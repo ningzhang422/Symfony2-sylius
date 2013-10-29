@@ -1,0 +1,68 @@
+{
+    "name": "sylius/core-bundle",
+    "type": "symfony-bundle",
+    "description": "Sylius core bundle. It integrates all other bundles into full stack Symfony2 ecommerce solution.",
+    "keywords": ["shop", "ecommerce", "store", "webshop", "sylius"],
+    "homepage": "http://sylius.org",
+    "license": "MIT",
+    "authors": [
+        {
+            "name":     "Paweł Jędrzejewski",
+            "homepage": "http://pjedrzejewski.com"
+        },
+        {
+            "name":     "Sylius project",
+            "homepage": "http://sylius.org"
+        },
+        {
+            "name":     "Community contributions",
+            "homepage": "http://github.com/Sylius/Sylius/contributors"
+        }
+    ],
+    "require": {
+        "php":                            ">=5.3.3",
+
+        "symfony/framework-bundle":       "~2.3",
+        "sylius/variable-product-bundle": "1.0.*@dev",
+        "sylius/cart-bundle":             "1.0.*@dev",
+        "sylius/money-bundle":            "1.0.*@dev",
+        "sylius/taxation-bundle":         "1.0.*@dev",
+        "sylius/shipping-bundle":         "1.0.*@dev",
+        "sylius/addressing-bundle":       "1.0.*@dev",
+        "sylius/promotions-bundle":       "1.0.*@dev",
+        "sylius/inventory-bundle":        "1.0.*@dev",
+        "sylius/taxonomies-bundle":       "1.0.*@dev",
+        "sylius/settings-bundle":         "1.0.*@dev",
+        "sylius/payum-bundle":            "1.0.*@dev",
+        "sylius/payments-bundle":         "1.0.*@dev",
+        "sylius/flow-bundle":             "1.0.*@dev",
+        "sylius/resource-bundle":         "1.0.*@dev",
+        "sylius/omnipay-bundle":          "1.0.*@dev",
+        "athari/yalinqo":                 "*@dev",
+        "friendsofsymfony/user-bundle":   "2.0.*@dev",
+        "jms/serializer-bundle":          "0.12.*",
+        "knplabs/knp-gaufrette-bundle":   "0.2.*@dev",
+        "mathiasverraes/money":           "*@dev",
+        "omnipay/omnipay":                "1.0.*@dev"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "1.2.*",
+        "phpspec/phpspec":  "2.0.*@dev",
+        "symfony/form":     "~2.3"
+    },
+    "suggest": {
+        "sylius/web-bundle": "Provides default web interface"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "autoload": {
+        "psr-0": { "Sylius\\Bundle\\CoreBundle\\": "" }
+    },
+    "target-dir": "Sylius/Bundle/CoreBundle",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}

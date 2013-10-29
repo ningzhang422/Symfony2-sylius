@@ -1,0 +1,90 @@
+{% extends 'SyliusWebBundle:Backend:layout.html.twig' %}
+
+{% import 'SyliusResourceBundle:Macros:buttons.html.twig' as buttons %}
+
+{% block topbar %}
+<ol class="breadcrumb">
+    <li>{{ 'sylius.breadcrumb.customers'|trans }}</li>
+    <li><a href="{{ path('sylius_backend_user_index') }}">{{ 'sylius.breadcrumb.user.index'|trans }}</a></li>
+    <li>{{ user.fullName  }}</li>
+</ol>
+{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <div class="actions-menu">
+        {{ buttons.manage(path('sylius_backend_user_index'), 'sylius.user.manage'|trans) }}
+        {{ buttons.edit(path('sylius_backend_user_update', {'id': user.id})) }}
+        {{ buttons.delete(path('sylius_backend_user_delete', {'id': user.id})) }}
+    </div>
+    <h1><i class="icon-info-sign"></i> {{ 'sylius.user.show_header'|trans|raw }}</h1>
+</div>
+
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th colspan="2">{{ 'sylius.user.general_info'|trans({'%username%': user.username}) }}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>{{ 'sylius.user.id'|trans }}</strong></td>
+            <td>{{ user.id }}</td>
+        </tr>
+        {% if user.firstName %}
+            <tr>
+                <td><strong>{{ 'sylius.user.first_name'|trans }}</strong></td>
+                <td>{{ user.firstName }}</td>
+            </tr>
+        {% endif %}
+        {% if user.lastName %}
+            <tr>
+                <td><strong>{{ 'sylius.user.last_name'|trans }}</strong></td>
+                <td>{{ user.lastName }}</td>
+            </tr>
+        {% endif %}
+        <tr>
+            <td><strong>{{ 'sylius.user.username'|trans }}</strong></td>
+            <td>{{ user.username }}</td>
+        </tr>
+        <tr>
+            <td><strong>{{ 'sylius.user.email'|trans }}</strong></td>
+            <td>{{ user.email }}</td>
+        </tr>
+        <tr>
+            <td><strong>{{ 'sylius.user.enabled'|trans }}</strong></td>
+            <td>
+                <span class="label label-{{ user.enabled ? 'success' : 'important'}}">
+                    {{ user.enabled ? 'sylius.yes'|trans : 'sylius.no'|trans }}
+                </span>
+            </td>
+        </tr>
+        {% if user.lastLogin %}
+        <tr>
+            <td><strong>{{ 'sylius.user.last_login'|trans }}</strong></td>
+            <td>{{ user.lastLogin|date }}</td>
+        </tr>
+        {% endif %}
+    </tbody>
+</table>
+
+<div class="row">
+    {% if user.shippingAddress %}
+        <div class="col-md-6">
+            {% include 'SyliusWebBundle:Backend/Address:_show.html.twig' with {'address': user.shippingAddress, 'title': 'sylius.user.shipping_address'|trans} %}
+        </div>
+    {% endif %}
+    {% if user.billingAddress %}
+        <div class="col-md-6">
+            {% include 'SyliusWebBundle:Backend/Address:_show.html.twig' with {'address': user.billingAddress, 'title': 'sylius.user.billing_address'|trans} %}
+        </div>
+    {% endif %}
+</div>
+<div class="row">
+    <div class="col-md-12">
+        {% render(url('sylius_backend_order_by_user', app.request.query.all|merge({id: user.id}) )) %}
+    </div>
+</div>
+
+{% endblock %}

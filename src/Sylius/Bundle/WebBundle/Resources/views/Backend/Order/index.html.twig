@@ -1,0 +1,28 @@
+{% extends 'SyliusWebBundle:Backend:layout.html.twig' %}
+
+{% import 'SyliusResourceBundle:Macros:buttons.html.twig' as buttons %}
+{% from 'SyliusWebBundle:Backend/Macros:misc.html.twig' import pagination %}
+{% from 'SyliusWebBundle:Backend/Order:macros.html.twig' import list %}
+
+{% block topbar %}
+<ol class="breadcrumb">
+    <li>{{ 'sylius.breadcrumb.sales'|trans }}</li>
+    <li>{{ 'sylius.breadcrumb.order.index'|trans }}</li>
+</ol>
+{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <div class="actions-menu">
+        {{ buttons.create(path('sylius_backend_order_create'), 'sylius.order.create'|trans) }}
+    </div>
+    <h1><i class="icon-shopping-cart"></i> {{ 'sylius.order.index_header'|trans|raw }}</h1>
+</div>
+
+{% render(url('sylius_backend_order_filter_form', {'criteria': app.request.query.get('criteria')})) %}
+
+{{ pagination(orders) }}
+{{ list(orders) }}
+{{ pagination(orders) }}
+
+{% endblock %}

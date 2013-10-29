@@ -1,0 +1,12 @@
+# This file is part of the Sylius package.
+# (c) Paweł Jędrzejewski
+
+sylius_account_homepage:
+    pattern: /
+    defaults: { _controller: FOSUserBundle:Profile:show }
+
+sylius_account_order:
+    resource: @SyliusWebBundle/Resources/config/routing/frontend/account/order.yml
+
+sylius_account_address:
+    resource: @SyliusWebBundle/Resources/config/routing/frontend/account/address.yml
