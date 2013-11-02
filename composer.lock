@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "8ea89411f78adc4740a2963a86c16442",
+    "hash": "37c139268188742a1ad79cb28eaa1f92",
     "packages": [
         {
             "name": "athari/yalinqo",
@@ -120,16 +120,16 @@
         },
         {
             "name": "doctrine/cache",
-            "version": "v1.2.0",
+            "version": "v1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "d0e4447707a064a5814b18cb0dcc2f24185f6179"
+                "reference": "e16d7adf45664a50fa86f515b6d5e7f670130449"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/d0e4447707a064a5814b18cb0dcc2f24185f6179",
-                "reference": "d0e4447707a064a5814b18cb0dcc2f24185f6179",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/e16d7adf45664a50fa86f515b6d5e7f670130449",
+                "reference": "e16d7adf45664a50fa86f515b6d5e7f670130449",
                 "shasum": ""
             },
             "require": {
@@ -137,6 +137,10 @@
             },
             "conflict": {
                 "doctrine/common": ">2.2,<2.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=3.7",
+                "satooshi/php-coveralls": "~0.6"
             },
             "type": "library",
             "extra": {
@@ -157,7 +161,8 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/"
+                    "homepage": "http://www.jwage.com/",
+                    "role": "Creator"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -185,7 +190,7 @@
                 "cache",
                 "caching"
             ],
-            "time": "2013-09-26 19:23:25"
+            "time": "2013-10-25 19:04:14"
         },
         {
             "name": "doctrine/collections",
@@ -400,12 +405,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineBundle.git",
-                "reference": "ef6c4381a1d182f78b83bc3890cfab0fa08a89f9"
+                "reference": "2ed46398aae1b7699f6fe7467faf54493b4f2a24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/ef6c4381a1d182f78b83bc3890cfab0fa08a89f9",
-                "reference": "ef6c4381a1d182f78b83bc3890cfab0fa08a89f9",
+                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/2ed46398aae1b7699f6fe7467faf54493b4f2a24",
+                "reference": "2ed46398aae1b7699f6fe7467faf54493b4f2a24",
                 "shasum": ""
             },
             "require": {
@@ -461,7 +466,7 @@
                 "orm",
                 "persistence"
             ],
-            "time": "2013-10-12 16:02:36"
+            "time": "2013-10-20 15:21:43"
         },
         {
             "name": "doctrine/inflector",
@@ -736,12 +741,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-                "reference": "f9ea1de0698e3055c9916e88c19f42e28844ef61"
+                "reference": "0cb03029c7c1c833a11c7bebf30125276f0aa5b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/f9ea1de0698e3055c9916e88c19f42e28844ef61",
-                "reference": "f9ea1de0698e3055c9916e88c19f42e28844ef61",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/0cb03029c7c1c833a11c7bebf30125276f0aa5b9",
+                "reference": "0cb03029c7c1c833a11c7bebf30125276f0aa5b9",
                 "shasum": ""
             },
             "require": {
@@ -796,7 +801,7 @@
             "keywords": [
                 "User management"
             ],
-            "time": "2013-10-09 22:58:46"
+            "time": "2013-10-28 10:50:07"
         },
         {
             "name": "gedmo/doctrine-extensions",
@@ -2464,16 +2469,16 @@
         },
         {
             "name": "payum/paypal-express-checkout-nvp",
-            "version": "0.6.0",
+            "version": "0.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Payum/PaypalExpressCheckoutNvp.git",
-                "reference": "08ad3f8d38da3e254aa59ef04450a18c5f0c40e4"
+                "reference": "bc523174f4e552ba40ebbb94aff5f62573148d06"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Payum/PaypalExpressCheckoutNvp/zipball/08ad3f8d38da3e254aa59ef04450a18c5f0c40e4",
-                "reference": "08ad3f8d38da3e254aa59ef04450a18c5f0c40e4",
+                "url": "https://api.github.com/repos/Payum/PaypalExpressCheckoutNvp/zipball/bc523174f4e552ba40ebbb94aff5f62573148d06",
+                "reference": "bc523174f4e552ba40ebbb94aff5f62573148d06",
                 "shasum": ""
             },
             "require": {
@@ -2526,20 +2531,20 @@
                 "paypal",
                 "recurring payment"
             ],
-            "time": "2013-10-25 13:32:44"
+            "time": "2013-11-01 14:12:49"
         },
         {
             "name": "payum/payum",
-            "version": "0.6.0",
+            "version": "0.6.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Payum/Payum.git",
-                "reference": "88694b17f075c13be9660cc6465eb0b0b15a440a"
+                "reference": "3561eb16dcc1620668a52eed99eeae9cc379d8d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Payum/Payum/zipball/88694b17f075c13be9660cc6465eb0b0b15a440a",
-                "reference": "88694b17f075c13be9660cc6465eb0b0b15a440a",
+                "url": "https://api.github.com/repos/Payum/Payum/zipball/3561eb16dcc1620668a52eed99eeae9cc379d8d5",
+                "reference": "3561eb16dcc1620668a52eed99eeae9cc379d8d5",
                 "shasum": ""
             },
             "require": {
@@ -2614,21 +2619,21 @@
                 "paypal rest",
                 "recurring payment"
             ],
-            "time": "2013-10-25 10:22:34"
+            "time": "2013-10-31 14:54:25"
         },
         {
             "name": "payum/payum-bundle",
-            "version": "0.6.0",
+            "version": "0.6.2",
             "target-dir": "Payum/Bundle/PayumBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Payum/PayumBundle.git",
-                "reference": "41426132caa41a653216bb2de0ed80273f763311"
+                "reference": "33b82cffa59e855c205eb9ed860bea3fdc6dfe14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Payum/PayumBundle/zipball/41426132caa41a653216bb2de0ed80273f763311",
-                "reference": "41426132caa41a653216bb2de0ed80273f763311",
+                "url": "https://api.github.com/repos/Payum/PayumBundle/zipball/33b82cffa59e855c205eb9ed860bea3fdc6dfe14",
+                "reference": "33b82cffa59e855c205eb9ed860bea3fdc6dfe14",
                 "shasum": ""
             },
             "require": {
@@ -2641,6 +2646,7 @@
                 "fp/testo": "@dev",
                 "payum/authorize-net-aim": "0.6.*",
                 "payum/be2bill": "0.6.*",
+                "payum/offline": "0.6.*",
                 "payum/omnipay-bridge": "0.6.*",
                 "payum/payex": "0.6.*",
                 "payum/paypal-express-checkout-nvp": "0.6.*",
@@ -2650,6 +2656,7 @@
             "suggest": {
                 "payum/authorize-net-aim": "If you want to use authorize.net gateway",
                 "payum/be2bill": "If you want to use be2bill gateway",
+                "payum/offline": "If you want to manage offline payments",
                 "payum/omnipay-bridge": "If you want to use omnipay provided gateways",
                 "payum/payex": "If you want to use payex gateway",
                 "payum/paypal-express-checkout-nvp": "If you want to use paypal express checkout nvp gateway",
@@ -2689,15 +2696,16 @@
             "keywords": [
                 "authorize.net",
                 "be2bill",
+                "offline",
                 "omnipay",
                 "payex",
                 "payment",
                 "paypal",
                 "paypal express checkout",
                 "paypal pro checkout",
-                "paypal recurring payment"
+                "recurring payment"
             ],
-            "time": "2013-10-25 13:57:33"
+            "time": "2013-10-31 15:04:50"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -3327,20 +3335,20 @@
         },
         {
             "name": "twig/extensions",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig-extensions.git",
-                "reference": "921799aaf05f88af749d72912d6b154dfeb9a03e"
+                "reference": "f91a82ec225e5bb108e01a0f93c9be04f84dcfa0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig-extensions/zipball/921799aaf05f88af749d72912d6b154dfeb9a03e",
-                "reference": "921799aaf05f88af749d72912d6b154dfeb9a03e",
+                "url": "https://api.github.com/repos/fabpot/Twig-extensions/zipball/f91a82ec225e5bb108e01a0f93c9be04f84dcfa0",
+                "reference": "f91a82ec225e5bb108e01a0f93c9be04f84dcfa0",
                 "shasum": ""
             },
             "require": {
-                "twig/twig": "1.*"
+                "twig/twig": "~1.0"
             },
             "type": "library",
             "extra": {
@@ -3370,20 +3378,20 @@
                 "i18n",
                 "text"
             ],
-            "time": "2013-02-28 14:21:30"
+            "time": "2013-10-18 19:37:15"
         },
         {
             "name": "twig/twig",
-            "version": "v1.14.1",
+            "version": "v1.14.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "8873d7593ad7c120004f177c0fd01459b383c9cb"
+                "reference": "ca445842fcea4f844d68203ffa2d00f5e3cdea64"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/8873d7593ad7c120004f177c0fd01459b383c9cb",
-                "reference": "8873d7593ad7c120004f177c0fd01459b383c9cb",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/ca445842fcea4f844d68203ffa2d00f5e3cdea64",
+                "reference": "ca445842fcea4f844d68203ffa2d00f5e3cdea64",
                 "shasum": ""
             },
             "require": {
@@ -3419,7 +3427,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2013-10-15 19:17:38"
+            "time": "2013-10-30 08:20:53"
         },
         {
             "name": "white-october/pagerfanta-bundle",
@@ -3428,18 +3436,22 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/whiteoctober/WhiteOctoberPagerfantaBundle.git",
-                "reference": "d02dcf3fb08e57267dfdae73687a20601157e6a5"
+                "reference": "8371fd2c040df491ac3094fa27697a71accf958c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/whiteoctober/WhiteOctoberPagerfantaBundle/zipball/d02dcf3fb08e57267dfdae73687a20601157e6a5",
-                "reference": "d02dcf3fb08e57267dfdae73687a20601157e6a5",
+                "url": "https://api.github.com/repos/whiteoctober/WhiteOctoberPagerfantaBundle/zipball/8371fd2c040df491ac3094fa27697a71accf958c",
+                "reference": "8371fd2c040df491ac3094fa27697a71accf958c",
                 "shasum": ""
             },
             "require": {
                 "pagerfanta/pagerfanta": "1.0.*",
-                "symfony/framework-bundle": "~2.1",
-                "symfony/property-access": "~2.2"
+                "symfony/framework-bundle": "~2.2",
+                "symfony/property-access": "~2.2",
+                "symfony/twig-bundle": "~2.2"
+            },
+            "require-dev": {
+                "symfony/symfony": "~2.2"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -3468,7 +3480,7 @@
                 "page",
                 "paging"
             ],
-            "time": "2013-09-26 11:26:40"
+            "time": "2013-10-31 11:28:49"
         },
         {
             "name": "willdurand/negotiation",
@@ -4042,57 +4054,6 @@
             "time": "2013-09-05 11:23:37"
         },
         {
-            "name": "friendsofsymfony/rest",
-            "version": "0.8.0",
-            "target-dir": "FOS/Rest",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/FriendsOfSymfony/FOSRest.git",
-                "reference": "9a84df8220553e2ae3163b8325a3c4c2e9792426"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRest/zipball/9a84df8220553e2ae3163b8325a3c4c2e9792426",
-                "reference": "9a84df8220553e2ae3163b8325a3c4c2e9792426",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2",
-                "symfony/http-foundation": "~2.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.8.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "FOS\\Rest": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Lukas Kahwe Smith",
-                    "email": "smith@pooteeweet.org"
-                },
-                {
-                    "name": "FriendsOfSymfony Community",
-                    "homepage": "https://github.com/FriendsOfSymfony/FOSRest/contributors"
-                }
-            ],
-            "description": "This library provides various tools to develop RESTful API's",
-            "homepage": "http://friendsofsymfony.github.com",
-            "keywords": [
-                "rest"
-            ],
-            "time": "2013-03-02 20:35:05"
-        },
-        {
             "name": "fzaninotto/faker",
             "version": "v1.2.0",
             "source": {
@@ -4235,12 +4196,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/phpspec.git",
-                "reference": "d8f64251d27dc1bb17b76608d620374b6b51f9ff"
+                "reference": "ce8b573e1c0a9a31bc40e8005683ba8117ca1a32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/phpspec/zipball/d8f64251d27dc1bb17b76608d620374b6b51f9ff",
-                "reference": "d8f64251d27dc1bb17b76608d620374b6b51f9ff",
+                "url": "https://api.github.com/repos/phpspec/phpspec/zipball/ce8b573e1c0a9a31bc40e8005683ba8117ca1a32",
+                "reference": "ce8b573e1c0a9a31bc40e8005683ba8117ca1a32",
                 "shasum": ""
             },
             "require": {
@@ -4295,7 +4256,7 @@
                 "testing",
                 "tests"
             ],
-            "time": "2013-10-04 08:02:36"
+            "time": "2013-10-21 19:22:09"
         },
         {
             "name": "phpspec/prophecy",
