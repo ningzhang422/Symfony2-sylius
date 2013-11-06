@@ -30,6 +30,9 @@ class UserFilterType extends AbstractType
                     'placeholder' => 'sylius.form.user_filter.query'
                 )
             ))
+            ->add('enabled','checkbox',array(
+                'label' => 'sylius.form.user.enabled'
+            ))
         ;
     }
 
