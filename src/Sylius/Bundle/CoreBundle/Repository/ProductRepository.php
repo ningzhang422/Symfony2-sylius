@@ -89,7 +89,7 @@ class ProductRepository extends VariableProductRepository
      *
      * @return ProductInterface[]
      */
-    public function findLatest($limit = 10)
+    public function findLatest($limit = 20)
     {
         return $this->findBy(array(), array('createdAt' => 'desc'), $limit);
     }
