@@ -20,7 +20,7 @@ class RegistrationFormType extends BaseType
     {
         $builder->add('firstName', 'text', array('label' => 'sylius.form.user.first_name'));
         $builder->add('lastName', 'text', array('label' => 'sylius.form.user.last_name'));
-
+        $builder->add('phone', 'text', array('label' => 'sylius.form.user.phone'));
         parent::buildForm($builder, $options);
 
         // remove the username field

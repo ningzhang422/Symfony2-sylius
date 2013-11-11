@@ -122,6 +122,10 @@
         <source>sylius.form.user.last_name</source>
         <target>Last name</target>
       </trans-unit>
+      <trans-unit id="711db7c8e5f9a2f36ed531a7371ef32a" resname="sylius.form.user.phone">
+        <source>sylius.form.user.phone</source>
+        <target>Telephone</target>
+      </trans-unit>
       <trans-unit id="b24ab8c53dcebb9b43b97d362a52d231" resname="sylius.form.user.password">
         <source>sylius.form.user.password</source>
         <target>Password</target>

@@ -54,6 +54,10 @@
         <source>sylius.user.first_name.min</source>
         <target>First name must be at least {{ limit }} characters long.</target>
       </trans-unit>
+      <trans-unit id="1a4e98b8754497fa3704c316c251032c" resname="sylius.user.phone.not_blank">
+        <source>sylius.user.phone.not_blank</source>
+        <target>Please enter your phone number.</target>
+      </trans-unit>
       <trans-unit id="1a4e98b8754497fa3704c316c2510326" resname="sylius.user.first_name.not_blank">
         <source>sylius.user.first_name.not_blank</source>
         <target>Please enter your first name.</target>

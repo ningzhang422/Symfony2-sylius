@@ -33,6 +33,9 @@ class ProfileFormType extends BaseType
             ->add('email', 'email', array(
                 'label'    => 'sylius.form.profile.email'
             ))
+            ->add('phone', 'text', array(
+                'label'    => 'sylius.form.profile.phone'
+            ))
         ;
     }
 

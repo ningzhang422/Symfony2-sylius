@@ -31,6 +31,7 @@ class User extends BaseUser implements UserInterface
     protected $billingAddress;
     protected $shippingAddress;
     protected $addresses;
+    protected $phone;
 
     public function __construct()
     {
@@ -238,5 +239,19 @@ class User extends BaseUser implements UserInterface
         $this->setUsernameCanonical($emailCanonical);
 
         return $this;
+    }
+    /**
+     * {@inheritdoc}
+     */
+    public function setPhone($phone)
+    {
+        $this->phone = $phone;
+    }
+    /**
+     * {@inheritdoc}
+     */
+    public function getPhone()
+    {
+        return $this->phone;
     }
 }

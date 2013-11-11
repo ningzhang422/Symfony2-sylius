@@ -93,6 +93,15 @@
                 </option>
             </constraint>
         </property>
+        <property name="phone">
+            <constraint name="NotBlank">
+                <option name="message">sylius.user.phone.not_blank</option>
+                <option name="groups">
+                    <value>Profile</value>
+                    <value>Registration</value>
+                </option>
+            </constraint>
+        </property>
         <property name="lastName">
             <constraint name="NotBlank">
                 <option name="message">sylius.user.last_name.not_blank</option>
