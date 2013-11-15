@@ -750,6 +750,10 @@
         <source>sylius.form.profile.lastName</source>
         <target>Last name</target>
       </trans-unit>
+      <trans-unit id="f434362fba3003af96b35062e2fc1c5c" resname="sylius.form.profile.phone">
+        <source>sylius.form.profile.phone</source>
+        <target>Telephone</target>
+      </trans-unit>
       <trans-unit id="25b6370883ff5b94aef1ceb697b6d3f6" resname="sylius.gallery.next">
         <source>sylius.gallery.next</source>
         <target>Next</target>
