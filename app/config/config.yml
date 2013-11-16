@@ -69,7 +69,7 @@ fos_user:
             type: sylius_user_profile
     registration:
         form:
-            type: sylius_user_registration
+            type: acme_user_registration # sylius_user_registration
 
 swiftmailer:
     transport: %sylius.mailer.transport%

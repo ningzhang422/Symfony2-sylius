@@ -1,7 +1,9 @@
 parameters:
-#    acme_shop.example.class: Acme\Bundle\ShopBundle\Example
+    # acme.entity.user.class: Acme\Bundle\ShopBundle\Entity\User
 
 services:
-#    acme_shop.example:
-#        class: %acme_shop.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]
+    sylius.user.registration.form.type:
+        class: Acme\Bundle\ShopBundle\Form\RegistrationFormType
+        arguments: [%fos_user.model.user.class%]
+        tags: 
+           - { name: form.type, alias: acme_user_registration }
