@@ -50,7 +50,7 @@ class AppKernel extends Kernel
             new Sylius\Bundle\WebBundle\SyliusWebBundle(),
             new Sylius\Bundle\ResourceBundle\SyliusResourceBundle(),
             
-            new Sylius\Bundle\ShopBundle\SyliusShopBundle(),
+            // new Sylius\Bundle\ShopBundle\SyliusShopBundle(),
 
             // Core bundles.
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
@@ -76,6 +76,7 @@ class AppKernel extends Kernel
             new Knp\Bundle\SnappyBundle\KnpSnappyBundle(),
             new Payum\Bundle\PayumBundle\PayumBundle(),
             new Acme\Bundle\ShopBundle\AcmeShopBundle(),
+            new Acme\Bundle\WebBundle\AcmeWebBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev'))) {
