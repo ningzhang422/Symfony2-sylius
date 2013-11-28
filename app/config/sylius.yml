@@ -6,7 +6,7 @@ sylius_core:
 sylius_installer:
     classes:
         user:
-            model: Sylius\Bundle\CoreBundle\Model\User
+            model: Acme\Bundle\ShopBundle\Entity\User #Sylius\Bundle\CoreBundle\Model\User
 
 sylius_money:
     currency: %sylius.currency%
@@ -98,7 +98,7 @@ sylius_resource:
         sylius.user:
             driver: doctrine/orm
             classes:
-                model: Sylius\Bundle\CoreBundle\Model\User
+                model: Acme\Bundle\ShopBundle\Entity\User #Sylius\Bundle\CoreBundle\Model\User
                 controller: Sylius\Bundle\CoreBundle\Controller\UserController
                 repository: Sylius\Bundle\CoreBundle\Repository\UserRepository
         sylius.group:

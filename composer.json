@@ -80,7 +80,7 @@
         ]
     },
     "autoload": {
-        "psr-0": { "Sylius\\": "src/" }
+        "psr-0": { "Sylius\\": "src/","Acme\\": "src/" }
     },
     "config": {
         "bin-dir": "bin"
