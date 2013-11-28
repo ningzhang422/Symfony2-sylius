@@ -63,15 +63,15 @@ stof_doctrine_extensions:
 fos_user:
     db_driver: orm
     firewall_name: main
-    user_class: Sylius\Bundle\CoreBundle\Model\User
+    user_class: Acme\Bundle\ShopBundle\Entity\User #Sylius\Bundle\CoreBundle\Model\User
     group:
         group_class: Sylius\Bundle\CoreBundle\Model\Group
     profile:
         form:
-            type: sylius_user_profile
+            type: acme_user_profile #sylius_user_profile
     registration:
         form:
-            type: sylius_user_registration
+            type: acme_user_registration #sylius_user_registration
 
 hwi_oauth:
     firewall_name: main
