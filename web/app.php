@@ -1,5 +1,6 @@
-<?php
 
+<?php
+umask(0000);
 /*
  * This file is part of the Sylius package.
  *
