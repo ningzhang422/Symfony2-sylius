@@ -15,6 +15,7 @@ use Behat\Behat\Context\BehatContext;
 use Behat\Gherkin\Node\TableNode;
 use Behat\Symfony2Extension\Context\KernelAwareInterface;
 use Doctrine\Common\Collections\ArrayCollection;
+<<<<<<< HEAD
 use Doctrine\Common\Persistence\ObjectManager;
 use Doctrine\Common\Persistence\ObjectRepository;
 use Faker\Factory as FakerFactory;
@@ -22,6 +23,12 @@ use Sylius\Bundle\AddressingBundle\Model\ZoneInterface;
 use Sylius\Bundle\OrderBundle\Model\OrderInterface;
 use Sylius\Bundle\ShippingBundle\Calculator\DefaultCalculators;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+=======
+use Faker\Factory as FakerFactory;
+use Sylius\Bundle\AddressingBundle\Model\ZoneInterface;
+use Sylius\Bundle\CoreBundle\Model\User;
+use Sylius\Bundle\ShippingBundle\Calculator\DefaultCalculators;
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 use Symfony\Component\EventDispatcher\GenericEvent;
 use Symfony\Component\HttpKernel\KernelInterface;
 use Symfony\Component\Locale\Locale;
@@ -67,6 +74,11 @@ class DataContext extends BehatContext implements KernelAwareInterface
      */
     public function thereAreFollowingTaxonomies(TableNode $table)
     {
+<<<<<<< HEAD
+=======
+        $manager = $this->getEntityManager();
+
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
         foreach ($table->getHash() as $data) {
             $this->thereIsTaxonomy($data['name']);
         }
@@ -135,7 +147,11 @@ class DataContext extends BehatContext implements KernelAwareInterface
                 isset($data['password']) ? $data['password'] : $this->faker->word(),
                 'ROLE_USER',
                 isset($data['enabled']) ? $data['enabled'] : true,
+<<<<<<< HEAD
                 isset($data['address']) && !empty($data['address']) ? $data['address'] : null
+=======
+                isset($data['address']) ? $data['address'] : null
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
             );
         }
     }
@@ -146,7 +162,11 @@ class DataContext extends BehatContext implements KernelAwareInterface
             $addressData = explode(',', $address);
             $addressData = array_map('trim', $addressData);
 
+<<<<<<< HEAD
             $user = $this->getRepository('user')->createNew();
+=======
+            $user = new User();
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 
             $user->setFirstname($this->faker->firstName);
             $user->setLastname($this->faker->lastName);
@@ -172,6 +192,7 @@ class DataContext extends BehatContext implements KernelAwareInterface
     }
 
     /**
+<<<<<<< HEAD
      * @Given /^there are groups:$/
      * @Given /^there are following groups:$/
      * @Given /^the following groups exist:$/
@@ -197,6 +218,8 @@ class DataContext extends BehatContext implements KernelAwareInterface
     }
 
     /**
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
      * @Given /^there are following orders:$/
      * @Given /^the following orders exist:$/
      * @Given /^there are orders:$/
@@ -258,7 +281,10 @@ class DataContext extends BehatContext implements KernelAwareInterface
         $order->calculateTotal();
         $order->complete();
 
+<<<<<<< HEAD
         $this->getService('sylius.order_processing.payment_processor')->createPayment($order);
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
         $this->getService('event_dispatcher')->dispatch('sylius.cart_change', new GenericEvent($order));
 
         $manager->persist($order);
@@ -1068,8 +1094,11 @@ class DataContext extends BehatContext implements KernelAwareInterface
      * @param array  $criteria
      *
      * @return object
+<<<<<<< HEAD
      *
      * @throws \InvalidArgumentException
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
      */
     public function findOneBy($type, array $criteria)
     {
@@ -1102,7 +1131,11 @@ class DataContext extends BehatContext implements KernelAwareInterface
     /**
      * Get entity manager.
      *
+<<<<<<< HEAD
      * @return ObjectManager
+=======
+     * @return EntityManager
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
      */
     public function getEntityManager()
     {

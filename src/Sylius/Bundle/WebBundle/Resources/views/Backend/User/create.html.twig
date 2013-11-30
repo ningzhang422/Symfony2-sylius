@@ -20,9 +20,17 @@
 
 {% block content %}
 <div class="page-header">
+<<<<<<< HEAD
     <h1><i class="glyphicon glyphicon-plus-sign"></i> {{ 'sylius.user.create_header'|trans|raw }}</h1>
 </div>
 
+=======
+    <h1><i class="icon-plus-sign"></i> {{ 'sylius.user.create_header'|trans|raw }}</h1>
+</div>
+
+{{ form_errors(form) }}
+
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 <form action="{{ path('sylius_backend_user_create') }}" method="post" class="form-horizontal" novalidate>
     {% include 'SyliusWebBundle:Backend/User:_form.html.twig' %}
     {{ create() }}

@@ -63,14 +63,22 @@ class PaymentMethod implements PaymentMethodInterface
     /**
      * Creation date.
      *
+<<<<<<< HEAD
      * @var \DateTime
+=======
+     * @var DateTime
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
      */
     protected $createdAt;
 
     /**
      * Last update time.
      *
+<<<<<<< HEAD
      * @var \DateTime
+=======
+     * @var DateTime
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
      */
     protected $updatedAt;
 
@@ -113,8 +121,11 @@ class PaymentMethod implements PaymentMethodInterface
     public function setEnabled($enabled)
     {
         $this->enabled = (Boolean) $enabled;
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -131,8 +142,11 @@ class PaymentMethod implements PaymentMethodInterface
     public function setName($name)
     {
         $this->name = $name;
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -149,8 +163,11 @@ class PaymentMethod implements PaymentMethodInterface
     public function setDescription($description)
     {
         $this->description = $description;
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -167,8 +184,11 @@ class PaymentMethod implements PaymentMethodInterface
     public function setGateway($gateway)
     {
         $this->gateway = $gateway;
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -185,8 +205,11 @@ class PaymentMethod implements PaymentMethodInterface
     public function setEnvironment($environment)
     {
         $this->environment = $environment;
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -224,4 +247,21 @@ class PaymentMethod implements PaymentMethodInterface
 
         return $this;
     }
+<<<<<<< HEAD
+=======
+
+    /**
+     * Get the default requirement labels.
+     *
+     * @return array
+     */
+    public static function getCategoryRequirementLabels()
+    {
+        return array(
+            PaymentsMethodInterface::CATEGORY_REQUIREMENT_MATCH_NONE => 'None of items have to match method category',
+            PaymentsMethodInterface::CATEGORY_REQUIREMENT_MATCH_ANY  => 'At least 1 item have to match method category',
+            PaymentsMethodInterface::CATEGORY_REQUIREMENT_MATCH_ALL  => 'All items have to match method category',
+        );
+    }
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 }

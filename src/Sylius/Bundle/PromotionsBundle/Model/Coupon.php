@@ -18,6 +18,7 @@ namespace Sylius\Bundle\PromotionsBundle\Model;
  */
 class Coupon implements CouponInterface
 {
+<<<<<<< HEAD
     /**
      * Id
      *
@@ -63,29 +64,45 @@ class Coupon implements CouponInterface
     /**
      * Constructor
      */
+=======
+    protected $id;
+    protected $code;
+    protected $usageLimit;
+    protected $used;
+    protected $promotion;
+    protected $expiresAt;
+
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function __construct()
     {
         $this->used = 0;
     }
 
+<<<<<<< HEAD
     /**
      * Get id
      *
      * @return integer
      */
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function getId()
     {
         return $this->id;
     }
 
+<<<<<<< HEAD
     /**
      * {@inheritdoc}
      */
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function getCode()
     {
         return $this->code;
     }
 
+<<<<<<< HEAD
     /**
      * {@inheritdoc}
      */
@@ -99,11 +116,19 @@ class Coupon implements CouponInterface
     /**
      * {@inheritdoc}
      */
+=======
+    public function setCode($code)
+    {
+        $this->code = $code;
+    }
+
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function getUsageLimit()
     {
         return $this->usageLimit;
     }
 
+<<<<<<< HEAD
     /**
      * {@inheritdoc}
      */
@@ -117,14 +142,24 @@ class Coupon implements CouponInterface
     /**
      * {@inheritdoc}
      */
+=======
+    public function setUsageLimit($usageLimit)
+    {
+        $this->usageLimit = $usageLimit;
+    }
+
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function getUsed()
     {
         return $this->used;
     }
 
+<<<<<<< HEAD
     /**
      * {@inheritdoc}
      */
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function setUsed($used)
     {
         $this->used = $used;
@@ -132,6 +167,7 @@ class Coupon implements CouponInterface
         return $this;
     }
 
+<<<<<<< HEAD
     /**
      * {@inheritdoc}
      */
@@ -145,11 +181,19 @@ class Coupon implements CouponInterface
     /**
      * {@inheritdoc}
      */
+=======
+    public function incrementUsed()
+    {
+        $this->used++;
+    }
+
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function getPromotion()
     {
         return $this->promotion;
     }
 
+<<<<<<< HEAD
     /**
      * {@inheritdoc}
      */
@@ -163,14 +207,24 @@ class Coupon implements CouponInterface
     /**
      * {@inheritdoc}
      */
+=======
+    public function setPromotion(PromotionInterface $promotion = null)
+    {
+        $this->promotion = $promotion;
+    }
+
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function getExpiresAt()
     {
         return $this->expiresAt;
     }
 
+<<<<<<< HEAD
     /**
      * {@inheritdoc}
      */
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function setExpiresAt(\DateTime $expiresAt = null)
     {
         $this->expiresAt = $expiresAt;
@@ -178,9 +232,12 @@ class Coupon implements CouponInterface
         return $this;
     }
 
+<<<<<<< HEAD
     /**
      * {@inheritdoc}
      */
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function isValid()
     {
         if (null !== $this->usageLimit && $this->used >= $this->usageLimit) {

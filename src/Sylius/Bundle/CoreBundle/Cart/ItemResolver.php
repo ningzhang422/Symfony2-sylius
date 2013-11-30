@@ -97,7 +97,11 @@ class ItemResolver implements ItemResolverInterface
         $item = $form->getData(); // Item instance, cool.
 
         // If our product has no variants, we simply set the master variant of it.
+<<<<<<< HEAD
         if (!$product->hasVariants()) {
+=======
+        if (!$product->hasOptions()) {
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
             $item->setVariant($product->getMasterVariant());
         }
 

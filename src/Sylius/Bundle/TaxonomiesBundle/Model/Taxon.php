@@ -136,8 +136,11 @@ class Taxon implements TaxonInterface
     public function setTaxonomy(TaxonomyInterface $taxonomy = null)
     {
         $this->taxonomy = $taxonomy;
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -162,8 +165,11 @@ class Taxon implements TaxonInterface
     public function setParent(TaxonInterface $parent = null)
     {
         $this->parent = $parent;
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -226,8 +232,11 @@ class Taxon implements TaxonInterface
     public function setName($name)
     {
         $this->name = $name;
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -244,8 +253,11 @@ class Taxon implements TaxonInterface
     public function setSlug($slug)
     {
         $this->slug = $slug;
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -270,8 +282,11 @@ class Taxon implements TaxonInterface
     public function setPermalink($permalink)
     {
         $this->permalink = $permalink;
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -288,8 +303,11 @@ class Taxon implements TaxonInterface
     public function setDescription($description)
     {
         $this->description = $description;
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -342,7 +360,10 @@ class Taxon implements TaxonInterface
     public function setLevel($level)
     {
         $this->level = $level;
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 }

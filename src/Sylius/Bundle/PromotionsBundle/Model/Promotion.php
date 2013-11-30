@@ -20,6 +20,7 @@ use Doctrine\Common\Collections\ArrayCollection;
  */
 class Promotion implements PromotionInterface
 {
+<<<<<<< HEAD
     /**
      * Id
      *
@@ -114,6 +115,22 @@ class Promotion implements PromotionInterface
     /**
      * Constructor
      */
+=======
+    protected $id;
+    protected $name;
+    protected $description;
+    protected $usageLimit;
+    protected $used;
+    protected $startsAt;
+    protected $endsAt;
+    protected $couponBased;
+    protected $coupons;
+    protected $rules;
+    protected $actions;
+    protected $updatedAt;
+    protected $createdAt;
+
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function __construct()
     {
         $this->used = 0;
@@ -123,22 +140,29 @@ class Promotion implements PromotionInterface
         $this->actions = new ArrayCollection();
     }
 
+<<<<<<< HEAD
     /**
      * @return int
      */
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function getId()
     {
         return $this->id;
     }
 
+<<<<<<< HEAD
     /**
      * {@inheritdoc}
      */
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function getName()
     {
         return $this->name;
     }
 
+<<<<<<< HEAD
     /**
      * {@inheritdoc}
      */
@@ -152,11 +176,19 @@ class Promotion implements PromotionInterface
     /**
      * {@inheritdoc}
      */
+=======
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
+
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function getDescription()
     {
         return $this->description;
     }
 
+<<<<<<< HEAD
     /**
      * {@inheritdoc}
      */
@@ -170,11 +202,19 @@ class Promotion implements PromotionInterface
     /**
      * {@inheritdoc}
      */
+=======
+    public function setDescription($description)
+    {
+        $this->description = $description;
+    }
+
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function getUsageLimit()
     {
         return $this->usageLimit;
     }
 
+<<<<<<< HEAD
     /**
      * {@inheritdoc}
      */
@@ -188,14 +228,24 @@ class Promotion implements PromotionInterface
     /**
      * {@inheritdoc}
      */
+=======
+    public function setUsageLimit($usageLimit)
+    {
+        $this->usageLimit = $usageLimit;
+    }
+
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function getUsed()
     {
         return $this->used;
     }
 
+<<<<<<< HEAD
     /**
      * {@inheritdoc}
      */
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function setUsed($used)
     {
         $this->used = $used;
@@ -203,6 +253,7 @@ class Promotion implements PromotionInterface
         return $this;
     }
 
+<<<<<<< HEAD
     /**
      * {@inheritdoc}
      */
@@ -216,11 +267,19 @@ class Promotion implements PromotionInterface
     /**
      * {@inheritdoc}
      */
+=======
+    public function incrementUsed()
+    {
+        $this->used++;
+    }
+
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function getStartsAt()
     {
         return $this->startsAt;
     }
 
+<<<<<<< HEAD
     /**
      * {@inheritdoc}
      */
@@ -234,11 +293,19 @@ class Promotion implements PromotionInterface
     /**
      * {@inheritdoc}
      */
+=======
+    public function setStartsAt(\DateTime $startsAt = null)
+    {
+        $this->startsAt = $startsAt;
+    }
+
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function getEndsAt()
     {
         return $this->endsAt;
     }
 
+<<<<<<< HEAD
     /**
      * {@inheritdoc}
      */
@@ -252,11 +319,19 @@ class Promotion implements PromotionInterface
     /**
      * {@inheritdoc}
      */
+=======
+    public function setEndsAt(\DateTime $endsAt = null)
+    {
+        $this->endsAt = $endsAt;
+    }
+
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function isCouponBased()
     {
         return $this->couponBased;
     }
 
+<<<<<<< HEAD
     /**
      * {@inheritdoc}
      */
@@ -270,36 +345,53 @@ class Promotion implements PromotionInterface
     /**
      * {@inheritdoc}
      */
+=======
+    public function setCouponBased($couponBased)
+    {
+        $this->couponBased = (Boolean) $couponBased;
+    }
+
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function getCoupons()
     {
         return $this->coupons;
     }
 
+<<<<<<< HEAD
     /**
      * {@inheritdoc}
      */
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function hasCoupons()
     {
         return !$this->coupons->isEmpty();
     }
 
+<<<<<<< HEAD
     /**
      * {@inheritdoc}
      */
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function hasCoupon(CouponInterface $coupon)
     {
         return $this->coupons->contains($coupon);
     }
 
+<<<<<<< HEAD
     /**
      * {@inheritdoc}
      */
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function addCoupon(CouponInterface $coupon)
     {
         if (!$this->hasCoupon($coupon)) {
             $coupon->setPromotion($this);
             $this->coupons->add($coupon);
         }
+<<<<<<< HEAD
 
         return $this;
     }
@@ -307,10 +399,15 @@ class Promotion implements PromotionInterface
     /**
      * {@inheritdoc}
      */
+=======
+    }
+
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function removeCoupon(CouponInterface $coupon)
     {
         $coupon->setPromotion(null);
         $this->coupons->removeElement($coupon);
+<<<<<<< HEAD
 
         return $this;
     }
@@ -318,36 +415,50 @@ class Promotion implements PromotionInterface
     /**
      * {@inheritdoc}
      */
+=======
+    }
+
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function hasRules()
     {
         return !$this->rules->isEmpty();
     }
 
+<<<<<<< HEAD
     /**
      * {@inheritdoc}
      */
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function getRules()
     {
         return $this->rules;
     }
 
+<<<<<<< HEAD
     /**
      * {@inheritdoc}
      */
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function hasRule(RuleInterface $rule)
     {
         return $this->rules->contains($rule);
     }
 
+<<<<<<< HEAD
     /**
      * {@inheritdoc}
      */
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function addRule(RuleInterface $rule)
     {
         if (!$this->hasRule($rule)) {
             $rule->setPromotion($this);
             $this->rules->add($rule);
         }
+<<<<<<< HEAD
 
         return $this;
     }
@@ -355,10 +466,15 @@ class Promotion implements PromotionInterface
     /**
      * {@inheritdoc}
      */
+=======
+    }
+
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function removeRule(RuleInterface $rule)
     {
         $rule->setPromotion(null);
         $this->rules->removeElement($rule);
+<<<<<<< HEAD
 
         return $this;
     }
@@ -366,36 +482,50 @@ class Promotion implements PromotionInterface
     /**
      * {@inheritdoc}
      */
+=======
+    }
+
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function hasActions()
     {
         return !$this->actions->isEmpty();
     }
 
+<<<<<<< HEAD
     /**
      * {@inheritdoc}
      */
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function getActions()
     {
         return $this->actions;
     }
 
+<<<<<<< HEAD
     /**
      * {@inheritdoc}
      */
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function hasAction(ActionInterface $action)
     {
         return $this->actions->contains($action);
     }
 
+<<<<<<< HEAD
     /**
      * {@inheritdoc}
      */
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function addAction(ActionInterface $action)
     {
         if (!$this->hasAction($action)) {
             $action->setPromotion($this);
             $this->actions->add($action);
         }
+<<<<<<< HEAD
 
         return $this;
     }
@@ -403,10 +533,15 @@ class Promotion implements PromotionInterface
     /**
      * {@inheritdoc}
      */
+=======
+    }
+
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function removeAction(ActionInterface $action)
     {
         $action->setPromotion(null);
         $this->actions->removeElement($action);
+<<<<<<< HEAD
 
         return $this;
     }
@@ -414,11 +549,16 @@ class Promotion implements PromotionInterface
     /**
      * {@inheritdoc}
      */
+=======
+    }
+
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function getUpdatedAt()
     {
         return $this->updatedAt;
     }
 
+<<<<<<< HEAD
     /**
      * {@inheritdoc}
      */
@@ -432,11 +572,19 @@ class Promotion implements PromotionInterface
     /**
      * {@inheritdoc}
      */
+=======
+    public function setUpdatedAt(\DateTime $updatedAt)
+    {
+        $this->updatedAt = $updatedAt;
+    }
+
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function getCreatedAt()
     {
         return $this->createdAt;
     }
 
+<<<<<<< HEAD
     /**
      * {@inheritdoc}
      */
@@ -445,5 +593,10 @@ class Promotion implements PromotionInterface
         $this->createdAt = $createdAt;
 
         return $this;
+=======
+    public function setCreatedAt(\DateTime $createdAt)
+    {
+        $this->createdAt = $createdAt;
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 }

@@ -13,7 +13,10 @@ namespace Sylius\Bundle\CoreBundle\Promotion\Action;
 
 use Sylius\Bundle\CoreBundle\Model\OrderInterface;
 use Sylius\Bundle\PromotionsBundle\Action\PromotionActionInterface;
+<<<<<<< HEAD
 use Sylius\Bundle\PromotionsBundle\Model\PromotionInterface;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 use Sylius\Bundle\PromotionsBundle\Model\PromotionSubjectInterface;
 use Sylius\Bundle\ResourceBundle\Model\RepositoryInterface;
 
@@ -44,13 +47,20 @@ class PercentageDiscountAction implements PromotionActionInterface
     /**
      * {@inheritdoc}
      */
+<<<<<<< HEAD
     public function execute(PromotionSubjectInterface $subject, array $configuration, PromotionInterface $promotion)
+=======
+    public function execute(PromotionSubjectInterface $subject, array $configuration)
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     {
         $adjustment = $this->repository->createNew();
 
         $adjustment->setAmount(- $subject->getPromotionSubjectItemTotal() * ($configuration['percentage']));
         $adjustment->setLabel(OrderInterface::PROMOTION_ADJUSTMENT);
+<<<<<<< HEAD
         $adjustment->setDescription($promotion->getDescription());
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 
         $subject->addAdjustment($adjustment);
     }

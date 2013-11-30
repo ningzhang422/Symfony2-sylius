@@ -1,5 +1,8 @@
 {% extends 'SyliusWebBundle:Backend:layout.html.twig' %}
+<<<<<<< HEAD
 {% import 'SyliusResourceBundle:Macros:buttons.html.twig' as buttons %}
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 
 {% block topbar %}
 <ol class="breadcrumb">
@@ -16,6 +19,7 @@
 
 <div class="well">
     <a href="{{ path('sylius_backend_tax_rate_index') }}" class="btn btn-primary">
+<<<<<<< HEAD
         <i class="glyphicon glyphicon-list-alt"></i> {{ 'sylius.tax_rate.manage'|trans }}
     </a>
     <a href="{{ path('sylius_backend_tax_rate_update', {'id': tax_rate.id}) }}" class="btn">
@@ -25,6 +29,22 @@
 </div>
 
 <table class="table table-bordered table-condensed">
+=======
+        <i class="icon-list-alt"></i> {{ 'sylius.tax_rate.manage'|trans }}
+    </a>
+    <a href="{{ path('sylius_backend_tax_rate_update', {'id': tax_rate.id}) }}" class="btn">
+        <i class="icon-pencil"></i> {{ 'sylius.edit'|trans }}
+    </a>
+    <form action="{{ path('sylius_backend_tax_rate_delete', {'id': tax_rate.id}) }}" method="post" style="display: inline;">
+        <input type="hidden" name="_method" value="DELETE">
+        <button class="btn btn-danger">
+            <i class="icon-trash"></i> {{ 'sylius.delete'|trans }}
+        </button>
+    </form>
+</div>
+
+<table class="table table-bordered table-consensed">
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     <thead>
         <tr>
             <th>{{ 'sylius.tax_rate.category'|trans }}</th>

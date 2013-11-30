@@ -18,7 +18,11 @@
         {{ buttons.manage(path('sylius_backend_option_index'), 'sylius.option.manage'|trans) }}
         {{ buttons.manage(path('sylius_backend_property_index'), 'sylius.property.manage'|trans) }}
     </div>
+<<<<<<< HEAD
     <h1><i class="glyphicon glyphicon-th-list"></i> {{ 'sylius.product.index_header'|trans|raw }}</h1>
+=======
+    <h1><i class="icon-folder-open"></i> {{ 'sylius.product.index_header'|trans|raw }}</h1>
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 </div>
 
 {% render(url('sylius_backend_product_filter_form', {'criteria': app.request.query.get('criteria')})) %}

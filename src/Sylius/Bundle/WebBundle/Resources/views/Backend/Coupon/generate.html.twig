@@ -12,7 +12,11 @@
 
 {% block content %}
 <div class="page-header">
+<<<<<<< HEAD
     <h1><i class="glyphicon glyphicon-random"></i> {{ 'sylius.promotion_coupon.generate_header'|trans|raw }}</h1>
+=======
+    <h1><i class="icon-random"></i> {{ 'sylius.promotion_coupon.generate_header'|trans|raw }}</h1>
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 </div>
 
 {{ form_errors(form) }}
@@ -20,8 +24,13 @@
 <form action="{{ path('sylius_backend_promotion_coupon_generate', {'promotionId': promotion.id}) }}" method="post" class="form-horizontal" novalidate>
     {% include 'SyliusWebBundle:Backend/Coupon:_generateForm.html.twig' %}
     <div class="form-actions">
+<<<<<<< HEAD
         <button type="submit" class="btn btn-primary btn-lg"><i class="glyphicon glyphicon-random"></i> {{ 'sylius.generate'|trans }}</button>
         <a href="{{ app.request.headers.get('referer') }}" class="btn btn-lg"><i class="glyphicon glyphicon-remove"></i> {{ 'sylius.cancel'|trans }}</a>
+=======
+        <button type="submit" class="btn btn-primary btn-lg"><i class="icon-random"></i> {{ 'sylius.generate'|trans }}</button>
+        <a href="{{ app.request.headers.get('referer') }}" class="btn btn-lg"><i class="icon-remove"></i> {{ 'sylius.cancel'|trans }}</a>
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     </div>
 </form>
 {% endblock %}

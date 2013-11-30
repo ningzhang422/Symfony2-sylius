@@ -81,7 +81,11 @@ class SecurityStep extends CheckoutStep
      * @param ProcessContextInterface $context
      * @param FormInterface           $registrationForm
      */
+<<<<<<< HEAD
     protected function renderStep(ProcessContextInterface $context, FormInterface $registrationForm)
+=======
+    private function renderStep(ProcessContextInterface $context, FormInterface $registrationForm)
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     {
         return $this->render('SyliusWebBundle:Frontend/Checkout/Step:security.html.twig', array(
             'context'           => $context,
@@ -94,7 +98,11 @@ class SecurityStep extends CheckoutStep
      *
      * @return FormInterface
      */
+<<<<<<< HEAD
     protected function getRegistrationForm()
+=======
+    private function getRegistrationForm()
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     {
         return $this->get('fos_user.registration.form.factory')->createForm();
     }
@@ -102,7 +110,11 @@ class SecurityStep extends CheckoutStep
     /**
      * Override security target path, it will redirect user to checkout after login.
      */
+<<<<<<< HEAD
     protected function overrideSecurityTargetPath()
+=======
+    private function overrideSecurityTargetPath()
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     {
         $url = $this->generateUrl('sylius_checkout_security', array(), true);
         $providerKey = $this->container->getParameter('fos_user.firewall_name');

@@ -104,8 +104,11 @@ class TaxCategory implements TaxCategoryInterface
     public function setName($name)
     {
         $this->name = $name;
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -122,8 +125,11 @@ class TaxCategory implements TaxCategoryInterface
     public function setDescription($description)
     {
         $this->description = $description;
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -143,8 +149,11 @@ class TaxCategory implements TaxCategoryInterface
             $rate->setCategory($this);
             $this->rates->add($rate);
         }
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -156,8 +165,11 @@ class TaxCategory implements TaxCategoryInterface
             $rate->setCategory(null);
             $this->rates->removeElement($rate);
         }
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**

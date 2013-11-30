@@ -15,6 +15,7 @@
     <div class="actions-menu">
         {{ buttons.manage(path('sylius_backend_shipping_method_index'), 'sylius.shipping_method.manage'|trans) }}
         {{ buttons.edit(path('sylius_backend_shipping_method_update', {'id': shipping_method.id})) }}
+<<<<<<< HEAD
         {{ buttons.delete(path('sylius_backend_shipping_method_delete', {'id': shipping_method.id}), null, false, false) }}
     </div>
     <h1><i class="glyphicon glyphicon-cog"></i> {{ 'sylius.shipping_method.show_header'|trans|raw }}</h1>
@@ -22,6 +23,15 @@
 
 
 <table class="table table-bordered table-condensed">
+=======
+        {{ buttons.delete(path('sylius_backend_shipping_method_delete', {'id': shipping_method.id})) }}
+    </div>
+    <h1><i class="icon-truck"></i> {{ 'sylius.shipping_method.show_header'|trans|raw }}</h1>
+</div>
+
+
+<table class="table table-bordered table-consensed">
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     <thead>
         <tr>
             <th>{{ 'sylius.shipping_method.name'|trans }}</th>

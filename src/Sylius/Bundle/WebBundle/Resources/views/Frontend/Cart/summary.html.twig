@@ -17,6 +17,10 @@
     <thead>
         <tr>
             <th>#</th>
+<<<<<<< HEAD
+=======
+            <th></th>
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
             <th>{{ 'sylius.cart.summary.product'|trans }}</th>
             <th>{{ 'sylius.cart.summary.quantity'|trans }}</th>
             <th></th>
@@ -32,18 +36,30 @@
     <tfoot>
         {% if cart.promotionTotal %}
         <tr>
+<<<<<<< HEAD
             <td colspan="6" style="text-align: right;">
+=======
+            <td colspan="7" style="text-align: right;">
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
                 <strong>{{ 'sylius.order.promotion_total'|trans }}</strong>: {{ cart.promotionTotal|sylius_price }}
             </td>
         </tr>
         {% endif %}
         <tr>
+<<<<<<< HEAD
             <td colspan="6" style="text-align: right;">
+=======
+            <td colspan="7" style="text-align: right;">
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
                 <strong>{{ 'sylius.order.shipping_total'|trans }}</strong>: {{ cart.shippingTotal|sylius_price }}
             </td>
         </tr>
         <tr>
+<<<<<<< HEAD
             <td colspan="4">
+=======
+            <td colspan="5">
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
                 <p><strong>{{ 'sylius.order.taxes'|trans }}</strong></p>
                 <ul>
                 {% for taxAdjustment in cart.taxAdjustments %}
@@ -58,16 +74,26 @@
             </td>
         </tr>
         <tr>
+<<<<<<< HEAD
             <td colspan="6" style="text-align: right;">
+=======
+            <td colspan="7" style="text-align: right;">
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
                 <strong>{{ 'sylius.cart.summary.grand_total'|trans }}</strong>: {{ cart.total|sylius_price }}
             </td>
         </tr>
     </tfoot>
 </table>
 
+<<<<<<< HEAD
 <div class="well well-sm">
     {{ form_row(form.promotionCoupon, {'label_attr': {'class': 'col-lg-12'}}) }}
     <button type="submit" class="btn btn-primary btn-sm">{{ 'sylius.cart.summary.add_coupon'|trans }}</button>
+=======
+<div class="well well-small">
+    {{ form_row(form.promotionCoupon, {'label_attr': {'class': 'col-lg-12'}}) }}
+    <button type="submit" class="btn btn-primary btn-small">{{ 'sylius.cart.summary.add_coupon'|trans }}</button>
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 </div>
 
 {{ form_rest(form) }}

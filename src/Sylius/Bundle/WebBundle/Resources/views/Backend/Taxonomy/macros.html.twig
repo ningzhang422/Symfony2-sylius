@@ -12,7 +12,11 @@
     </thead>
     <tbody>
         {% for taxonomy in taxonomies %}
+<<<<<<< HEAD
         <tr id="{{ taxonomy.id }}">
+=======
+        <tr>
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
             <td>
                 <a href="{{ path('sylius_backend_taxonomy_show', {'id': taxonomy.id}) }}" class="btn btn-link">
                     <strong>{{ taxonomy.name }}</strong>

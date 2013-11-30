@@ -20,6 +20,7 @@ use Sylius\Bundle\ResourceBundle\Model\TimestampableInterface;
  */
 interface PromotionInterface extends TimestampableInterface
 {
+<<<<<<< HEAD
     /**
      * Get name
      *
@@ -107,6 +108,20 @@ interface PromotionInterface extends TimestampableInterface
      *
      * @param \DateTime $endsAt
      */
+=======
+    public function getName();
+    public function setName($name);
+    public function getDescription();
+    public function setDescription($description);
+    public function getUsageLimit();
+    public function setUsageLimit($usageLimit);
+    public function getUsed();
+    public function setUsed($used);
+    public function incrementUsed();
+    public function getStartsAt();
+    public function setStartsAt(\DateTime $startsAt = null);
+    public function getEndsAt();
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function setEndsAt(\DateTime $endsAt = null);
 
     /**

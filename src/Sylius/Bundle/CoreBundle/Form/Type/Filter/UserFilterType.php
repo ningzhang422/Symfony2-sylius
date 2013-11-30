@@ -25,11 +25,22 @@ class UserFilterType extends AbstractType
     {
         $builder
             ->add('query', 'text', array(
+<<<<<<< HEAD
+=======
+                'required' => false,
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
                 'label' => 'sylius.form.user_filter.query',
                 'attr'  => array(
                     'placeholder' => 'sylius.form.user_filter.query'
                 )
             ))
+<<<<<<< HEAD
+=======
+            ->add('enabled','checkbox',array(
+                'label' => 'sylius.form.user.enabled',
+                'required' => false
+            ))
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
         ;
     }
 

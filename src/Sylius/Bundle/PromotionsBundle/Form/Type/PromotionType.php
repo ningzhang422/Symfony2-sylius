@@ -102,7 +102,11 @@ class PromotionType extends AbstractType
      */
     public function buildView(FormView $view, FormInterface $form, array $options)
     {
+<<<<<<< HEAD
         $view->vars['prototypes'] = array();
+=======
+        $this->vars['prototypes'] = array();
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 
         foreach ($form->getConfig()->getAttribute('prototypes') as $group => $prototypes) {
             foreach ($prototypes as $type => $prototype) {

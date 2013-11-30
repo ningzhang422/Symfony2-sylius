@@ -63,7 +63,11 @@ class PaymentStep extends CheckoutStep
         return $this->renderStep($context, $order, $form);
     }
 
+<<<<<<< HEAD
     protected function renderStep(ProcessContextInterface $context, OrderInterface $order, FormInterface $form)
+=======
+    private function renderStep(ProcessContextInterface $context, OrderInterface $order, FormInterface $form)
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     {
       return $this->render('SyliusWebBundle:Frontend/Checkout/Step:payment.html.twig', array(
             'order'   => $order,
@@ -72,7 +76,11 @@ class PaymentStep extends CheckoutStep
         ));
     }
 
+<<<<<<< HEAD
     protected function createCheckoutPaymentForm(OrderInterface $order)
+=======
+    private function createCheckoutPaymentForm(OrderInterface $order)
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     {
         return $this->createForm('sylius_checkout_payment', $order);
     }

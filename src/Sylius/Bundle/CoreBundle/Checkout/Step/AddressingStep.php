@@ -63,7 +63,11 @@ class AddressingStep extends CheckoutStep
         return $this->renderStep($context, $order, $form);
     }
 
+<<<<<<< HEAD
     protected function renderStep(ProcessContextInterface $context, OrderInterface $order, FormInterface $form)
+=======
+    private function renderStep(ProcessContextInterface $context, OrderInterface $order, FormInterface $form)
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     {
         return $this->render('SyliusWebBundle:Frontend/Checkout/Step:addressing.html.twig', array(
             'order'   => $order,
@@ -73,7 +77,11 @@ class AddressingStep extends CheckoutStep
 
     }
 
+<<<<<<< HEAD
     protected function createCheckoutAddressingForm(OrderInterface $order)
+=======
+    private function createCheckoutAddressingForm(OrderInterface $order)
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     {
         return $this->createForm('sylius_checkout_addressing', $order);
     }

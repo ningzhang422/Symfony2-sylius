@@ -23,7 +23,10 @@
         "php": ">=5.3.3",
 
         "symfony/framework-bundle":        "~2.3",
+<<<<<<< HEAD
         "symfony/twig-bundle":             "~2.3",
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
         "friendsofsymfony/rest-bundle":    "~1.0",
         "jms/serializer-bundle":           "0.12.*",
         "white-october/pagerfanta-bundle": "1.0.*"

@@ -78,8 +78,11 @@ class VariableProduct extends Product implements VariableProductInterface
             ->getMasterVariant()
             ->setAvailableOn($availableOn)
         ;
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -100,15 +103,22 @@ class VariableProduct extends Product implements VariableProductInterface
     public function setMasterVariant(VariantInterface $masterVariant)
     {
         if ($this->variants->contains($masterVariant)) {
+<<<<<<< HEAD
             return $this;
+=======
+            return;
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
         }
 
         $masterVariant->setProduct($this);
         $masterVariant->setMaster(true);
 
         $this->variants->add($masterVariant);
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -149,8 +159,11 @@ class VariableProduct extends Product implements VariableProductInterface
         foreach ($variants as $variant) {
             $this->addVariant($variant);
         }
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -162,8 +175,11 @@ class VariableProduct extends Product implements VariableProductInterface
             $variant->setProduct($this);
             $this->variants->add($variant);
         }
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -175,8 +191,11 @@ class VariableProduct extends Product implements VariableProductInterface
             $variant->setProduct(null);
             $this->variants->removeElement($variant);
         }
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -209,8 +228,11 @@ class VariableProduct extends Product implements VariableProductInterface
     public function setOptions(Collection $options)
     {
         $this->options = $options;
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -221,8 +243,11 @@ class VariableProduct extends Product implements VariableProductInterface
         if (!$this->hasOption($option)) {
             $this->options->add($option);
         }
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -233,8 +258,11 @@ class VariableProduct extends Product implements VariableProductInterface
         if ($this->hasOption($option)) {
             $this->options->removeElement($option);
         }
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**

@@ -63,8 +63,11 @@ Feature: User account addresses page
 
   Scenario: Deleting an address
     Given I press "Delete" near "GERMANY"
+<<<<<<< HEAD
      Then I should see "Do you want to delete this item"
      When I press "delete"
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
      Then I should see 2 addresses in the list
       And I should not see "GERMANY"
       And I should still be on my account addresses page

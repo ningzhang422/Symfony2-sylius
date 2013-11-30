@@ -14,9 +14,13 @@ namespace Sylius\Bundle\ResourceBundle\Controller;
 use FOS\RestBundle\Controller\FOSRestController;
 use Symfony\Component\EventDispatcher\Event;
 use Symfony\Component\Form\FormInterface;
+<<<<<<< HEAD
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
+=======
+use Symfony\Component\HttpFoundation\Request;
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Sylius\Bundle\ResourceBundle\Event\ResourceEvent;
 
@@ -109,7 +113,11 @@ class ResourceController extends FOSRestController
     {
         $config = $this->getConfiguration();
 
+<<<<<<< HEAD
         $view = $this
+=======
+        $view =  $this
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
             ->view()
             ->setTemplate($config->getTemplate('show.html'))
             ->setTemplateVar($config->getResourceName())
@@ -196,6 +204,7 @@ class ResourceController extends FOSRestController
     /**
      * Delete resource.
      */
+<<<<<<< HEAD
     public function deleteAction(Request $request)
     {
         $resource = $this->findOr404();
@@ -233,6 +242,23 @@ class ResourceController extends FOSRestController
         ;
 
         return $this->handleView($view);
+=======
+    public function deleteAction()
+    {
+        $resource = $this->findOr404();
+
+        $event = $this->delete($resource);
+
+        if ($event->isStopped()) {
+            $this->setFlash($event->getMessageType(), $event->getMessage(), $event->getMessageParams());
+
+            return $this->redirectTo($resource);
+        }
+
+        $this->setFlash('success', 'delete');
+
+        return $this->redirectToIndex($resource);
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -305,9 +331,21 @@ class ResourceController extends FOSRestController
 
     public function create($resource)
     {
+<<<<<<< HEAD
         $event = $this->dispatchEvent('pre_create', $resource);
         if (!$event->isStopped()) {
             $this->persistAndFlush($resource);
+=======
+        $manager = $this->getManager();
+
+        $event = $this->dispatchEvent('pre_create', $resource);
+
+        if (!$event->isStopped()) {
+            $manager->persist($resource);
+            $this->dispatchEvent('create', $resource);
+            $manager->flush();
+            $this->dispatchEvent('post_create', $resource);
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
         }
 
         return $event;
@@ -315,9 +353,21 @@ class ResourceController extends FOSRestController
 
     public function update($resource)
     {
+<<<<<<< HEAD
         $event = $this->dispatchEvent('pre_update', $resource);
         if (!$event->isStopped()) {
             $this->persistAndFlush($resource, 'update');
+=======
+        $manager = $this->getManager();
+
+        $event = $this->dispatchEvent('pre_update', $resource);
+
+        if (!$event->isStopped()) {
+            $manager->persist($resource);
+            $this->dispatchEvent('update', $resource);
+            $manager->flush();
+            $this->dispatchEvent('post_update', $resource);
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
         }
 
         return $event;
@@ -325,22 +375,42 @@ class ResourceController extends FOSRestController
 
     public function delete($resource)
     {
+<<<<<<< HEAD
         $event = $this->dispatchEvent('pre_delete', $resource);
         if (!$event->isStopped()) {
             $this->removeAndFlush($resource);
+=======
+        $manager = $this->getManager();
+
+        $event = $this->dispatchEvent('pre_delete', $resource);
+
+        if (!$event->isStopped()) {
+            $manager->remove($resource);
+            $this->dispatchEvent('delete', $resource);
+            $manager->flush();
+            $this->dispatchEvent('post_delete', $resource);
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
         }
 
         return $event;
     }
 
+<<<<<<< HEAD
     public function persistAndFlush($resource, $action = 'create')
+=======
+    public function persistAndFlush($resource)
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     {
         $manager = $this->getManager();
 
         $manager->persist($resource);
+<<<<<<< HEAD
         $this->dispatchEvent($action, $resource);
         $manager->flush();
         $this->dispatchEvent(sprintf('post_%s', $action), $resource);
+=======
+        $manager->flush();
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     public function removeAndFlush($resource)
@@ -348,9 +418,13 @@ class ResourceController extends FOSRestController
         $manager = $this->getManager();
 
         $manager->remove($resource);
+<<<<<<< HEAD
         $this->dispatchEvent('delete', $resource);
         $manager->flush();
         $this->dispatchEvent('post_delete', $resource);
+=======
+        $manager->flush();
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     public function getRepository()

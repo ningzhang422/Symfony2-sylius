@@ -11,15 +11,25 @@
 
 {% block content %}
 <div class="page-header">
+<<<<<<< HEAD
     <h1><i class="glyphicon glyphicon-info-sign"></i> {{ 'sylius.settings.general_header'|trans|raw }}</h1>
+=======
+    <h1><i class="icon-cogs"></i> {{ 'sylius.settings.general_header'|trans|raw }}</h1>
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 </div>
 
 {{ form_errors(form) }}
 
 <form action="{{ path('sylius_backend_general_settings') }}" method="post" class="form-horizontal" novalidate>
+<<<<<<< HEAD
     {{ form_row(form.title, {'attr': {'class': 'input-lg'}}) }}
     {{ form_row(form.meta_keywords, {'attr': {'class': 'input-lg'}}) }}
     {{ form_row(form.meta_description, {'attr': {'class': 'input-lg'}}) }}
+=======
+    {{ form_row(form.title, {'attr': {'class': 'input-xlarge'}}) }}
+    {{ form_row(form.meta_keywords, {'attr': {'class': 'input-xlarge'}}) }}
+    {{ form_row(form.meta_description, {'attr': {'class': 'input-xxlarge'}}) }}
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     {{ form_rest(form) }}
     {{ update() }}
 </form>

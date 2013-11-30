@@ -13,10 +13,16 @@ namespace spec\Sylius\Bundle\CoreBundle\Model;
 
 use PhpSpec\ObjectBehavior;
 use Sylius\Bundle\CoreBundle\Model\OrderInterface;
+<<<<<<< HEAD
 use Sylius\Bundle\CoreBundle\Model\OrderShippingStates;
 use Sylius\Bundle\InventoryBundle\Model\InventoryUnitInterface;
 
 /**
+=======
+
+/**
+*
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
  * @author Paweł Jędrzejewski <pjedrzejewski@diweb.pl>
  */
 class OrderSpec extends ObjectBehavior
@@ -236,6 +242,7 @@ class OrderSpec extends ObjectBehavior
         $this->setCurrency('PLN');
         $this->getCurrency()->shouldReturn('PLN');
     }
+<<<<<<< HEAD
 
     function it_has_ready_shipping_state_by_default()
     {
@@ -283,4 +290,6 @@ class OrderSpec extends ObjectBehavior
 
         $this->shouldNotBeBackorder();
     }
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 }

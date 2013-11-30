@@ -2,7 +2,10 @@
 
 {% import 'SyliusResourceBundle:Macros:buttons.html.twig' as buttons %}
 {% import 'SyliusWebBundle:Backend/Macros:alerts.html.twig' as alerts %}
+<<<<<<< HEAD
 {% import 'SyliusWebBundle:Backend/Macros:misc.html.twig' as misc %}
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 
 {% if payments|length > 0 %}
 <table class="table">
@@ -19,6 +22,7 @@
     </thead>
     <tbody>
     {% for payment in payments %}
+<<<<<<< HEAD
         <tr id="{{ payment.id }}">
             <td>{{ payment.id }}</td>
             <td><span class="label label-primary">{{ payment.method }}</span></td>
@@ -26,6 +30,15 @@
                 {{ payment.amount|sylius_price(payment.currency) }}
             </td>
             <td>{{ misc.state_label(payment.state, 'payment') }}</td>
+=======
+        <tr>
+            <td>{{ payment.id }}</td>
+            <td><span class="label label-primary">{{ payment.method }}</span></td>
+            <td>
+                {{ payment.amount|sylius_money(payment.currency) }}
+            </td>
+            <td><span class="label label-success">{{ payment.state }}</span></td>
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
             <td>{{ payment.createdAt|date }}</td>
             <td>{{ payment.updatedAt|date }}</td>
             <td>

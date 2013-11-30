@@ -120,6 +120,7 @@ Feature: Product options
     Scenario: Deleted option disappears from the list
         Given I am on the option index page
          When I click "delete" near "T-Shirt color"
+<<<<<<< HEAD
          Then I should see "Do you want to delete this item"
          When I press "delete"
          Then I should be on the option index page
@@ -130,5 +131,7 @@ Feature: Product options
         Given I am on the option index page
          When I click "delete" near "T-Shirt color"
           And I click "delete" from the confirmation modal
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
          Then I should be on the option index page
           And I should not see option with name "T-Shirt color" in that list

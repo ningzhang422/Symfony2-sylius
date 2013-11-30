@@ -1,4 +1,5 @@
 parameters:
+<<<<<<< HEAD
     sylius.database.driver:           pdo_mysql
     sylius.database.host:             127.0.0.1
     sylius.database.port:             ~
@@ -15,6 +16,24 @@ parameters:
     sylius.secret:                    abc
 
     sylius.currency:                  EUR
+=======
+    sylius.database.driver:   pdo_mysql
+    sylius.database.host:     127.0.0.1
+    sylius.database.port:     ~
+    sylius.database.name:     sylius
+    sylius.database.user:     root
+    sylius.database.password: ~
+
+    sylius.mailer.transport:  smtp
+    sylius.mailer.host:       127.0.0.1
+    sylius.mailer.user:       ~
+    sylius.mailer.password:   ~
+
+    sylius.locale:            en
+    sylius.secret:            abc
+
+    sylius.currency:          EUR
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 
     sylius.cache:             file_system
 
@@ -24,6 +43,7 @@ parameters:
     paypal.express_checkout.sandbox: true
 
     stripe.secret_key: EDITME
+<<<<<<< HEAD
     stripe.test_mode: true
 
     sylius.oauth.amazon.clientid:       <amazon_client_id>
@@ -32,3 +52,6 @@ parameters:
     sylius.oauth.facebook.clientsecret: <facebook_client_secret>
     sylius.oauth.google.clientid:       <google_client_id>
     sylius.oauth.google.clientsecret:   <google_client_secret>
+=======
+    stripe.test_mode: true
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d

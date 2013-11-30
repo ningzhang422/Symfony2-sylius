@@ -56,6 +56,7 @@ Feature: Shipments
     Scenario: Deleting shipment
         Given I am on the shipment page with method "DHL"
          When I press "delete"
+<<<<<<< HEAD
          Then I should see "Do you want to delete this item"
          When I press "delete"
          Then I should be on the shipment index page
@@ -66,12 +67,15 @@ Feature: Shipments
         Given I am on the shipment page with method "DHL"
          When I press "delete"
           And I click "delete" from the confirmation modal
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
          Then I should be on the shipment index page
           And I should see "Shipment has been successfully deleted."
 
     Scenario: Deleted shipment disappears from the list
         Given I am on the shipment page with method "DHL"
          When I press "delete"
+<<<<<<< HEAD
          Then I should see "Do you want to delete this item"
          When I press "delete"
          Then I should be on the shipment index page
@@ -82,12 +86,15 @@ Feature: Shipments
         Given I am on the shipment page with method "DHL"
          When I press "delete"
           And I click "delete" from the confirmation modal
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
          Then I should be on the shipment index page
           And I should not see shipment with name "DHL" in that list
 
     Scenario: Deleting shipment from the list
         Given I am on the shipment index page
          When I click "delete" near "DHL"
+<<<<<<< HEAD
          Then I should see "Do you want to delete this item"
          When I press "delete"
          Then I should still be on the shipment index page
@@ -99,6 +106,8 @@ Feature: Shipments
         Given I am on the shipment index page
          When I click "delete" near "DHL"
           And I click "delete" from the confirmation modal
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
          Then I should still be on the shipment index page
           And "Shipment has been successfully deleted." should appear on the page
           But I should not see shipment with name "DHL" in that list

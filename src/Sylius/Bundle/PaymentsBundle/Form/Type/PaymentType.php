@@ -11,7 +11,10 @@
 
 namespace Sylius\Bundle\PaymentsBundle\Form\Type;
 
+<<<<<<< HEAD
 use Sylius\Bundle\PaymentsBundle\Model\PaymentInterface;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
@@ -61,6 +64,7 @@ class PaymentType extends AbstractType
             ->add('amount', 'sylius_money', array(
                 'label' => 'sylius.form.payment.amount'
             ))
+<<<<<<< HEAD
             ->add('state', 'choice', array(
                 'label'   => 'sylius.form.payment.state',
                 'choices' => array(
@@ -74,6 +78,8 @@ class PaymentType extends AbstractType
                     PaymentInterface::STATE_UNKNOWN    => 'sylius.form.payment.state.unknown'
                 )
             ))
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
         ;
     }
 

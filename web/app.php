@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 
 <?php
 umask(0000);
+=======
+<?php
+
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 /*
  * This file is part of the Sylius package.
  *
@@ -26,7 +31,11 @@ $loader = require_once __DIR__.'/../app/bootstrap.php.cache';
 require_once __DIR__.'/../app/AppKernel.php';
 //require_once __DIR__.'/../app/AppCache.php';
 
+<<<<<<< HEAD
 $kernel = new AppKernel('prod', false);
+=======
+$kernel = new AppKernel('prod', true);
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 //$kernel = new AppCache($kernel);
 
 $request = Request::createFromGlobals();

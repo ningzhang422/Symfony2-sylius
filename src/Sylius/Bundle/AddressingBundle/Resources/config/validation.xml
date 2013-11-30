@@ -50,12 +50,21 @@
                 <option name="groups">sylius</option>
             </constraint>
         </property>
+<<<<<<< HEAD
         <constraint name="Callback">
             <option name="methods">
                 <value>isValidProvince</value>
             </option>
             <option name="groups">sylius</option>
         </constraint>
+=======
+        <getter property="valid">
+            <constraint name="True">
+                <option name="message">sylius.address.province.valid</option>
+                <option name="groups">sylius</option>
+            </constraint>
+        </getter>
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
         <property name="street">
             <constraint name="NotBlank">
                 <option name="message">sylius.address.street.not_blank</option>

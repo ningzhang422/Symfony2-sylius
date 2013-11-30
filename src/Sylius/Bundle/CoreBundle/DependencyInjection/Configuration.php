@@ -26,6 +26,7 @@ class Configuration implements ConfigurationInterface
             ->addDefaultsIfNotSet()
             ->children()
                 ->scalarNode('driver')->cannotBeOverwritten()->isRequired()->cannotBeEmpty()->end()
+<<<<<<< HEAD
                 ->arrayNode('from_email')
                     ->addDefaultsIfNotSet()
                     ->children()
@@ -48,6 +49,8 @@ class Configuration implements ConfigurationInterface
                         ->end()
                     ->end()
                 ->end()
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
             ->end()
         ;
 
@@ -72,6 +75,7 @@ class Configuration implements ConfigurationInterface
                             ->addDefaultsIfNotSet()
                             ->children()
                                 ->scalarNode('model')->defaultValue('Sylius\\Bundle\\CoreBundle\\Model\\User')->end()
+<<<<<<< HEAD
                                 ->scalarNode('form')->defaultValue('Sylius\\Bundle\\CoreBundle\\Form\\Type\\UserType')->end()
                             ->end()
                         ->end()
@@ -80,6 +84,8 @@ class Configuration implements ConfigurationInterface
                             ->children()
                                 ->scalarNode('model')->defaultValue('Sylius\\Bundle\\CoreBundle\\Model\\Group')->end()
                                 ->scalarNode('form')->defaultValue('Sylius\\Bundle\\CoreBundle\\Form\\Type\\GroupType')->end()
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
                             ->end()
                         ->end()
                         ->arrayNode('variant_image')

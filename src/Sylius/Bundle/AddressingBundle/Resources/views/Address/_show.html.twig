@@ -3,7 +3,11 @@
 <h1>Address details <small>{{ address.fullName }}</small></h1>
 <hr />
 
+<<<<<<< HEAD
 <div class="well well-sm">
+=======
+<div class="well well-small">
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     {{ buttons.create(path('sylius_address_create'), 'new address') }}
     {{ buttons.edit(path('sylius_address_update', {'id': address.id})) }}
     {{ buttons.delete(path('sylius_address_delete', {'id': address.id})) }}

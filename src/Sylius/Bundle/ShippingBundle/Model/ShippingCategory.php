@@ -91,8 +91,11 @@ class ShippingCategory implements ShippingCategoryInterface
     public function setName($name)
     {
         $this->name = $name;
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -109,8 +112,11 @@ class ShippingCategory implements ShippingCategoryInterface
     public function setDescription($description)
     {
         $this->description = $description;
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -127,8 +133,11 @@ class ShippingCategory implements ShippingCategoryInterface
     public function setCreatedAt(\DateTime $createdAt)
     {
         $this->createdAt = $createdAt;
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -145,7 +154,10 @@ class ShippingCategory implements ShippingCategoryInterface
     public function setUpdatedAt(\DateTime $updatedAt)
     {
         $this->updatedAt = $updatedAt;
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 }

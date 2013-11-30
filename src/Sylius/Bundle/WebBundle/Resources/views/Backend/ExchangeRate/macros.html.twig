@@ -16,9 +16,15 @@
     </thead>
     <tbody>
     {% for exchange_rate in countries %}
+<<<<<<< HEAD
         <tr id="{{ exchange_rate.id }}">
             <td>{{ exchange_rate.id }}</td>
             <td>{{ exchange_rate.currencyName }}</td>
+=======
+        <tr>
+            <td>{{ exchange_rate.id }}</td>
+            <td>{{ exchange_rate.currency }}</td>
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
             <td><span class="label label-primary">{{ exchange_rate.rate }}</span></td>
             <td>{{ exchange_rate.updatedAt|date }}</td>
             <td>

@@ -159,8 +159,11 @@ class Variant extends BaseVariant implements VariantInterface
         if (0 > $this->onHand) {
             $this->onHand = 0;
         }
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -185,8 +188,11 @@ class Variant extends BaseVariant implements VariantInterface
     public function setAvailableOnDemand($availableOnDemand)
     {
         $this->availableOnDemand = (Boolean) $availableOnDemand;
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -197,8 +203,11 @@ class Variant extends BaseVariant implements VariantInterface
         parent::setDefaults($masterVariant);
 
         $this->setPrice($masterVariant->getPrice());
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -234,8 +243,11 @@ class Variant extends BaseVariant implements VariantInterface
             $image->setVariant($this);
             $this->images->add($image);
         }
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -245,8 +257,11 @@ class Variant extends BaseVariant implements VariantInterface
     {
         $image->setVariant(null);
         $this->images->removeElement($image);
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**

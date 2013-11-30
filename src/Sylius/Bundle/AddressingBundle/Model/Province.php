@@ -66,8 +66,11 @@ class Province implements ProvinceInterface
     public function setName($name)
     {
         $this->name = $name;
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -84,7 +87,10 @@ class Province implements ProvinceInterface
     public function setCountry(CountryInterface $country = null)
     {
         $this->country = $country;
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 }

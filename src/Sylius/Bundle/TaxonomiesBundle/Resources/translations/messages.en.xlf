@@ -2,6 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
   <file source-language="en" datatype="plaintext" original="file.ext">
     <body>
+<<<<<<< HEAD
       <trans-unit id="9efc314b65237d5d646e1b817372afc6" resname="---">
         <source>---</source>
         <target>---</target>
@@ -10,14 +11,19 @@
         <source>sylius.form.taxon.description</source>
         <target>Description</target>
       </trans-unit>
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
       <trans-unit id="a1c0695bf5bacd6d133270e2f80c0402" resname="sylius.form.taxon.name">
         <source>sylius.form.taxon.name</source>
         <target>Name</target>
       </trans-unit>
+<<<<<<< HEAD
       <trans-unit id="6b6f5ed8ebb9177aa11c9caa5faaa641" resname="sylius.form.taxon.parent">
         <source>sylius.form.taxon.parent</source>
         <target>Parent</target>
       </trans-unit>
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
       <trans-unit id="6650744d08fd00bfac34d5d0ada224fc" resname="sylius.form.taxon.permalink">
         <source>sylius.form.taxon.permalink</source>
         <target>Permalink</target>
@@ -26,6 +32,7 @@
         <source>sylius.form.taxonomy.name</source>
         <target>Name</target>
       </trans-unit>
+<<<<<<< HEAD
       <trans-unit id="7d919cf19637c8f21057cbde7fa47c64" resname="sylius.taxon.create_taxon">
         <source>sylius.taxon.create_taxon</source>
         <target>Create Taxon</target>
@@ -47,6 +54,37 @@
         <target>No taxons to show.</target>
       </trans-unit>
       <trans-unit id="b84914ae819ced610d15414c570c82e8" resname="sylius.taxon.update_taxonomy">
+=======
+      <trans-unit id="d4847da399cfbd5328ec238207ab9309" resname="sylius.form.taxon.parent">
+        <source>sylius.form.taxon.parent</source>
+        <target>Parent</target>
+      </trans-unit>
+      <trans-unit id="285fed3f121c6505108465ee0a26873f" resname="sylius.form.taxon.description">
+        <source>sylius.form.taxon.description</source>
+        <target>Description</target>
+      </trans-unit>
+      <trans-unit id="285fed3f121c6505108465ee0a26873f" resname="sylius.taxon.create_taxon">
+        <source>sylius.taxon.create_taxon</source>
+        <target>Create Taxon</target>
+      </trans-unit>
+      <trans-unit id="285fed3f121c6505108465ee0a26873f" resname="sylius.taxon.delete_taxonomy">
+        <source>sylius.taxon.delete_taxonomy</source>
+        <target>Delete Taxonomy</target>
+      </trans-unit>
+      <trans-unit id="285fed3f121c6505108465ee0a26873f" resname="sylius.taxon.manage_taxonomies">
+        <source>sylius.taxon.manage_taxonomies</source>
+        <target>Manage Taxonomies</target>
+      </trans-unit>
+      <trans-unit id="285fed3f121c6505108465ee0a26873f" resname="sylius.taxon.no_taxonomies">
+        <source>sylius.taxon.no_taxonomies</source>
+        <target>No taxonomies to show.</target>
+      </trans-unit>
+      <trans-unit id="285fed3f121c6505108465ee0a26873f" resname="sylius.taxon.no_taxons">
+        <source>sylius.taxon.no_taxons</source>
+        <target>No taxons to show.</target>
+      </trans-unit>
+      <trans-unit id="285fed3f121c6505108465ee0a26873f" resname="sylius.taxon.update_taxonomy">
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
         <source>sylius.taxon.update_taxonomy</source>
         <target>Update Taxonomy</target>
       </trans-unit>

@@ -11,8 +11,11 @@
 
 namespace Sylius\Bundle\AddressingBundle\Model;
 
+<<<<<<< HEAD
 use Symfony\Component\Validator\ExecutionContextInterface;
 
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 /**
  * Default address model.
  *
@@ -221,6 +224,7 @@ class Address implements AddressInterface
         return $this;
     }
 
+<<<<<<< HEAD
     public function isValidProvince(ExecutionContextInterface $context)
     {
         if (!$this->isValid()) {
@@ -228,6 +232,8 @@ class Address implements AddressInterface
         }
     }
 
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function isValid()
     {
         if (null === $this->country) {

@@ -11,6 +11,7 @@
 
 namespace Sylius\Bundle\MoneyBundle\Model;
 
+<<<<<<< HEAD
 use Symfony\Component\Intl\Intl;
 
 class ExchangeRate implements ExchangeRateInterface
@@ -38,6 +39,16 @@ class ExchangeRate implements ExchangeRateInterface
     /**
      * @var \DateTime
      */
+=======
+use DateTime;
+
+class ExchangeRate implements ExchangeRateInterface
+{
+    protected $id;
+    protected $currency;
+    protected $rate;
+    protected $createdAt;
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     protected $updatedAt;
 
     public function getId()
@@ -45,6 +56,7 @@ class ExchangeRate implements ExchangeRateInterface
         return $this->id;
     }
 
+<<<<<<< HEAD
     /**
      * {@inheritdoc}
      */
@@ -56,11 +68,14 @@ class ExchangeRate implements ExchangeRateInterface
     /**
      * {@inheritdoc}
      */
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function getCurrency()
     {
         return $this->currency;
     }
 
+<<<<<<< HEAD
     /**
      * {@inheritdoc}
      */
@@ -74,11 +89,19 @@ class ExchangeRate implements ExchangeRateInterface
     /**
      * {@inheritdoc}
      */
+=======
+    public function setCurrency($currency)
+    {
+        $this->currency = $currency;
+    }
+
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function getRate()
     {
         return $this->rate;
     }
 
+<<<<<<< HEAD
     /**
      * {@inheritdoc}
      */
@@ -92,11 +115,19 @@ class ExchangeRate implements ExchangeRateInterface
     /**
      * {@inheritdoc}
      */
+=======
+    public function setRate($rate)
+    {
+        $this->rate = $rate;
+    }
+
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function getCreatedAt()
     {
         return $this->createdAt;
     }
 
+<<<<<<< HEAD
     /**
      * {@inheritdoc}
      */
@@ -110,11 +141,19 @@ class ExchangeRate implements ExchangeRateInterface
     /**
      * {@inheritdoc}
      */
+=======
+    public function setCreatedAt(DateTime $createdAt)
+    {
+        $this->createdAt = $createdAt;
+    }
+
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function getUpdatedAt()
     {
         return $this->updatedAt;
     }
 
+<<<<<<< HEAD
     /**
      * {@inheritdoc}
      */
@@ -123,5 +162,10 @@ class ExchangeRate implements ExchangeRateInterface
         $this->updatedAt = $updatedAt;
 
         return $this;
+=======
+    public function setUpdatedAt(DateTime $updatedAt)
+    {
+        $this->updatedAt = $updatedAt;
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 }

@@ -96,6 +96,7 @@ Feature: Product prototypes
     Scenario: Deleted prototype disappears from the list
         Given I am on the prototype index page
          When I click "delete" near "T-Shirt"
+<<<<<<< HEAD
          Then I should see "Do you want to delete this item"
          When I press "delete"
          Then I should be on the prototype index page
@@ -106,5 +107,7 @@ Feature: Product prototypes
         Given I am on the prototype index page
          When I click "delete" near "T-Shirt"
           And I click "delete" from the confirmation modal
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
          Then I should be on the prototype index page
           And I should see "There are no prototypes defined"

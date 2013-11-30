@@ -11,8 +11,11 @@
 
 namespace Sylius\Bundle\ResourceBundle\Twig;
 
+<<<<<<< HEAD
 use Pagerfanta\Pagerfanta;
 use Symfony\Component\DependencyInjection\Container;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 use Symfony\Component\HttpKernel\Event\GetResponseEvent;
 use Symfony\Component\HttpKernel\HttpKernel;
 use Symfony\Component\Routing\RouterInterface;
@@ -24,11 +27,15 @@ use Twig_Function_Method;
  *
  * @author Paweł Jędrzejewski <pjedrzejewski@diweb.pl>
  * @author Saša Stamenković <umpirsky@gmail.com>
+<<<<<<< HEAD
  * @author Arnaud Langlade <arn0d.dev@gmail.com>
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
  */
 class SyliusResourceExtension extends Twig_Extension
 {
     /**
+<<<<<<< HEAD
      * @var string
      */
     private $paginateTemplate;
@@ -44,11 +51,14 @@ class SyliusResourceExtension extends Twig_Extension
     private $syliusRouteParams = array();
 
     /**
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
      * @var \Symfony\Component\HttpFoundation\Request
      */
     private $request;
 
     /**
+<<<<<<< HEAD
      * @var Container
      */
     private $container;
@@ -58,6 +68,15 @@ class SyliusResourceExtension extends Twig_Extension
         $this->container = $container;
         $this->paginateTemplate = $paginateTemplate;
         $this->sortingTemplate = $sortingTemplate;
+=======
+     * @var RouterInterface
+     */
+    private $router;
+
+    public function __construct(RouterInterface $router)
+    {
+        $this->router = $router;
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -67,6 +86,7 @@ class SyliusResourceExtension extends Twig_Extension
     {
         return array(
             'sylius_resource_sort' => new Twig_Function_Method($this, 'renderSortingLink', array('is_safe' => array('html'))),
+<<<<<<< HEAD
             'sylius_resource_paginate' => new Twig_Function_Method($this, 'renderPaginateSelect', array('is_safe' => array('html'))),
         );
     }
@@ -74,6 +94,11 @@ class SyliusResourceExtension extends Twig_Extension
     /**
      * @param GetResponseEvent $event
      */
+=======
+        );
+    }
+
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function fetchRequest(GetResponseEvent $event)
     {
         if (HttpKernel::MASTER_REQUEST != $event->getRequestType()) {
@@ -81,6 +106,7 @@ class SyliusResourceExtension extends Twig_Extension
         }
 
         $this->request = $event->getRequest();
+<<<<<<< HEAD
 
         $routeParams = $this->request->attributes->get('_route_params', array());
         if (array_key_exists('_sylius', $routeParams)) {
@@ -171,6 +197,35 @@ class SyliusResourceExtension extends Twig_Extension
                 )
             );
         }
+=======
+    }
+
+    public function renderSortingLink($property, $label = null, $order = null, $route = null, array $routeParameters = array())
+    {
+        $label = null === $label ? $property : $label;
+        $route = null === $route ? $this->request->attributes->get('_route') : $route;
+
+        $routeParameters = empty($routeParameters) ? $this->request->attributes->get('_route_parameters', array()) : $routeParameters;
+
+        $sorting = $this->request->get('sorting', array());
+
+        if (null === $order && isset($sorting[$property])) {
+            $currentOrder = $sorting[$property];
+
+            $order = 'asc' === $currentOrder ? 'desc' : 'asc';
+        }
+
+        $order = null === $order ? 'asc' : $order;
+
+        $url = $this->router->generate($route, array_merge(
+            array('sorting' => array($property => $order)), $routeParameters
+        ));
+
+        // @TODO: Move this to templates when we refactor resource bundle.
+        $active = $property == key($sorting) ? ($currentOrder === 'desc' ? ' <i class="icon icon-chevron-down"></i>' : ' <i class="icon icon-chevron-up"></i>'): '';
+
+        return sprintf('<a href="%s">%s%s</a>', $url, $label, $active);
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -180,6 +235,7 @@ class SyliusResourceExtension extends Twig_Extension
     {
         return 'sylius_resource';
     }
+<<<<<<< HEAD
 
     /**
      * @param array $params
@@ -225,4 +281,6 @@ class SyliusResourceExtension extends Twig_Extension
 
         return $options;
     }
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 }

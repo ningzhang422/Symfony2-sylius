@@ -43,6 +43,7 @@ security:
                 lifetime: 31536000
                 always_remember_me: true
                 remember_me_parameter: _remember_me
+<<<<<<< HEAD
             oauth:
                 resource_owners:
                     amazon:   "/login/check-amazon"
@@ -55,13 +56,21 @@ security:
             logout: true
             anonymous: true
 
+=======
+            logout: true
+            anonymous: true
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
         dev:
             pattern:  ^/(_(profiler|wdt)|css|images|js)/
             security: false
 
     access_control:
+<<<<<<< HEAD
         - { path: ^/login.*, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/connect.*, role: IS_AUTHENTICATED_ANONYMOUSLY }
+=======
+        - { path: ^/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
         - { path: ^/register, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
 

@@ -38,6 +38,7 @@ class FixedDiscountActionSpec extends ObjectBehavior
     }
 
     /**
+<<<<<<< HEAD
      * @param Sylius\Bundle\CoreBundle\Model\OrderInterface          $order
      * @param Sylius\Bundle\OrderBundle\Model\AdjustmentInterface    $adjustment
      * @param Sylius\Bundle\PromotionsBundle\Model\PromotionInterface $promotion
@@ -50,10 +51,25 @@ class FixedDiscountActionSpec extends ObjectBehavior
         $adjustment->setAmount(-500)->shouldBeCalled();
         $adjustment->setLabel(OrderInterface::PROMOTION_ADJUSTMENT)->shouldBeCalled();
         $adjustment->setDescription('promotion description')->shouldBeCalled();
+=======
+     * @param Sylius\Bundle\CoreBundle\Model\OrderInterface       $order
+     * @param Sylius\Bundle\OrderBundle\Model\AdjustmentInterface $adjustment
+     */
+    function it_applies_fixed_discount_as_promotion_adjustment($adjustmentRepository, $order, $adjustment)
+    {
+        $adjustmentRepository->createNew()->willReturn($adjustment);
+
+        $adjustment->setAmount(-500)->shouldBeCalled();
+        $adjustment->setLabel(OrderInterface::PROMOTION_ADJUSTMENT)->shouldBeCalled();
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 
         $order->addAdjustment($adjustment)->shouldBeCalled();
         $configuration = array('amount' => 500);
 
+<<<<<<< HEAD
         $this->execute($order, $configuration, $promotion);
+=======
+        $this->execute($order, $configuration);
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 }

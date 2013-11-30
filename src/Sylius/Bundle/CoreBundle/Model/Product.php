@@ -156,8 +156,11 @@ class Product extends BaseProduct implements ProductInterface
     public function setTaxons(Collection $taxons)
     {
         $this->taxons = $taxons;
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -210,8 +213,11 @@ class Product extends BaseProduct implements ProductInterface
     public function setTaxCategory(TaxCategoryInterface $category = null)
     {
         $this->taxCategory = $category;
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -228,8 +234,11 @@ class Product extends BaseProduct implements ProductInterface
     public function setShippingCategory(ShippingCategoryInterface $category = null)
     {
         $this->shippingCategory = $category;
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**

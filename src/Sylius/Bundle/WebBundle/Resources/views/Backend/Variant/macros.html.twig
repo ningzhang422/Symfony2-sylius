@@ -22,7 +22,11 @@
     <tbody>
     {% for variant in variants %}
         {% set product = variant.product %}
+<<<<<<< HEAD
         <tr id="{{ variant.id }}">
+=======
+        <tr>
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
             <td>{{ variant.id }}</td>
             <td>{{ variant.sku ?: '-' }}</td>
             <td>{% if variant.images.count > 0 %}
@@ -42,7 +46,11 @@
                 </span>
             </td>
             <td><span class="badge badge-{{ variant.inStock ? 'success' : 'important' }}">{{ variant.onHand }}</span></td>
+<<<<<<< HEAD
             <td>{{ variant.price|sylius_price }}</td>
+=======
+            <td>{{ variant.price|sylius_money }}</td>
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
             <td>
                 <div class="pull-right">
                 {{ buttons.edit(path('sylius_backend_variant_update', {'productId': product.id, 'id': variant.id})) }}

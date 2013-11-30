@@ -92,6 +92,7 @@ Feature: Zones
     Scenario: Deleting zone
         Given I am on the page of zone "USA GMT-8"
          When I press "delete"
+<<<<<<< HEAD
          Then I should see "Do you want to delete this item"
          When I press "delete"
          Then I should be on the zone index page
@@ -102,12 +103,15 @@ Feature: Zones
         Given I am on the page of zone "USA GMT-8"
          When I press "delete"
           And I click "delete" from the confirmation modal
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
          Then I should be on the zone index page
           And I should see "Zone has been successfully deleted."
 
     Scenario: Deleting zone from list
         Given I am on the zone index page
          When I click "delete" near "USA GMT-8"
+<<<<<<< HEAD
          Then I should see "Do you want to delete this item"
          When I press "delete"
          Then I should still be on the zone index page
@@ -118,12 +122,15 @@ Feature: Zones
         Given I am on the zone index page
          When I click "delete" near "USA GMT-8"
           And I click "delete" from the confirmation modal
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
          Then I should still be on the zone index page
           And I should see "Zone has been successfully deleted."
 
     Scenario: Deleted zone disappears from the list
         Given I am on the page of zone "Germany"
          When I press "delete"
+<<<<<<< HEAD
          Then I should see "Do you want to delete this item"
          When I press "delete"
          Then I should be on the zone index page
@@ -134,5 +141,7 @@ Feature: Zones
         Given I am on the page of zone "Germany"
          When I press "delete"
           And I click "delete" from the confirmation modal
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
          Then I should be on the zone index page
           But I should not see zone with name "Germany" in that list

@@ -1,10 +1,13 @@
 CHANGELOG
 =========
 
+<<<<<<< HEAD
 ### v0.6.0
 
 * Release before components introduction.
 
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 ### v0.5.0
 
 * Symfony 2.3 compatible version.

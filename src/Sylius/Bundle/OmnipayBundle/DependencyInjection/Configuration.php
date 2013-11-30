@@ -55,7 +55,11 @@ class Configuration implements ConfigurationInterface
 
                                                     return false;
                                                 })
+<<<<<<< HEAD
                                         ->thenInvalid(sprintf('Unknown payment gateway selected. Valid gateways are: %s.',  implode(", ", $gateways)))
+=======
+                                        ->thenInvalid(sprintf('Unknown payment gateway selected. Valid gateways are: %s.',  implode(", ",$gateways)))
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
                                     ->end()
                                 ->end()
                                 ->scalarNode('label')->cannotBeEmpty()->end()

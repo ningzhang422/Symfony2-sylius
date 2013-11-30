@@ -232,6 +232,7 @@ Feature: Promotions
     Scenario: Deleting promotion
         Given I am on the page of promotion "New Year"
          When I press "delete"
+<<<<<<< HEAD
          Then I should see "Do you want to delete this item"
          When I press "delete"
          Then I should be on the promotion index page
@@ -242,12 +243,15 @@ Feature: Promotions
         Given I am on the page of promotion "New Year"
          When I press "delete"
           And I click "delete" from the confirmation modal
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
          Then I should be on the promotion index page
           And I should see "Promotion has been successfully deleted."
 
     Scenario: Deleted promotion disappears from the list
         Given I am on the page of promotion "New Year"
          When I press "delete"
+<<<<<<< HEAD
          Then I should see "Do you want to delete this item"
          When I press "delete"
          Then I should be on the promotion index page
@@ -258,12 +262,15 @@ Feature: Promotions
         Given I am on the page of promotion "New Year"
          When I press "delete"
           And I click "delete" from the confirmation modal
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
          Then I should be on the promotion index page
           And I should not see promotion with name "New Year" in that list
 
     Scenario: Deleting promotion via list
         Given I am on the promotion index page
          When I click "delete" near "Press Campaign"
+<<<<<<< HEAD
          Then I should see "Do you want to delete this item"
          When I press "delete"
          Then I should be on the promotion index page
@@ -274,12 +281,15 @@ Feature: Promotions
         Given I am on the promotion index page
          When I click "delete" near "Press Campaign"
           And I click "delete" from the confirmation modal
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
          Then I should be on the promotion index page
           And I should see "Promotion has been successfully deleted."
 
     Scenario: Deleting promotion rule
         Given I am on the page of promotion "Christmas"
          When I press "delete" near "Item total"
+<<<<<<< HEAD
          Then I should see "Do you want to delete this item"
          When I press "delete"
          Then I should be on the page of promotion "Christmas"
@@ -291,6 +301,8 @@ Feature: Promotions
         Given I am on the page of promotion "Christmas"
          When I press "delete" near "Item total"
           And I click "delete" from the confirmation modal
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
          Then I should be on the page of promotion "Christmas"
           And I should see "Promotion rule has been successfully deleted."
           And I should not see "Order total"
@@ -298,6 +310,7 @@ Feature: Promotions
     Scenario: Deleting promotion action
         Given I am on the page of promotion "Christmas"
          When I press "delete" near "Fixed discount"
+<<<<<<< HEAD
          Then I should see "Do you want to delete this item"
          When I press "delete"
          Then I should be on the page of promotion "Christmas"
@@ -309,6 +322,8 @@ Feature: Promotions
         Given I am on the page of promotion "Christmas"
          When I press "delete" near "Fixed discount"
           And I click "delete" from the confirmation modal
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
          Then I should be on the page of promotion "Christmas"
           And I should see "Promotion action has been successfully deleted."
           And I should not see "Fixed discount"

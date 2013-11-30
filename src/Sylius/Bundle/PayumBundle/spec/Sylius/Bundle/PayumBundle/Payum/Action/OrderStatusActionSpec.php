@@ -27,7 +27,11 @@ class OrderStatusActionSpec extends ObjectBehavior
 
     /**
      * @param Sylius\Bundle\CoreBundle\Model\OrderInterface $order
+<<<<<<< HEAD
      * @param Payum\Request\StatusRequestInterface          $statusRequest
+=======
+     * @param Payum\Request\StatusRequestInterface $statusRequest
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
      */
     function it_should_support_status_request_with_order_model($order, $statusRequest)
     {
@@ -62,9 +66,15 @@ class OrderStatusActionSpec extends ObjectBehavior
     }
 
     /**
+<<<<<<< HEAD
      * @param Sylius\Bundle\CoreBundle\Model\OrderInterface       $order
      * @param Sylius\Bundle\PaymentsBundle\Model\PaymentInterface $payment
      * @param Payum\Request\StatusRequestInterface                $statusRequest
+=======
+     * @param Sylius\Bundle\CoreBundle\Model\OrderInterface $order
+     * @param Sylius\Bundle\PaymentsBundle\Model\PaymentInterface $payment
+     * @param Payum\Request\StatusRequestInterface $statusRequest
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
      */
     function it_should_mark_new_if_order_have_empty_payment_details($order, $payment, $statusRequest)
     {
@@ -78,10 +88,17 @@ class OrderStatusActionSpec extends ObjectBehavior
     }
 
     /**
+<<<<<<< HEAD
      * @param Sylius\Bundle\CoreBundle\Model\OrderInterface       $order
      * @param Sylius\Bundle\PaymentsBundle\Model\PaymentInterface $payment
      * @param Payum\Request\StatusRequestInterface                $statusRequest
      * @param Payum\PaymentInterface                              $payment
+=======
+     * @param Sylius\Bundle\CoreBundle\Model\OrderInterface $order
+     * @param Sylius\Bundle\PaymentsBundle\Model\PaymentInterface $payment
+     * @param Payum\Request\StatusRequestInterface $statusRequest
+     * @param Payum\PaymentInterface $payment
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
      */
     function it_should_do_status_subrequest_with_payment_details_as_model($order, $payment, $statusRequest, $payment)
     {

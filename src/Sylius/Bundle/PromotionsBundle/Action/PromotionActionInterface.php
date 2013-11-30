@@ -11,7 +11,10 @@
 
 namespace Sylius\Bundle\PromotionsBundle\Action;
 
+<<<<<<< HEAD
 use Sylius\Bundle\PromotionsBundle\Model\PromotionInterface;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 use Sylius\Bundle\PromotionsBundle\Model\PromotionSubjectInterface;
 
 /**
@@ -21,6 +24,7 @@ use Sylius\Bundle\PromotionsBundle\Model\PromotionSubjectInterface;
  */
 interface PromotionActionInterface
 {
+<<<<<<< HEAD
     /**
      * Applies the promotion to its subject.
      *
@@ -35,5 +39,8 @@ interface PromotionActionInterface
      *
      * @return string
      */
+=======
+    public function execute(PromotionSubjectInterface $subject, array $configuration);
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function getConfigurationFormType();
 }

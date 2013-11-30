@@ -1,5 +1,11 @@
 <div class="tab-pane" id="options">
+<<<<<<< HEAD
 {% if form.options is defined %}
     {{ form_row(form.options) }}
 {% endif %}
+=======
+    {% if form.options is defined %}
+        {{ form_row(form.options, {'attr': {'class': 'input-xlarge'}}) }}
+    {% endif %}
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 </div>

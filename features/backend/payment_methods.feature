@@ -71,6 +71,7 @@ Feature: Payment methods
     Scenario: Deleting payment method
         Given I am on the payment method index page
          When I click "delete" near "PayPal"
+<<<<<<< HEAD
          Then I should see "Do you want to delete this item"
          When I press "delete"
          Then I should still be on the payment method index page
@@ -81,12 +82,15 @@ Feature: Payment methods
         Given I am on the payment method index page
          When I click "delete" near "PayPal"
           And I click "delete" from the confirmation modal
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
          Then I should still be on the payment method index page
           And I should see "Payment method has been successfully deleted."
 
     Scenario: Deleted payment method disappears from the list
         Given I am on the payment method index page
          When I click "delete" near "PayPal"
+<<<<<<< HEAD
          Then I should see "Do you want to delete this item"
          When I press "delete"
          Then I should still be on the payment method index page
@@ -97,5 +101,7 @@ Feature: Payment methods
         Given I am on the payment method index page
          When I click "delete" near "PayPal"
           And I click "delete" from the confirmation modal
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
          Then I should still be on the payment method index page
           And I should not see payment method with name "PayPal" in that list

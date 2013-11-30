@@ -83,6 +83,7 @@ class Order extends Cart implements OrderInterface
     protected $promotionCoupon;
 
     /**
+<<<<<<< HEAD
      * Order shipping state.
      * It depends on the status of all order shipments.
      *
@@ -91,6 +92,8 @@ class Order extends Cart implements OrderInterface
     protected $shippingState;
 
     /**
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
      * Constructor.
      */
     public function __construct()
@@ -100,8 +103,11 @@ class Order extends Cart implements OrderInterface
         $this->inventoryUnits = new ArrayCollection();
         $this->shipments = new ArrayCollection();
         $this->currency = 'EUR'; // @todo: Temporary
+<<<<<<< HEAD
 
         $this->shippingState = OrderShippingStates::READY;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -136,8 +142,11 @@ class Order extends Cart implements OrderInterface
     public function setShippingAddress(AddressInterface $address)
     {
         $this->shippingAddress = $address;
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -154,8 +163,11 @@ class Order extends Cart implements OrderInterface
     public function setBillingAddress(AddressInterface $address)
     {
         $this->billingAddress = $address;
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -396,8 +408,11 @@ class Order extends Cart implements OrderInterface
     public function setPromotionCoupon(CouponInterface $coupon = null)
     {
         $this->promotionCoupon = $coupon;
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -437,6 +452,7 @@ class Order extends Cart implements OrderInterface
     /**
      * {@inheritdoc}
      */
+<<<<<<< HEAD
     public function getShippingState()
     {
         return $this->shippingState;
@@ -464,6 +480,11 @@ class Order extends Cart implements OrderInterface
         }
 
         return false;
+=======
+    public function setCreatedAt(\DateTime $createdAt)
+    {
+        $this->createdAt = $createdAt;
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**

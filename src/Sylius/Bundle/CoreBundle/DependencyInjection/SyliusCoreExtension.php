@@ -14,7 +14,10 @@ namespace Sylius\Bundle\CoreBundle\DependencyInjection;
 use Sylius\Bundle\ResourceBundle\DependencyInjection\SyliusResourceExtension;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\PrependExtensionInterface;
+<<<<<<< HEAD
 use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 
 /**
  * Core extension.
@@ -48,6 +51,7 @@ class SyliusCoreExtension extends SyliusResourceExtension implements PrependExte
     {
         $this->configDir = __DIR__.'/../Resources/config';
 
+<<<<<<< HEAD
         list($config, $loader) = $this->configure($config, new Configuration(), $container, self::CONFIGURE_LOADER | self::CONFIGURE_DATABASE | self::CONFIGURE_PARAMETERS);
 
         $loader->load('mailer.xml');
@@ -55,6 +59,9 @@ class SyliusCoreExtension extends SyliusResourceExtension implements PrependExte
         if (!empty($config['order_confirmation'])) {
             $this->loadOrderConfirmation($config['order_confirmation'], $container, $loader, $config['from_email']);
         }
+=======
+        $this->configure($config, new Configuration(), $container, self::CONFIGURE_LOADER | self::CONFIGURE_DATABASE | self::CONFIGURE_PARAMETERS);
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -70,6 +77,7 @@ class SyliusCoreExtension extends SyliusResourceExtension implements PrependExte
             }
         }
     }
+<<<<<<< HEAD
 
     protected function loadOrderConfirmation(array $config, ContainerBuilder $container, XmlFileLoader $loader, array $fromEmail)
     {
@@ -88,4 +96,6 @@ class SyliusCoreExtension extends SyliusResourceExtension implements PrependExte
         $container->setParameter('sylius.email.order_confirmation.from_email', array($fromEmail['address'] => $fromEmail['sender_name']));
         $container->setParameter('sylius.email.order_confirmation.template', $config['template']);
     }
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 }

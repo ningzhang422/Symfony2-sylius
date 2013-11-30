@@ -11,6 +11,7 @@
 
 namespace spec\Sylius\Bundle\ResourceBundle\Twig;
 
+<<<<<<< HEAD
 use Pagerfanta\Pagerfanta;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
@@ -22,11 +23,15 @@ use Symfony\Component\HttpKernel\HttpKernel;
 use Symfony\Component\Routing\Router;
 use Symfony\Component\Routing\RouterInterface;
 use Symfony\Component\DependencyInjection\Container;
+=======
+use PhpSpec\ObjectBehavior;
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 
 /**
  * Sylius resource extension for Twig spec.
  *
  * @author Paweł Jędrzejewski <pjedrzejewski@diweb.pl>
+<<<<<<< HEAD
  * @author Arnaud Langlade <arn0d.dev@gmail.com>
  */
 class SyliusResourceExtensionSpec extends ObjectBehavior
@@ -41,6 +46,17 @@ class SyliusResourceExtensionSpec extends ObjectBehavior
             'SyliusResourceBundle:Twig:paginate.html.twig',
             'SyliusResourceBundle:Twig:sorting.html.twig'
         );
+=======
+ */
+class SyliusResourceExtensionSpec extends ObjectBehavior
+{
+    /**
+     * @param Symfony\Component\Routing\RouterInterface $router
+     */
+    function let($router)
+    {
+        $this->beConstructedWith($router);
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     function it_is_initializable()
@@ -52,6 +68,7 @@ class SyliusResourceExtensionSpec extends ObjectBehavior
     {
         $this->shouldHaveType('Twig_Extension');
     }
+<<<<<<< HEAD
 
     function it_should_fetch_request(GetResponseEvent $event)
     {
@@ -263,4 +280,6 @@ class SyliusResourceExtensionSpec extends ObjectBehavior
 
         return $event;
     }
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 }

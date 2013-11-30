@@ -18,6 +18,7 @@ namespace Sylius\Bundle\PromotionsBundle\Model;
  */
 class Action implements ActionInterface
 {
+<<<<<<< HEAD
     /**
      * The id of this action
      *
@@ -49,29 +50,43 @@ class Action implements ActionInterface
     /**
      * Constructor
      */
+=======
+    protected $id;
+    protected $type;
+    protected $configuration;
+    protected $promotion;
+
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function __construct()
     {
         $this->configuration = array();
     }
 
+<<<<<<< HEAD
     /**
      * Get id
      *
      * @return int
      */
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function getId()
     {
         return $this->id;
     }
 
+<<<<<<< HEAD
     /**
      * {@inheritdoc}
      */
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function getType()
     {
         return $this->type;
     }
 
+<<<<<<< HEAD
     /**
      * {@inheritdoc}
      */
@@ -85,11 +100,19 @@ class Action implements ActionInterface
     /**
      * {@inheritdoc}
      */
+=======
+    public function setType($type)
+    {
+        $this->type = $type;
+    }
+
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function getConfiguration()
     {
         return $this->configuration;
     }
 
+<<<<<<< HEAD
     /**
      * {@inheritdoc}
      */
@@ -103,11 +126,19 @@ class Action implements ActionInterface
     /**
      * {@inheritdoc}
      */
+=======
+    public function setConfiguration(array $configuration)
+    {
+        $this->configuration = $configuration;
+    }
+
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function getPromotion()
     {
         return $this->promotion;
     }
 
+<<<<<<< HEAD
     /**
      * {@inheritdoc}
      */
@@ -116,5 +147,10 @@ class Action implements ActionInterface
         $this->promotion = $promotion;
 
         return $this;
+=======
+    public function setPromotion(PromotionInterface $promotion = null)
+    {
+        $this->promotion = $promotion;
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 }

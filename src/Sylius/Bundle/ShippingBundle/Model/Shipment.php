@@ -75,7 +75,11 @@ class Shipment implements ShipmentInterface, TimestampableInterface
      */
     public function __construct()
     {
+<<<<<<< HEAD
         $this->state = ShipmentInterface::STATE_CHECKOUT;
+=======
+        $this->state = ShipmentInterface::STATE_READY;
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
         $this->items = new ArrayCollection();
         $this->createdAt = new \DateTime();
     }
@@ -110,8 +114,11 @@ class Shipment implements ShipmentInterface, TimestampableInterface
     public function setState($state)
     {
         $this->state = $state;
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -128,8 +135,11 @@ class Shipment implements ShipmentInterface, TimestampableInterface
     public function setMethod(ShippingMethodInterface $method)
     {
         $this->method = $method;
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -157,8 +167,11 @@ class Shipment implements ShipmentInterface, TimestampableInterface
             $item->setShipment($this);
             $this->items->add($item);
         }
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -170,8 +183,11 @@ class Shipment implements ShipmentInterface, TimestampableInterface
             $item->setShipment(null);
             $this->items->removeElement($item);
         }
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -205,8 +221,11 @@ class Shipment implements ShipmentInterface, TimestampableInterface
     public function setTracking($tracking)
     {
         $this->tracking = $tracking;
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -231,8 +250,11 @@ class Shipment implements ShipmentInterface, TimestampableInterface
     public function setCreatedAt(\DateTime $createdAt)
     {
         $this->createdAt = $createdAt;
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -249,8 +271,11 @@ class Shipment implements ShipmentInterface, TimestampableInterface
     public function setUpdatedAt(\DateTime $updatedAt)
     {
         $this->updatedAt = $updatedAt;
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     public function getShippingWeight()
@@ -260,8 +285,11 @@ class Shipment implements ShipmentInterface, TimestampableInterface
         foreach ($this->items as $item) {
             $weight += $item->getShippable()->getShippingWeigth();
         }
+<<<<<<< HEAD
 
         return $weight;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     public function getShippingItemCount()

@@ -21,6 +21,7 @@ interface ActionInterface
     const TYPE_FIXED_DISCOUNT      = 'fixed_discount';
     const TYPE_PERCENTAGE_DISCOUNT = 'percentage_discount';
 
+<<<<<<< HEAD
     /**
      * Get type
      *
@@ -61,5 +62,12 @@ interface ActionInterface
      *
      * @param PromotionInterface $promotion
      */
+=======
+    public function getType();
+    public function setType($type);
+    public function getConfiguration();
+    public function setConfiguration(array $configuration);
+    public function getPromotion();
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function setPromotion(PromotionInterface $promotion = null);
 }

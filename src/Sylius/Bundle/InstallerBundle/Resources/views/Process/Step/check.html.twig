@@ -36,9 +36,15 @@
         <thead>
             <tr>
                 <th>{{ collection.label }}</th>
+<<<<<<< HEAD
                 <th class="col-md-5">{{ 'sylius.process.step.check.table.current'|trans }}</th>
                 <th class="col-md-5">{{ 'sylius.process.step.check.table.required'|trans }}</th>
                 <th class="col-md-1">{{ 'sylius.process.step.check.table.status'|trans }}</th>
+=======
+                <th class="span5">{{ 'sylius.process.step.check.table.current'|trans }}</th>
+                <th class="span5">{{ 'sylius.process.step.check.table.required'|trans }}</th>
+                <th class="span1">{{ 'sylius.process.step.check.table.status'|trans }}</th>
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
             </tr>
         </thead>
         <tbody>
@@ -68,8 +74,13 @@
 {% endfor %}
 
 <div class="form-actions">
+<<<<<<< HEAD
     <a href="{{ path('sylius_flow_display', {'scenarioAlias': 'sylius_installer', 'stepName': 'welcome'}) }}" class="btn btn-lg btn-default"><i class="icon-chevron-left"></i> {{ 'sylius.process.step.check.button.back'|trans }}</a> &nbsp;
     <a href="{{ fulfilled ? path('sylius_flow_forward', {'scenarioAlias': 'sylius_installer', 'stepName': 'check'}) : '#' }}" class="btn btn-lg btn-primary{% if not fulfilled %} disabled{% endif %}">
+=======
+    <a href="{{ path('sylius_flow_display', {'scenarioAlias': 'sylius_installer', 'stepName': 'welcome'}) }}" class="btn btn-large"><i class="icon-chevron-left"></i> {{ 'sylius.process.step.check.button.back'|trans }}</a> &nbsp;
+    <a href="{{ fulfilled ? path('sylius_flow_forward', {'scenarioAlias': 'sylius_installer', 'stepName': 'check'}) : '#' }}" class="btn btn-large {% if fulfilled %}btn-primary{% else %}disabled{% endif %}">
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
         {{ 'sylius.process.step.check.button.next'|trans }} <i class="icon-chevron-right"></i>
     </a>
 </div>

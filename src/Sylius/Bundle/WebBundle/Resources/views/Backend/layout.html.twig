@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 <html>
     <head>
         <title>
@@ -8,6 +12,7 @@
         </title>
         <meta charset="UTF-8">
 
+<<<<<<< HEAD
         <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'>
 
         {% block stylesheets %}
@@ -15,15 +20,33 @@
             {% stylesheets output='assets/compiled/backend.css' filter='cssrewrite'
                 '@SyliusWebBundle/Resources/assets/css/backend.css'
                 '@SyliusWebBundle/Resources/assets/css/blueimp-gallery.css'
+=======
+        <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'>
+
+        {% block stylesheets %}
+            {% stylesheets output='assets/compiled/backend.css' filter='cssrewrite'
+                '//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css'
+                '//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'
+                '@SyliusWebBundle/Resources/assets/css/backend.css'
+                '@SyliusWebBundle/Resources/assets/css/blueimp-gallery.min.css'
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
             %}
                 <link rel="stylesheet" href="{{ asset_url }}" type="text/css" />
             {% endstylesheets %}
         {% endblock %}
+<<<<<<< HEAD
 
         <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
         <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     </head>
     <body>
         {% include 'SyliusWebBundle:Backend:_navbar.html.twig' %}
@@ -51,12 +74,17 @@
 
                 <hr>
 
+<<<<<<< HEAD
                 {# Gallery modal #}
                 {% include 'SyliusWebBundle::gallery.html.twig' %}
 
                 {# Confirmation modal #}
                 {% include 'SyliusWebBundle::confirm-modal.html.twig' %}
 
+=======
+                {% include 'SyliusWebBundle::gallery.html.twig' %}
+
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
                 <footer>
                     <p>&copy; <a href="http://Sylius.org">Sylius</a>, 2011 - {{ 'now'|date('Y') }}.</p>
                 </footer>
@@ -66,6 +94,7 @@
 
         {# javascripts... #}
         {% block javascripts %}
+<<<<<<< HEAD
             <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
             <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
             {% javascripts output='assets/compiled/backend.js'
@@ -78,6 +107,19 @@
             %}
                 <script type="text/javascript" src="{{ asset_url }}"></script>
             {% endjavascripts %}
+=======
+        {% javascripts output='assets/compiled/backend.js'
+            'http://code.jquery.com/jquery-1.8.0.min.js'
+            'http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js'
+            '@SyliusWebBundle/Resources/assets/js/jquery.blueimp-gallery.min.js'
+            '@SyliusWebBundle/Resources/assets/js/form-collection.js'
+            '@SyliusWebBundle/Resources/assets/js/form-spinner.js'
+            '@SyliusWebBundle/Resources/assets/js/select2.js'
+            '@SyliusWebBundle/Resources/assets/js/backend.js'
+        %}
+            <script type="text/javascript" src="{{ asset_url }}"></script>
+        {% endjavascripts %}
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
         {% endblock %}
     </body>
 </html>

@@ -5,6 +5,7 @@
     <h1>Registration <small>Create an account in store</small></h1>
 </div>
 
+<<<<<<< HEAD
 <form action="{{ path('fos_user_registration_register') }}" method="post" class="form-horizontal" novalidate>
     <fieldset class="well">
         {% for field in form %}
@@ -17,5 +18,16 @@
         </div>
         <button type="submit" class="btn btn-success btn-lg"><i class="icon-user"></i> Register</button>
     </div>
+=======
+<form action="{{ path('fos_user_registration_register') }}" method="post" novalidate class="form-horizontal">
+<fieldset class="well">
+    {% for field in form %}
+        {{ form_row(field) }}
+    {% endfor %}
+</fieldset>
+<div class="form-actions">
+    <button type="submit" class="btn btn-success btn-large span3"><i class="icon-user"></i> Register</button>
+</div>
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 </form>
 {% endblock %}

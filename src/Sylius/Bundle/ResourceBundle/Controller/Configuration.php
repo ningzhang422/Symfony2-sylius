@@ -148,7 +148,11 @@ class Configuration
     {
         $limit = $this->get('limit', 10);
 
+<<<<<<< HEAD
         if (false === $limit) {
+=======
+        if (null === $limit) {
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
             return null;
         }
 
@@ -162,7 +166,11 @@ class Configuration
 
     public function getPaginationMaxPerPage()
     {
+<<<<<<< HEAD
         return (int) $this->get('paginate', 10);
+=======
+        return (int) $this->get('paginate', 20);
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     public function isFilterable()
@@ -216,6 +224,10 @@ class Configuration
 
     protected function get($parameter, $default = null)
     {
+<<<<<<< HEAD
         return isset($this->parameters[$parameter]) ? $this->parameters[$parameter] : $default;
+=======
+        return array_key_exists($parameter, $this->parameters) ? $this->parameters[$parameter] : $default;
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 }

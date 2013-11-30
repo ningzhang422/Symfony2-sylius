@@ -18,8 +18,13 @@
     </thead>
     <tbody>
     {% for product in products %}
+<<<<<<< HEAD
         <tr id="{{ product.id }}">
             <td class="center-text"><input type="checkbox" value="{{ product.id }}" /></td>
+=======
+        <tr>
+            <td class="center-text"><input type="checkbox" /></td>
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
             <td>
                 {{ product.id }}
             </td>
@@ -28,6 +33,7 @@
                     <img src="{{ product.image ? product.image.path|imagine_filter('sylius_50x40') : 'http://placehold.it/50x40' }}" alt="" class="img-rounded" />
                 </a>
             </td>
+<<<<<<< HEAD
             <td>
                 {% if product.sku %}
                     <span class="label label-primary">{{ product.sku }}</span>
@@ -35,6 +41,9 @@
                     <span class="label label-default">{{ 'sylius.product.no_sku'|trans }}</span>
                 {% endif %}
             </td>
+=======
+            <td>{{ product.sku|default('sylius.product.no_sku'|trans)|raw }}</td>
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
             <td>
                 <a href="{{ path('sylius_backend_product_show', {'id': product.id}) }}" class="btn btn-link">
                     <strong>{{ product.name }}</strong>
@@ -42,7 +51,11 @@
             </td>
             <td>
                 {% if not product.hasOptions %}
+<<<<<<< HEAD
                     {{ product.masterVariant.price|sylius_price }}
+=======
+                    {{ product.masterVariant.price|sylius_money }}
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
                 {% else %}
                     ---
                 {% endif %}

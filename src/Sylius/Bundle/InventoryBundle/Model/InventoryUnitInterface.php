@@ -23,7 +23,11 @@ interface InventoryUnitInterface extends TimestampableInterface
     /**
      * Default states.
      */
+<<<<<<< HEAD
     const STATE_CHECKOUT    = 'checkout';
+=======
+    const STATE_IN_CART     = 'in_cart';
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     const STATE_SOLD        = 'sold';
     const STATE_BACKORDERED = 'backordered';
 

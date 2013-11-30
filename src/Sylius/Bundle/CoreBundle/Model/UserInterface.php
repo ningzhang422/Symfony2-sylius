@@ -23,6 +23,7 @@ use Sylius\Bundle\ResourceBundle\Model\TimestampableInterface;
  */
 interface UserInterface extends BaseUserInterface, TimestampableInterface
 {
+<<<<<<< HEAD
     /**
      * Get first name
      */
@@ -30,11 +31,18 @@ interface UserInterface extends BaseUserInterface, TimestampableInterface
 
     /**
      * Set first name
+=======
+    public function getFirstName();
+
+    /**
+     * Set firstname.
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
      *
      * @param string $firstName
      */
     public function setFirstName($firstName);
 
+<<<<<<< HEAD
     /**
      * Get last name
      */
@@ -59,6 +67,12 @@ interface UserInterface extends BaseUserInterface, TimestampableInterface
      *
      * @param string $currency
      */
+=======
+    public function getLastName();
+    public function setLastName($lastName);
+
+    public function getCurrency();
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function setCurrency($currency);
 
     /**
@@ -113,7 +127,11 @@ interface UserInterface extends BaseUserInterface, TimestampableInterface
     /**
      * Remove address.
      *
+<<<<<<< HEAD
      * @param AddressInterface $address
+=======
+     * @param AddressInterface $addresses
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
      */
     public function removeAddress(AddressInterface $address);
 

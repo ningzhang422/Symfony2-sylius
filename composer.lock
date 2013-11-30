@@ -3,7 +3,11 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
+<<<<<<< HEAD
     "hash": "c9dc16ec99ac083ae7be6c3890b90d0d",
+=======
+    "hash": "62e0c1fd5b4e407cf1579178ccc266a5",
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     "packages": [
         {
             "name": "athari/yalinqo",
@@ -161,7 +165,12 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
+<<<<<<< HEAD
                     "homepage": "http://www.jwage.com/"
+=======
+                    "homepage": "http://www.jwage.com/",
+                    "role": "Creator"
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -405,12 +414,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineBundle.git",
+<<<<<<< HEAD
                 "reference": "c65e5a21d1db794511d11fe28918f41bd6072f8f"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/c65e5a21d1db794511d11fe28918f41bd6072f8f",
                 "reference": "c65e5a21d1db794511d11fe28918f41bd6072f8f",
+=======
+                "reference": "2ed46398aae1b7699f6fe7467faf54493b4f2a24"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/2ed46398aae1b7699f6fe7467faf54493b4f2a24",
+                "reference": "2ed46398aae1b7699f6fe7467faf54493b4f2a24",
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
                 "shasum": ""
             },
             "require": {
@@ -421,7 +439,11 @@
                 "symfony/framework-bundle": "~2.2"
             },
             "require-dev": {
+<<<<<<< HEAD
                 "doctrine/orm": "~2.2",
+=======
+                "doctrine/orm": ">=2.2,<2.5-dev",
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
                 "symfony/validator": "~2.2",
                 "symfony/yaml": "~2.2"
             },
@@ -466,7 +488,11 @@
                 "orm",
                 "persistence"
             ],
+<<<<<<< HEAD
             "time": "2013-11-25 17:33:45"
+=======
+            "time": "2013-10-20 15:21:43"
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
         },
         {
             "name": "doctrine/inflector",
@@ -742,12 +768,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
+<<<<<<< HEAD
                 "reference": "eb459d55bca10b51e7d44143ca6757fd999fce62"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/eb459d55bca10b51e7d44143ca6757fd999fce62",
                 "reference": "eb459d55bca10b51e7d44143ca6757fd999fce62",
+=======
+                "reference": "e543600e49216765315610b6281349ee86dfe87e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/e543600e49216765315610b6281349ee86dfe87e",
+                "reference": "e543600e49216765315610b6281349ee86dfe87e",
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
                 "shasum": ""
             },
             "require": {
@@ -802,7 +837,11 @@
             "keywords": [
                 "User management"
             ],
+<<<<<<< HEAD
             "time": "2013-11-25 12:39:19"
+=======
+            "time": "2013-11-07 03:54:10"
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
         },
         {
             "name": "gedmo/doctrine-extensions",
@@ -1083,6 +1122,7 @@
             "time": "2013-07-30 22:07:23"
         },
         {
+<<<<<<< HEAD
             "name": "hwi/oauth-bundle",
             "version": "0.3.0",
             "target-dir": "HWI/Bundle/OAuthBundle",
@@ -1194,6 +1234,8 @@
             "time": "2013-09-28 12:37:04"
         },
         {
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
             "name": "imagine/imagine",
             "version": "v0.5.0",
             "source": {
@@ -2383,12 +2425,20 @@
             "version": "v1.0.4",
             "source": {
                 "type": "git",
+<<<<<<< HEAD
                 "url": "https://github.com/omnipay/omnipay.git",
+=======
+                "url": "https://github.com/adrianmacneil/omnipay.git",
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
                 "reference": "4f5e82232161939c0b14f5921c092ed77980d450"
             },
             "dist": {
                 "type": "zip",
+<<<<<<< HEAD
                 "url": "https://api.github.com/repos/omnipay/omnipay/zipball/4f5e82232161939c0b14f5921c092ed77980d450",
+=======
+                "url": "https://api.github.com/repos/adrianmacneil/omnipay/zipball/4f5e82232161939c0b14f5921c092ed77980d450",
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
                 "reference": "4f5e82232161939c0b14f5921c092ed77980d450",
                 "shasum": ""
             },
@@ -2422,7 +2472,11 @@
                 }
             ],
             "description": "A framework agnostic, multi-gateway payment processing library",
+<<<<<<< HEAD
             "homepage": "https://github.com/omnipay/omnipay",
+=======
+            "homepage": "https://github.com/adrianmacneil/omnipay",
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
             "keywords": [
                 "2checkout",
                 "2co",
@@ -2586,6 +2640,7 @@
         },
         {
             "name": "payum/paypal-express-checkout-nvp",
+<<<<<<< HEAD
             "version": "0.6.4",
             "source": {
                 "type": "git",
@@ -2596,6 +2651,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/Payum/PaypalExpressCheckoutNvp/zipball/5dcde1e622fe7c0b9b5dae0077fda0c08e2d555d",
                 "reference": "5dcde1e622fe7c0b9b5dae0077fda0c08e2d555d",
+=======
+            "version": "0.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Payum/PaypalExpressCheckoutNvp.git",
+                "reference": "bc523174f4e552ba40ebbb94aff5f62573148d06"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Payum/PaypalExpressCheckoutNvp/zipball/bc523174f4e552ba40ebbb94aff5f62573148d06",
+                "reference": "bc523174f4e552ba40ebbb94aff5f62573148d06",
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
                 "shasum": ""
             },
             "require": {
@@ -2648,6 +2715,7 @@
                 "paypal",
                 "recurring payment"
             ],
+<<<<<<< HEAD
             "time": "2013-11-19 08:02:01"
         },
         {
@@ -2662,6 +2730,22 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/Payum/Payum/zipball/7c2826e834e967378c4232ef5eb6a92d3178b460",
                 "reference": "7c2826e834e967378c4232ef5eb6a92d3178b460",
+=======
+            "time": "2013-11-01 14:12:49"
+        },
+        {
+            "name": "payum/payum",
+            "version": "0.6.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Payum/Payum.git",
+                "reference": "3561eb16dcc1620668a52eed99eeae9cc379d8d5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Payum/Payum/zipball/3561eb16dcc1620668a52eed99eeae9cc379d8d5",
+                "reference": "3561eb16dcc1620668a52eed99eeae9cc379d8d5",
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
                 "shasum": ""
             },
             "require": {
@@ -2736,7 +2820,11 @@
                 "paypal rest",
                 "recurring payment"
             ],
+<<<<<<< HEAD
             "time": "2013-11-22 12:17:52"
+=======
+            "time": "2013-10-31 14:54:25"
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
         },
         {
             "name": "payum/payum-bundle",
@@ -3008,6 +3096,57 @@
             "time": "2013-08-22 05:04:53"
         },
         {
+<<<<<<< HEAD
+=======
+            "name": "sensio/generator-bundle",
+            "version": "v2.2.6",
+            "target-dir": "Sensio/Bundle/GeneratorBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sensiolabs/SensioGeneratorBundle.git",
+                "reference": "9fb6b8cb240e78035968b2b5e1fc6455bb9ac40f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/9fb6b8cb240e78035968b2b5e1fc6455bb9ac40f",
+                "reference": "9fb6b8cb240e78035968b2b5e1fc6455bb9ac40f",
+                "shasum": ""
+            },
+            "require": {
+                "symfony/console": "~2.0",
+                "symfony/framework-bundle": "~2.2"
+            },
+            "require-dev": {
+                "doctrine/orm": "~2.2,>=2.2.3",
+                "symfony/doctrine-bridge": "~2.2",
+                "twig/twig": "~1.11"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Sensio\\Bundle\\GeneratorBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "This bundle generates code for you",
+            "time": "2013-06-02 13:07:01"
+        },
+        {
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
             "name": "stof/doctrine-extensions-bundle",
             "version": "v1.1.0",
             "target-dir": "Stof/DoctrineExtensionsBundle",
@@ -3553,12 +3692,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/whiteoctober/WhiteOctoberPagerfantaBundle.git",
+<<<<<<< HEAD
                 "reference": "606467f9e9f9e80975128db589eec2f9d11139c2"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/whiteoctober/WhiteOctoberPagerfantaBundle/zipball/606467f9e9f9e80975128db589eec2f9d11139c2",
                 "reference": "606467f9e9f9e80975128db589eec2f9d11139c2",
+=======
+                "reference": "cf51f3482fa7a73757f4ca4e2d7424bcdb1d2b2f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/whiteoctober/WhiteOctoberPagerfantaBundle/zipball/cf51f3482fa7a73757f4ca4e2d7424bcdb1d2b2f",
+                "reference": "cf51f3482fa7a73757f4ca4e2d7424bcdb1d2b2f",
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
                 "shasum": ""
             },
             "require": {
@@ -3598,6 +3746,7 @@
                 "page",
                 "paging"
             ],
+<<<<<<< HEAD
             "time": "2013-11-15 14:52:00"
         },
         {
@@ -3612,6 +3761,22 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/willdurand/Negotiation/zipball/d5d080d5405e3e0895038b5b578458884cdf8af6",
                 "reference": "d5d080d5405e3e0895038b5b578458884cdf8af6",
+=======
+            "time": "2013-11-08 00:34:44"
+        },
+        {
+            "name": "willdurand/negotiation",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/willdurand/Negotiation.git",
+                "reference": "6021e6a9e14d6ab62dcd4f83364058d4978d6890"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/willdurand/Negotiation/zipball/6021e6a9e14d6ab62dcd4f83364058d4978d6890",
+                "reference": "6021e6a9e14d6ab62dcd4f83364058d4978d6890",
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
                 "shasum": ""
             },
             "require": {
@@ -3648,7 +3813,11 @@
                 "header",
                 "negotiation"
             ],
+<<<<<<< HEAD
             "time": "2013-11-21 10:29:12"
+=======
+            "time": "2013-08-01 14:42:09"
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
         }
     ],
     "packages-dev": [
@@ -3945,6 +4114,7 @@
             "time": "2013-06-04 12:18:22"
         },
         {
+<<<<<<< HEAD
             "name": "behat/mink-goutte-driver",
             "version": "v1.0.9",
             "source": {
@@ -3996,6 +4166,8 @@
             "time": "2013-07-03 18:43:54"
         },
         {
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
             "name": "behat/mink-selenium2-driver",
             "version": "v1.1.1",
             "source": {
@@ -4223,6 +4395,7 @@
             "time": "2013-09-05 11:23:37"
         },
         {
+<<<<<<< HEAD
             "name": "fabpot/goutte",
             "version": "v1.0.3",
             "source": {
@@ -4279,6 +4452,8 @@
             "time": "2013-08-16 06:03:22"
         },
         {
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
             "name": "fzaninotto/faker",
             "version": "v1.2.0",
             "source": {

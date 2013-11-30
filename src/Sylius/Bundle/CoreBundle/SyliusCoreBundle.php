@@ -35,7 +35,10 @@ class SyliusCoreBundle extends Bundle
     {
         $interfaces = array(
             'Sylius\Bundle\CoreBundle\Model\UserInterface'         => 'sylius.model.user.class',
+<<<<<<< HEAD
             'Sylius\Bundle\CoreBundle\Model\GroupInterface'        => 'sylius.model.group.class',
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
             'Sylius\Bundle\CoreBundle\Model\VariantImageInterface' => 'sylius.model.variant_image.class',
         );
 

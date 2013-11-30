@@ -112,7 +112,11 @@ Feature: Shipping methods
          Then I should be editing shipping method "FedEx"
 
     @javascript
+<<<<<<< HEAD
     Scenario: Updating the shipping method with js modal
+=======
+    Scenario: Updating the shipping method
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
         Given I am editing shipping method "FedEx"
          When I fill in "Name" with "General Shipping"
           And I press "Save changes"
@@ -121,6 +125,7 @@ Feature: Shipping methods
     Scenario: Deleting shipping method
         Given I am on the page of shipping method "FedEx"
          When I press "delete"
+<<<<<<< HEAD
          Then I should see "Do you want to delete this item"
          When I press "delete"
          Then I should be on the shipping method index page
@@ -131,12 +136,15 @@ Feature: Shipping methods
         Given I am on the page of shipping method "FedEx"
          When I press "delete"
           And I click "delete" from the confirmation modal
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
          Then I should be on the shipping method index page
           And I should see "Shipping method has been successfully deleted."
 
     Scenario: Deleted shipping method disappears from the list
         Given I am on the page of shipping method "FedEx"
          When I press "delete"
+<<<<<<< HEAD
          Then I should see "Do you want to delete this item"
          When I press "delete"
          Then I should be on the shipping method index page
@@ -147,5 +155,7 @@ Feature: Shipping methods
         Given I am on the page of shipping method "FedEx"
          When I press "delete"
           And I click "delete" from the confirmation modal
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
          Then I should be on the shipping method index page
           And I should not see shipping method with name "FedEx" in that list

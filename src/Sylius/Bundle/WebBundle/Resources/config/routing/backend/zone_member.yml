@@ -7,6 +7,10 @@ sylius_backend_zone_member_delete:
     defaults:
         _controller: sylius.controller.zone_member:deleteAction
         _sylius:
+<<<<<<< HEAD
             redirect:
                 route: sylius_backend_zone_show
                 parameters: {'id': $zoneId}
+=======
+            redirect: referer
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d

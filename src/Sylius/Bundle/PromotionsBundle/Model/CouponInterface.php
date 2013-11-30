@@ -18,6 +18,7 @@ namespace Sylius\Bundle\PromotionsBundle\Model;
  */
 interface CouponInterface
 {
+<<<<<<< HEAD
     /**
      * Get code
      *
@@ -98,5 +99,18 @@ interface CouponInterface
      *
      * @return Boolean
      */
+=======
+    public function getCode();
+    public function setCode($code);
+    public function getUsageLimit();
+    public function setUsageLimit($usageLimit);
+    public function getUsed();
+    public function setUsed($used);
+    public function incrementUsed();
+    public function getPromotion();
+    public function setPromotion(PromotionInterface $promotion = null);
+    public function getExpiresAt();
+    public function setExpiresAt(\DateTime $expiresAt = null);
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function isValid();
 }

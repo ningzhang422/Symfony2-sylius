@@ -18,11 +18,16 @@ use Behat\MinkExtension\Context\MinkContext;
 use Behat\Mink\Driver\Selenium2Driver;
 use Behat\Mink\Exception\ExpectationException;
 use Behat\Symfony2Extension\Context\KernelAwareInterface;
+<<<<<<< HEAD
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpKernel\KernelInterface;
 use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Symfony\Component\Security\Core\SecurityContextInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
+=======
+use Symfony\Component\HttpKernel\KernelInterface;
+use Symfony\Component\Security\Core\Exception\AuthenticationException;
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 
 require_once 'PHPUnit/Autoload.php';
 require_once 'PHPUnit/Framework/Assert/Functions.php';
@@ -53,8 +58,11 @@ class WebUser extends MinkContext implements KernelAwareInterface
     {
         // Sylius data creation context.
         $this->useContext('data', new DataContext());
+<<<<<<< HEAD
         // Sylius OAuth context.
         $this->useContext('oauth', new OAuthContext());
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -736,6 +744,7 @@ class WebUser extends MinkContext implements KernelAwareInterface
     }
 
     /**
+<<<<<<< HEAD
      * @When /^I click the login with (.+) button$/
      * @When /^I press the login with (.+) button$/
      */
@@ -753,6 +762,8 @@ class WebUser extends MinkContext implements KernelAwareInterface
     }
 
     /**
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
      * @Given /^I added product "([^""]*)" to cart, with quantity "([^""]*)"$/
      * @When /^I add product "([^""]*)" to cart, with quantity "([^""]*)"$/
      */
@@ -806,6 +817,7 @@ class WebUser extends MinkContext implements KernelAwareInterface
     }
 
     /**
+<<<<<<< HEAD
      * @Given /^I click "([^"]*)" from the confirmation modal$/
      */
     public function iClickOnConfirmationModal($button)
@@ -827,6 +839,8 @@ class WebUser extends MinkContext implements KernelAwareInterface
     }
 
     /**
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
      * Assert that given code equals the current one.
      *
      * @param integer $code

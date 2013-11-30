@@ -3,7 +3,10 @@
 {% from 'SyliusWebBundle:Backend/Variant:macros.html.twig' import list as list_variants %}
 {% import 'SyliusResourceBundle:Macros:buttons.html.twig' as buttons %}
 {% import 'SyliusWebBundle:Backend/Macros:alerts.html.twig' as alerts %}
+<<<<<<< HEAD
 {% import 'SyliusWebBundle:Backend/Macros:misc.html.twig' as misc %}
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 
 {% block topbar %}
 <ol class="breadcrumb">
@@ -18,6 +21,7 @@
     <div class="actions-menu">
     {{ buttons.manage(path('sylius_backend_product_index'), 'sylius.product.manage'|trans) }}
     {{ buttons.edit(path('sylius_backend_product_update', {'id': product.id})) }}
+<<<<<<< HEAD
     {{ buttons.delete(path('sylius_backend_product_delete', {'id': product.id}), null, false, false) }}
     <a href="{{ path('sylius_product_show', {'slug': product.slug}) }}" class="btn btn-info">
        <i class="glyphicon glyphicon-shopping-cart"></i>
@@ -25,6 +29,15 @@
     </a>
     </div>
     <h1><i class="glyphicon glyphicon-info-sign"></i> {{ 'sylius.product.show_header'|trans({'%product%': product.name})|raw }}</h1>
+=======
+    {{ buttons.delete(path('sylius_backend_product_delete', {'id': product.id})) }}
+    <a href="{{ path('sylius_product_show', {'slug': product.slug}) }}" class="btn btn-info">
+       <i class="icon-shopping-cart"></i>
+        {{ 'sylius.product.show_in_store'|trans }}
+    </a>
+    </div>
+    <h1><i class="icon-info-sign"></i> {{ 'sylius.product.show_header'|trans({'%product%': product.name})|raw }}</h1>
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 </div>
 
 <div class="row">
@@ -55,10 +68,13 @@
                     <td>{{ product.id }}</td>
                 </tr>
                 <tr>
+<<<<<<< HEAD
                     <td>{{ 'sylius.product.sku'|trans }}</td>
                     <td>{{ product.sku }}</td>
                 </tr>
                 <tr>
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
                     <td>{{ 'sylius.product.name'|trans }}</td>
                     <td>{{ product.name }}</td>
                 </tr>
@@ -69,6 +85,7 @@
                 <tr>
                     <td>{{ 'sylius.product.options'|trans }}</td>
                     <td>
+<<<<<<< HEAD
                         {% if product.options|length > 0 %}
                         <ul>
                         {% for option in product.options %}
@@ -80,6 +97,19 @@
                                 <i class="glyphicon glyphicon-list-alt icon-white"></i> {{ 'sylius.product.no_options'|trans }}
                             </span>
                         {% endif %}
+=======
+                        <ul>
+                        {% for option in product.options %}
+                            <li><strong>{{ option.name }}</strong>: {{ option.values|join(', ') }}.</li>
+                        {% else %}
+                            <li>
+                                <span class="label label-info">
+                                    <i class="icon-list-alt icon-white"></i> {{ 'sylius.product.no_options'|trans }}
+                                </span>
+                            </li>
+                        {% endfor %}
+                        </ul>
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
                     </td>
                 </tr>
                 <tr>
@@ -93,7 +123,11 @@
                         </ul>
                         {% else %}
                             <span class="label label-info">
+<<<<<<< HEAD
                                 <i class="glyphicon glyphicon-list-alt icon-white"></i> {{ 'sylius.product.no_taxons'|trans }}
+=======
+                                <i class="icon-list-alt icon-white"></i> {{ 'sylius.product.no_taxons'|trans }}
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
                             </span>
                         {% endif %}
                     </td>
@@ -103,6 +137,7 @@
                     <td>{{ product.taxCategory|default('sylius.product.no_tax_category'|trans) }}</td>
                 </tr>
                 <tr>
+<<<<<<< HEAD
                     <td>{{ 'sylius.product.shipping_category'|trans }}</td>
                     <td>{{ product.shippingCategory|default('sylius.product.no_shipping_category'|trans) }}</td>
                 </tr>
@@ -110,6 +145,13 @@
                     <td>{{ 'sylius.product.available_on_demand'|trans }}</td>
                     <td>
                         {{ misc.state_label(product.masterVariant.availableOnDemand) }}
+=======
+                    <td>{{ 'sylius.product.available_on_demand'|trans }}</td>
+                    <td>
+                        <span class="label label-{{ product.masterVariant.availableOnDemand ? 'success' : 'warning'}}">
+                            {{ product.masterVariant.availableOnDemand ? 'sylius.yes'|trans : 'sylius.no'|trans }}
+                        </span>
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
                     </td>
                 </tr>
                 <tr>
@@ -118,7 +160,11 @@
                 </tr>
                 <tr>
                     <td>{{ 'sylius.product.price'|trans }}</td>
+<<<<<<< HEAD
                     <td>{{ product.masterVariant.price|sylius_price }}</td>
+=======
+                    <td>{{ product.masterVariant.price|sylius_money }}</td>
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
                 </tr>
             </tbody>
         </table>
@@ -154,7 +200,11 @@
                 <tr>
                     <td colspan="2">
                         <span class="label label-info">
+<<<<<<< HEAD
                             <i class="glyphicon glyphicon-list-alt icon-white"></i> {{ 'sylius.product.no_properties'|trans }}
+=======
+                            <i class="icon-list-alt icon-white"></i> {{ 'sylius.product.no_properties'|trans }}
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
                         </span>
                     </td>
                 </tr>
@@ -166,11 +216,19 @@
 
 {% if product.hasOptions %}
 <hr>
+<<<<<<< HEAD
 <div class="well well-sm">
     {{ buttons.create(path('sylius_backend_variant_create', {'productId': product.id}), 'sylius.variant.create'|trans) }}
     {{ buttons.manage(path('sylius_backend_variant_generate', {'productId': product.id}), 'sylius.product.generate_variants'|trans) }}
     <div class="pull-right">
         <strong>{{ 'sylius.product.variant_selection_method'|trans }}</strong>: {{ product.variantSelectionMethodLabel }}
+=======
+<div class="well well-small">
+    {{ buttons.create(path('sylius_backend_variant_create', {'productId': product.id}), 'sylius.variant.create'|trans) }}
+    {{ buttons.manage(path('sylius_backend_variant_generate', {'productId': product.id}), 'sylius.product.generate_variants'|trans) }}
+    <div class="pull-right">
+    <strong>{{ 'sylius.product.variant_selection_method'|trans }}</strong>: {{ product.variantSelectionMethodLabel }}
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     </div>
 </div>
 

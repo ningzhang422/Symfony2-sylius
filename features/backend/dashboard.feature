@@ -26,6 +26,7 @@ Feature: Store dashboard
             | Sticker | 4        |
 
     Scenario: Viewing the dashboard at website root
+<<<<<<< HEAD
        Given I am on the dashboard page
         Then I should see "Administration dashboard"
 
@@ -36,3 +37,15 @@ Feature: Store dashboard
     Scenario: Viewing recent users
         Given I am on the dashboard page
          Then I should see 3 users in the list
+=======
+        Given I am on the dashboard page
+         Then I should see "Administration dashboard"
+
+    Scenario: Viewing recent orders
+         Given I am on the dashboard page
+          Then I should see 2 orders in the list
+
+    Scenario: Viewing recent users
+         Given I am on the dashboard page
+          Then I should see 3 users in the list
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d

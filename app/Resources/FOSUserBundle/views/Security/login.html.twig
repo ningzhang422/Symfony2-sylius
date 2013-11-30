@@ -5,32 +5,55 @@
     <h1>Login <small>Sylius store</small></h1>
 </div>
 
+<<<<<<< HEAD
 {% if error %}
     <div class="alert alert-danger">
         {{ error }}
     </div>
 {% endif %}
 
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 <blockquote>
   <p>Please login using "<strong>sylius@example.com</strong>" email and "<strong>sylius</strong>" as password.</p>
   <small>Mr. Sylius Demo Guide</small>
 </blockquote>
 
+<<<<<<< HEAD
 <form action="{{ path('fos_user_security_check') }}" method="post" class="form-horizontal">
 <fieldset>
     <div class="form-group">
         <label for="username" class="col-sm-3 control-label">Email</label>
         <div class="col-sm-9">
+=======
+{% if error %}
+<div class="alert alert-error">
+    {{ error }}
+</div>
+{% endif %}
+
+<form action="{{ path('fos_user_security_check') }}" method="post">
+<fieldset>
+    <div class="form-group">
+        <label for="username" class="control-label">Email</label>
+        <div class="controls">
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
             <input type="text" id="username" name="_username" value="{{ last_username }}" class="form-control" />
         </div>
     </div>
     <div class="form-group">
+<<<<<<< HEAD
         <label for="password" class="col-sm-3 control-label">Password</label>
         <div class="col-sm-9">
+=======
+        <label for="password" class="control-label">Password</label>
+        <div class="controls">
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
             <input type="password" id="password" name="_password" class="form-control" />
         </div>
     </div>
     <div class="form-group">
+<<<<<<< HEAD
         <div class="col-sm-offset-3 col-sm-9">
             <div class="checkbox">
                 <label for="remember_me">
@@ -46,6 +69,14 @@
     </div>
     <button type="submit" class="btn btn-primary btn-lg" name="login"><i class="icon-lock"></i> Login</button>
 </div>
+=======
+        <div class="controls">
+            Remember me? &nbsp; <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
+        </div>
+    </div>
+</fieldset>
+    <button type="submit" class="btn btn-primary btn-lg pull-left" name="login"><i class="icon-lock"></i> Login</button>
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 </form>
 
 {% endblock %}

@@ -5,7 +5,11 @@
 {% block topbar %}
 <ol class="breadcrumb">
     <li>{{ 'sylius.breadcrumb.configuration'|trans }}</li>
+<<<<<<< HEAD
     <li><a href="{{ path('sylius_backend_tax_category_index') }}">{{ 'sylius.breadcrumb.tax_category.index'|trans }}</a></li>
+=======
+    <li><a href="{{ path('sylius_backend_shipping_method_index') }}">{{ 'sylius.breadcrumb.shipping_method.index'|trans }}</a></li>
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     <li>{{ tax_category.name }}</li>
     <li>{{ 'sylius.breadcrumb.edit'|trans }}</li>
 </ol>
@@ -13,7 +17,11 @@
 
 {% block content %}
 <div class="page-header">
+<<<<<<< HEAD
     <h1><i class="glyphicon glyphicon-pencil"></i> {{ 'sylius.tax_category.update_header'|trans|raw }}</h1>
+=======
+    <h1><i class="icon-pencil"></i> {{ 'sylius.tax_category.update_header'|trans|raw }}</h1>
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 </div>
 
 {{ form_errors(form) }}

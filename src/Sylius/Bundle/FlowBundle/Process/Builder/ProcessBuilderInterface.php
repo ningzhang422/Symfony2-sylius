@@ -47,7 +47,11 @@ interface ProcessBuilderInterface
     public function remove($name);
 
     /**
+<<<<<<< HEAD
      * Check whether or not process has given step.
+=======
+     * Check wether or not process has given step.
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
      *
      * @param string $name
      *

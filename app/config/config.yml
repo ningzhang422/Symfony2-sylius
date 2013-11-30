@@ -64,6 +64,7 @@ fos_user:
     db_driver: orm
     firewall_name: main
     user_class: Acme\Bundle\ShopBundle\Entity\User #Sylius\Bundle\CoreBundle\Model\User
+<<<<<<< HEAD
     group:
         group_class: Sylius\Bundle\CoreBundle\Model\Group
     profile:
@@ -89,6 +90,14 @@ hwi_oauth:
             client_id:     %sylius.oauth.google.clientid%
             client_secret: %sylius.oauth.google.clientsecret%
             scope:         "https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile"
+=======
+    profile:
+        form:
+            type: acme_user_profile # sylius_user_profile
+    registration:
+        form:
+            type: acme_user_registration # sylius_user_registration
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 
 swiftmailer:
     transport: %sylius.mailer.transport%
@@ -149,4 +158,8 @@ knp_snappy:
     image:
         enabled:    true
         binary:     /usr/bin/wkhtmltoimage
+<<<<<<< HEAD
         options:    []
+=======
+        options:    []
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d

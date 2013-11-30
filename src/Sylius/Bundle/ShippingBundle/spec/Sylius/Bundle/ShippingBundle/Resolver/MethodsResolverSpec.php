@@ -43,7 +43,11 @@ class MethodsResolverSpec extends ObjectBehavior
      * @param Sylius\Bundle\ShippingBundle\Model\ShippingMethodInterface  $method2
      * @param Sylius\Bundle\ShippingBundle\Model\ShippingMethodInterface  $method3
      */
+<<<<<<< HEAD
     function it_returns_all_methods_eligible_for_given_subject(
+=======
+    function it_returns_all_methods_eliglible_for_given_subject(
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
         $methodRepository, $eligibilityChecker, $subject, $method1, $method2, $method3
     )
     {

@@ -21,8 +21,17 @@ class UserController extends ResourceController
      */
     public function filterFormAction(Request $request)
     {
+<<<<<<< HEAD
         return $this->renderResponse('SyliusWebBundle:Backend/User:filterForm.html.twig', array(
             'form' => $this->get('form.factory')->createNamed('criteria', 'sylius_user_filter', $request->query->get('criteria'))->createView()
         ));
+=======
+        // $form = $this->getFormFactory()->createNamed('criteria', 'sylius_user_filter', $request->query->get('criteria'));
+        
+        return $this->renderResponse('SyliusWebBundle:Backend/User:filterForm.html.twig', 
+                                       array(
+                                            'form' => $this->get('form.factory')->createNamed('criteria', 'sylius_user_filter', $request->query->get('criteria'))->createView()
+                                    ));
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 }

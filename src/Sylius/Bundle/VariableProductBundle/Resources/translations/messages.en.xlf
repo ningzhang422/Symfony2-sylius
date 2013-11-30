@@ -19,10 +19,13 @@
                 <source>sylius.form.option.name</source>
                 <target>Internal name</target>
             </trans-unit>
+<<<<<<< HEAD
             <trans-unit id="872f019b57a6ebda68f4907e4e9a34c4" resname="sylius.form.option_value.add_value">
                 <source>sylius.form.option_value.add_value</source>
                 <target>Add value</target>
             </trans-unit>
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
             <trans-unit id="5">
                 <source>sylius.form.option.presentation</source>
                 <target>Presentation</target>

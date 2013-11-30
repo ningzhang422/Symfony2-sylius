@@ -16,10 +16,22 @@
     <div class="actions-menu">
         {{ buttons.create(path('sylius_backend_user_create'), 'sylius.user.create'|trans) }}
     </div>
+<<<<<<< HEAD
     <h1><i class="glyphicon glyphicon-user"></i> {{ 'sylius.user.index_header'|trans|raw }}</h1>
 </div>
 
 {% render(url('sylius_backend_user_filter_form', {'criteria': app.request.query.get('criteria')})) %}
+=======
+    <h1><i class="icon-user"></i> {{ 'sylius.user.index_header'|trans|raw }}</h1>
+</div>
+
+{% set my_array = {} %}
+
+
+{% set my_array = my_array|merge( {'query' : app.request.query.get('criteria').query}) %}
+
+{% render(url('sylius_backend_user_filter_form', {'criteria': my_array})) %}
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 
 {% set activeTab = (app.request.query.get('criteria') is not empty and app.request.query.get('criteria').enabled|default('1') == '0') ? 'disabled' : 'all' %}
 
@@ -27,7 +39,11 @@
     <div class="col-md-12">
         <ul class="nav nav-tabs grid-tabs">
             <li class="{{ activeTab == 'all' ? 'active' : '' }}"><a href="{{ path('sylius_backend_user_index') }}">{{ 'sylius.user.filter.all'|trans }}</a></li>
+<<<<<<< HEAD
             <li class="{{ activeTab == 'disabled' ? 'active' : '' }}"><a href="{{ path('sylius_backend_user_index', {'criteria': {'enabled': false}}) }}"><i class="glyphicon glyphicon-info-sign"></i> {{ 'sylius.user.filter.unconfirmed'|trans }}</a></li>
+=======
+            <li class="{{ activeTab == 'disabled' ? 'active' : '' }}"><a href="{{ path('sylius_backend_user_index', {'criteria': {'enabled': false}}) }}"><i class="icon-info-sign"></i> {{ 'sylius.user.filter.unconfirmed'|trans }}</a></li>
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
         </ul>
     </div>
 </div>

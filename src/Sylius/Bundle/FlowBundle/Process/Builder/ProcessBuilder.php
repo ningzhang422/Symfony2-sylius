@@ -154,7 +154,11 @@ class ProcessBuilder implements ProcessBuilderInterface
         $this->assertHasProcess();
 
         if ($validator instanceof \Closure) {
+<<<<<<< HEAD
             $validator = new ProcessValidator($validator, 'An error occurred.');
+=======
+            $validator = new ProcessValidator($validator, 'An error occured.');
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
         }
 
         if (!$validator instanceof ProcessValidatorInterface) {

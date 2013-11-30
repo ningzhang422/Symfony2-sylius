@@ -102,6 +102,7 @@ Feature: Countries and provinces
     Scenario: Deleting country via the list button
         Given I am on the country index page
          When I press "delete" near "China"
+<<<<<<< HEAD
          Then I should see "Do you want to delete this item"
          When I press "delete"
          Then I should still be on the country index page
@@ -113,6 +114,8 @@ Feature: Countries and provinces
         Given I am on the country index page
          When I press "delete" near "China"
           And I click "delete" from the confirmation modal
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
          Then I should still be on the country index page
           And I should see "Country has been successfully deleted."
           But I should not see country with name "China" in the list
@@ -120,6 +123,7 @@ Feature: Countries and provinces
     Scenario: Deleting country
         Given I am on the page of country "China"
          When I press "delete"
+<<<<<<< HEAD
          Then I should see "Do you want to delete this item"
          When I press "delete"
          Then I should be on the country index page
@@ -130,12 +134,15 @@ Feature: Countries and provinces
         Given I am on the page of country "China"
          When I press "delete"
           And I click "delete" from the confirmation modal
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
          Then I should be on the country index page
           And I should see "Country has been successfully deleted."
 
     Scenario: Deleted country disappears from the list
         Given I am on the page of country "France"
          When I press "delete"
+<<<<<<< HEAD
          Then I should see "Do you want to delete this item"
          When I press "delete"
          Then I should be on the country index page
@@ -146,6 +153,8 @@ Feature: Countries and provinces
         Given I am on the page of country "France"
          When I press "delete"
           And I click "delete" from the confirmation modal
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
          Then I should be on the country index page
           And I should not see country with name "France" in that list
 
@@ -163,6 +172,7 @@ Feature: Countries and provinces
     Scenario: Deleting province
         Given I am on the page of country "France"
          When I press "delete" near "Toulouse"
+<<<<<<< HEAD
          Then I should see "Do you want to delete this item"
          When I press "delete"
          Then I should still be on the page of country "France"
@@ -173,5 +183,7 @@ Feature: Countries and provinces
         Given I am on the page of country "France"
          When I press "delete" near "Toulouse"
           And I click "delete" from the confirmation modal
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
          Then I should still be on the page of country "France"
           And "Toulouse" should not appear on the page

@@ -23,9 +23,13 @@
 
     <services>
         <service id="sylius_resource.twig" class="%sylius_resource.twig.class%">
+<<<<<<< HEAD
             <argument type="service" id="service_container" />
             <argument>SyliusResourceBundle:Twig:paginate.html.twig</argument>
             <argument>SyliusResourceBundle:Twig:sorting.html.twig</argument>
+=======
+            <argument type="service" id="router" />
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
             <tag name="twig.extension" />
             <tag name="kernel.event_listener" event="kernel.request" method="fetchRequest" />
         </service>

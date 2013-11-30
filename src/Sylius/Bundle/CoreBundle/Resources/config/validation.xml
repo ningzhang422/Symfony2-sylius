@@ -93,6 +93,18 @@
                 </option>
             </constraint>
         </property>
+<<<<<<< HEAD
+=======
+        <property name="phone">
+            <constraint name="NotBlank">
+                <option name="message">sylius.user.phone.not_blank</option>
+                <option name="groups">
+                    <value>Profile</value>
+                    <value>Registration</value>
+                </option>
+            </constraint>
+        </property>
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
         <property name="lastName">
             <constraint name="NotBlank">
                 <option name="message">sylius.user.last_name.not_blank</option>
@@ -112,6 +124,7 @@
                 </option>
             </constraint>
         </property>
+<<<<<<< HEAD
         <property name="plainPassword">
             <constraint name="NotBlank">
                 <option name="groups">
@@ -139,6 +152,8 @@
                 </option>
             </constraint>
         </property>
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     </class>
 
 </constraint-mapping>

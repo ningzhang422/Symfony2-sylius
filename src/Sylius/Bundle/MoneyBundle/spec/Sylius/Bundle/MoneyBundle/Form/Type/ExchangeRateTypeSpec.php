@@ -40,7 +40,11 @@ class ExchangeRateTypeSpec extends ObjectBehavior
     function it_should_build_form_with_proper_fields($builder)
     {
         $builder
+<<<<<<< HEAD
             ->add('currency', 'currency', Argument::any())
+=======
+            ->add('currency', 'text', Argument::any())
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
             ->shouldBeCalled()
             ->willReturn($builder)
         ;

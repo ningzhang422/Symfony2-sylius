@@ -49,6 +49,11 @@ class AppKernel extends Kernel
             new Sylius\Bundle\CoreBundle\SyliusCoreBundle(),
             new Sylius\Bundle\WebBundle\SyliusWebBundle(),
             new Sylius\Bundle\ResourceBundle\SyliusResourceBundle(),
+<<<<<<< HEAD
+=======
+            
+            // new Sylius\Bundle\ShopBundle\SyliusShopBundle(),
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 
             // Core bundles.
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
@@ -66,7 +71,10 @@ class AppKernel extends Kernel
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
             new Knp\Bundle\GaufretteBundle\KnpGaufretteBundle(),
             new JMS\SerializerBundle\JMSSerializerBundle($this),
+<<<<<<< HEAD
             new HWI\Bundle\OAuthBundle\HWIOAuthBundle(),
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
             new FOS\RestBundle\FOSRestBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new WhiteOctober\PagerfantaBundle\WhiteOctoberPagerfantaBundle(),
@@ -80,6 +88,10 @@ class AppKernel extends Kernel
 
         if (in_array($this->getEnvironment(), array('dev'))) {
             $bundles[] = new \Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
+<<<<<<< HEAD
+=======
+            $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
         }
 
         return $bundles;

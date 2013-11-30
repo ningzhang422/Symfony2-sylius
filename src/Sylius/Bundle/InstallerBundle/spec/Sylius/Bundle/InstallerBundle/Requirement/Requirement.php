@@ -25,27 +25,47 @@ class Requirement extends ObjectBehavior
         $this->getLabel()->shouldReturn('PHP version');
     }
 
+<<<<<<< HEAD
     function it_gets_fulfilled()
+=======
+    function it_get_fulsfilled()
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     {
         $this->isFulfilled()->shouldReturn(true);
     }
 
+<<<<<<< HEAD
     function it_gets_expected()
+=======
+    function it_get_exspected()
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     {
         $this->getExpected()->shouldReturn('5.4');
     }
 
+<<<<<<< HEAD
     function it_gets_actual()
+=======
+    function it_get_sactual()
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     {
         $this->getActual()->shouldReturn('5.5');
     }
 
+<<<<<<< HEAD
     function it_gets_required()
+=======
+    function it_get_resquired()
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     {
         $this->isRequired()->shouldReturn(true);
     }
 
+<<<<<<< HEAD
     function it_gets_help()
+=======
+    function it_gest_help()
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     {
         $this->getHelp()->shouldReturn('Please upgrade.');
     }

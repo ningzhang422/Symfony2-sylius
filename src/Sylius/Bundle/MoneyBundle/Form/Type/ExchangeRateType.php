@@ -12,8 +12,13 @@
 namespace Sylius\Bundle\MoneyBundle\Form\Type;
 
 use Symfony\Component\Form\AbstractType;
+<<<<<<< HEAD
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
+=======
+use Symfony\Component\OptionsResolver\OptionsResolverInterface;
+use Symfony\Component\Form\FormBuilderInterface;
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 
 /**
  * Sylius exchange rate type.
@@ -32,7 +37,11 @@ class ExchangeRateType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
+<<<<<<< HEAD
             ->add('currency', 'currency', array(
+=======
+            ->add('currency', 'text', array( // TODO: use currency type when we upgrade to 2.3
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
                 'label' => 'sylius.form.exchange_rate.currency'
             ))
             ->add('rate', 'text', array(

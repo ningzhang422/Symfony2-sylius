@@ -38,6 +38,7 @@ class PercentageDiscountActionSpec extends ObjectBehavior
     }
 
     /**
+<<<<<<< HEAD
      * @param Sylius\Bundle\CoreBundle\Model\OrderInterface           $order
      * @param Sylius\Bundle\OrderBundle\Model\AdjustmentInterface     $adjustment
      * @param Sylius\Bundle\PromotionsBundle\Model\PromotionInterface $promotion
@@ -53,6 +54,20 @@ class PercentageDiscountActionSpec extends ObjectBehavior
         $adjustment->setDescription('promotion description')->shouldBeCalled();
         $order->addAdjustment($adjustment)->shouldBeCalled();
 
+=======
+     * @param Sylius\Bundle\CoreBundle\Model\OrderInterface       $order
+     * @param Sylius\Bundle\OrderBundle\Model\AdjustmentInterface $adjustment
+     */
+    function it_applies_percentage_discount_as_promotion_adjustment($adjustmentRepository, $order, $adjustment)
+    {
+        $order->getPromotionSubjectItemTotal()->willReturn(10000);
+        $adjustmentRepository->createNew()->willReturn($adjustment);
+
+        $adjustment->setAmount(-2500)->shouldBeCalled();
+        $adjustment->setLabel(OrderInterface::PROMOTION_ADJUSTMENT)->shouldBeCalled();
+
+        $order->addAdjustment($adjustment)->shouldBeCalled();
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
         $configuration = array('percentage' => 0.25);
 
         $this->execute($order, $configuration);

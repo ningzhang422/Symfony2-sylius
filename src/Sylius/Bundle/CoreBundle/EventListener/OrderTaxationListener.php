@@ -50,7 +50,11 @@ class OrderTaxationListener
 
         if (!$order instanceof OrderInterface) {
             throw new \InvalidArgumentException(
+<<<<<<< HEAD
                 'Order taxation listener requires event subject to be instance of "Sylius\Bundle\CoreBundle\Model\OrderInterface"'
+=======
+                'Order taxation listener requires event subjct to be instance of "Sylius\Bundle\CoreBundle\Model\OrderInterface"'
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
             );
         }
 

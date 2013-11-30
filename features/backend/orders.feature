@@ -67,6 +67,7 @@ Feature: Orders management
     Scenario: Deleting the order
         Given I am viewing order with number "000000001"
          When I press "delete"
+<<<<<<< HEAD
          Then I should see "Do you want to delete this item"
          When I press "delete"
          Then I should be on the order index page
@@ -77,12 +78,15 @@ Feature: Orders management
         Given I am viewing order with number "000000001"
          When I press "delete"
           And I click "delete" from the confirmation modal
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
          Then I should be on the order index page
           And I should see "Order has been successfully deleted."
 
     Scenario: Deleting the order via list button
         Given I am on the order index page
          When I press "delete" near "#000000001"
+<<<<<<< HEAD
          Then I should see "Do you want to delete this item"
          When I press "delete"
          Then I should be on the order index page
@@ -93,12 +97,15 @@ Feature: Orders management
         Given I am on the order index page
          When I press "delete" near "#000000001"
           And I click "delete" from the confirmation modal
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
          Then I should be on the order index page
           And I should see "Order has been successfully deleted."
 
     Scenario: Deleted order disappears from the list
         Given I am viewing order with number "000000002"
          When I press "delete"
+<<<<<<< HEAD
          Then I should see "Do you want to delete this item"
          When I press "delete"
          Then I should be on the order index page
@@ -109,6 +116,8 @@ Feature: Orders management
         Given I am viewing order with number "000000002"
          When I press "delete"
           And I click "delete" from the confirmation modal
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
          Then I should be on the order index page
           And I should not see order with number "#000000002" in the list
 

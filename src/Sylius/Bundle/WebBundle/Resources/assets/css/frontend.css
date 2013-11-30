@@ -8,7 +8,11 @@ h1.logo {
 }
 
 h1.logo a {
+<<<<<<< HEAD
     color: #333;
+=======
+    color: #333333;
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 }
 
 h1.logo a img {
@@ -25,7 +29,11 @@ h1.logo a:hover {
 }
 
 .jumbotron {
+<<<<<<< HEAD
     margin: 20px 0 40px;
+=======
+    margin: 20px 0px 40px 0px;
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     text-align: center;
 }
 
@@ -93,8 +101,24 @@ div.product-box a img {
     margin-bottom: 5px;
 }
 
+<<<<<<< HEAD
 div.product-box h3 {
    color: #333;
+=======
+div.product-box .btn {
+    float: right;
+    height: 25px;
+    padding: 1px 6px 7px 6px;
+}
+
+div.product-box span.label {
+    font-size: 15px;
+    padding: 6px;
+}
+
+div.product-box h3 {
+   color: #333333;
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 }
 
 div.footer p {
@@ -103,7 +127,11 @@ div.footer p {
 }
 
 div.footer ul li a {
+<<<<<<< HEAD
     color: #999;
+=======
+    color: #999999;
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 }
 
 #sidebar ul li img.menu-thumbnail {
@@ -122,6 +150,10 @@ div.currency-menu {
     margin-right: 50px;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 .checkout-new-customer form, .checkout-existing-customer form {
     margin-top: 20px;
 }
@@ -140,6 +172,7 @@ div.currency-menu {
 
 .checkout-new-customer .form-group > .col-lg-10, .address-container .form-group > .col-lg-10 {
     width: 75%;
+<<<<<<< HEAD
 }
 
 a.oauth-login {
@@ -149,3 +182,6 @@ a.oauth-login {
 a.oauth-login:hover {
     text-decoration: none;
 }
+=======
+}
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d

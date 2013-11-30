@@ -39,11 +39,14 @@ class ProductType extends BaseProductType
                 'empty_value' => '---',
                 'label'       => 'sylius.form.product.tax_category'
             ))
+<<<<<<< HEAD
             ->add('shippingCategory', 'sylius_shipping_category_choice', array(
                 'required'    => false,
                 'empty_value' => '---',
                 'label'       => 'sylius.form.product.shipping_category'
             ))
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
             ->add('taxons', 'sylius_taxon_selection')
             ->add('variantSelectionMethod', 'choice', array(
                 'label'   => 'sylius.form.product.variant_selection_method',

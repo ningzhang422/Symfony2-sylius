@@ -64,6 +64,7 @@ Feature: Product variants
           And I should see "Variants have been successfully generated."
           And I should see 3 variants in the list
 
+<<<<<<< HEAD
     Scenario: Generating only missing variants of product
         Given I am creating variant of "Black T-Shirt"
          When I fill in "Price" with "19.99"
@@ -75,12 +76,16 @@ Feature: Product variants
           And I should see 3 variants in the list
 
     Scenario: Generating all possible variants of product with multiple options
+=======
+    Scenario: Generating variants of product with multiple options
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
         Given I am viewing product "Sylius T-Shirt"
          When I follow "Generate variants"
          Then I should still be on the page of product with name "Sylius T-Shirt"
           And I should see "Variants have been successfully generated."
           And I should see 9 variants in the list
 
+<<<<<<< HEAD
     Scenario: Generating only missing variants of product with multiple options
         Given I am creating variant of "Sylius T-Shirt"
          When I fill in "Price" with "19.99"
@@ -92,6 +97,8 @@ Feature: Product variants
           And I should see "Variants have been successfully generated."
           And I should see 9 variants in the list
 
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     Scenario: Creating a product variant by selecting option
         Given I am creating variant of "Black T-Shirt"
          When I fill in "Price" with "19.99"
@@ -122,6 +129,7 @@ Feature: Product variants
         Given product "Black T-Shirt" is available in all variations
           And I am on the page of product "Black T-Shirt"
          When I click "delete" near "T-Shirt size: L"
+<<<<<<< HEAD
          Then I should see "Do you want to delete this item"
          When I press "delete"
          Then I should be on the page of product "Black T-Shirt"
@@ -133,5 +141,7 @@ Feature: Product variants
           And I am on the page of product "Black T-Shirt"
          When I click "delete" near "T-Shirt size: L"
           And I click "delete" from the confirmation modal
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
          Then I should be on the page of product "Black T-Shirt"
           And I should see "Variant has been successfully deleted."

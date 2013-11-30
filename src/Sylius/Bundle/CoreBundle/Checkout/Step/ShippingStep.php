@@ -20,7 +20,11 @@ use Symfony\Component\Form\FormInterface;
  * The shipping step of checkout.
  *
  * Based on the user address, we present the available shipping methods,
+<<<<<<< HEAD
  * and ask him to select his preferred one.
+=======
+ * and ask him to select his preffered one.
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
  *
  * @author Paweł Jędrzejewski <pjedrzejewski@diweb.pl>
  */
@@ -65,7 +69,11 @@ class ShippingStep extends CheckoutStep
         return $this->renderStep($context, $order, $form);
     }
 
+<<<<<<< HEAD
     protected function renderStep(ProcessContextInterface $context, OrderInterface $order, FormInterface $form)
+=======
+    private function renderStep(ProcessContextInterface $context, OrderInterface $order, FormInterface $form)
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     {
         return $this->render('SyliusWebBundle:Frontend/Checkout/Step:shipping.html.twig', array(
             'order'   => $order,
@@ -74,7 +82,11 @@ class ShippingStep extends CheckoutStep
         ));
     }
 
+<<<<<<< HEAD
     protected function createCheckoutShippingForm(OrderInterface $order)
+=======
+    private function createCheckoutShippingForm(OrderInterface $order)
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     {
         $zone = $this->getZoneMatcher()->match($order->getShippingAddress());
 

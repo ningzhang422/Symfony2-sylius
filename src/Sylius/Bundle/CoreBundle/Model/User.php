@@ -22,9 +22,12 @@ use Sylius\Bundle\AddressingBundle\Model\AddressInterface;
  */
 class User extends BaseUser implements UserInterface
 {
+<<<<<<< HEAD
     protected $amazonId;
     protected $facebookId;
     protected $googleId;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     protected $firstName;
     protected $lastName;
     protected $createdAt;
@@ -34,6 +37,10 @@ class User extends BaseUser implements UserInterface
     protected $billingAddress;
     protected $shippingAddress;
     protected $addresses;
+<<<<<<< HEAD
+=======
+    protected $phone;
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 
     public function __construct()
     {
@@ -52,6 +59,7 @@ class User extends BaseUser implements UserInterface
     public function setCurrency($currency)
     {
         $this->currency = $currency;
+<<<<<<< HEAD
 
         return $this;
     }
@@ -126,6 +134,8 @@ class User extends BaseUser implements UserInterface
     public function getGoogleId()
     {
         return $this->googleId;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -215,8 +225,11 @@ class User extends BaseUser implements UserInterface
     public function removeAddress(AddressInterface $address)
     {
         $this->addresses->removeElement($address);
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -245,6 +258,7 @@ class User extends BaseUser implements UserInterface
         return $this->firstName.' '.$this->lastName;
     }
 
+<<<<<<< HEAD
     /**
      * {@inheritdoc}
      */
@@ -258,11 +272,19 @@ class User extends BaseUser implements UserInterface
     /**
      * {@inheritdoc}
      */
+=======
+    public function setFirstName($firstName)
+    {
+        $this->firstName = $firstName;
+    }
+
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function getFirstName()
     {
         return $this->firstName;
     }
 
+<<<<<<< HEAD
     /**
      * {@inheritdoc}
      */
@@ -276,6 +298,13 @@ class User extends BaseUser implements UserInterface
     /**
      * {@inheritdoc}
      */
+=======
+    public function setLastName($lastName)
+    {
+        $this->lastName = $lastName;
+    }
+
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function getLastName()
     {
         return $this->lastName;
@@ -295,8 +324,11 @@ class User extends BaseUser implements UserInterface
     public function setCreatedAt(\DateTime $createdAt)
     {
         $this->createdAt = $createdAt;
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -313,8 +345,11 @@ class User extends BaseUser implements UserInterface
     public function setUpdatedAt(\DateTime $updatedAt)
     {
         $this->updatedAt = $updatedAt;
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -338,4 +373,21 @@ class User extends BaseUser implements UserInterface
 
         return $this;
     }
+<<<<<<< HEAD
+=======
+    /**
+     * {@inheritdoc}
+     */
+    public function setPhone($phone)
+    {
+        $this->phone = $phone;
+    }
+    /**
+     * {@inheritdoc}
+     */
+    public function getPhone()
+    {
+        return $this->phone;
+    }
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 }

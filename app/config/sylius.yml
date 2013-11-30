@@ -1,7 +1,10 @@
 sylius_core:
     driver: doctrine/orm
+<<<<<<< HEAD
     order_confirmation:
         enabled: true
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 
 sylius_installer:
     classes:
@@ -101,7 +104,10 @@ sylius_resource:
                 model: Acme\Bundle\ShopBundle\Entity\User #Sylius\Bundle\CoreBundle\Model\User
                 controller: Sylius\Bundle\CoreBundle\Controller\UserController
                 repository: Sylius\Bundle\CoreBundle\Repository\UserRepository
+<<<<<<< HEAD
         sylius.group:
             driver: doctrine/orm
             classes:
                 model: Sylius\Bundle\CoreBundle\Model\Group
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d

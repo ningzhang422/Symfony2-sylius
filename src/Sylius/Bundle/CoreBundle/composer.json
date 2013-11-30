@@ -23,10 +23,15 @@
         "php":                            ">=5.3.3",
 
         "symfony/framework-bundle":       "~2.3",
+<<<<<<< HEAD
         "sylius/product-bundle":          "1.0.*@dev",
         "sylius/variable-product-bundle": "1.0.*@dev",
         "sylius/cart-bundle":             "1.0.*@dev",
         "sylius/order-bundle":            "1.0.*@dev",
+=======
+        "sylius/variable-product-bundle": "1.0.*@dev",
+        "sylius/cart-bundle":             "1.0.*@dev",
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
         "sylius/money-bundle":            "1.0.*@dev",
         "sylius/taxation-bundle":         "1.0.*@dev",
         "sylius/shipping-bundle":         "1.0.*@dev",
@@ -39,12 +44,20 @@
         "sylius/payments-bundle":         "1.0.*@dev",
         "sylius/flow-bundle":             "1.0.*@dev",
         "sylius/resource-bundle":         "1.0.*@dev",
+<<<<<<< HEAD
+=======
+        "sylius/omnipay-bundle":          "1.0.*@dev",
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
         "athari/yalinqo":                 "*@dev",
         "friendsofsymfony/user-bundle":   "2.0.*@dev",
         "jms/serializer-bundle":          "0.12.*",
         "knplabs/knp-gaufrette-bundle":   "0.2.*@dev",
         "mathiasverraes/money":           "*@dev",
+<<<<<<< HEAD
         "hwi/oauth-bundle":               "0.3.*"
+=======
+        "omnipay/omnipay":                "1.0.*@dev"
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     },
     "require-dev": {
         "fzaninotto/faker": "1.2.*",

@@ -96,7 +96,11 @@ class InventoryHandler implements InventoryHandlerInterface
      */
     protected function addInventoryUnits(OrderInterface $order, VariantInterface $variant, $quantity)
     {
+<<<<<<< HEAD
         $units = $this->inventoryUnitFactory->create($variant, $quantity, InventoryUnitInterface::STATE_CHECKOUT);
+=======
+        $units = $this->inventoryUnitFactory->create($variant, $quantity, InventoryUnitInterface::STATE_IN_CART);
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 
         foreach ($units as $unit) {
             $order->addInventoryUnit($unit);

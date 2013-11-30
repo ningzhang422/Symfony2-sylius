@@ -97,6 +97,7 @@ Feature: Users management
     Scenario: Deleting user
         Given I am on the page of user with username "rick@foo.com"
          When I press "delete"
+<<<<<<< HEAD
          Then I should see "Do you want to delete this item"
          When I press "delete"
          Then I should be on the user index page
@@ -107,12 +108,15 @@ Feature: Users management
         Given I am on the page of user with username "rick@foo.com"
          When I press "delete"
           And I click "delete" from the confirmation modal
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
          Then I should be on the user index page
           And I should see "User has been successfully deleted."
 
     Scenario: Deleted user disappears from the list
         Given I am on the page of user with username "rick@foo.com"
          When I press "delete"
+<<<<<<< HEAD
          Then I should see "Do you want to delete this item"
          When I press "delete"
          Then I should be on the user index page
@@ -123,12 +127,15 @@ Feature: Users management
         Given I am on the page of user with username "rick@foo.com"
          When I press "delete"
           And I click "delete" from the confirmation modal
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
          Then I should be on the user index page
           And I should not see user with username "rick@foo.com" in that list
 
     Scenario: Deleting user from the list
         Given I am on the user index page
          When I click "delete" near "rick@foo.com"
+<<<<<<< HEAD
          Then I should see "Do you want to delete this item"
          When I press "delete"
          Then I should still be on the user index page
@@ -140,6 +147,8 @@ Feature: Users management
         Given I am on the user index page
          When I click "delete" near "rick@foo.com"
           And I click "delete" from the confirmation modal
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
          Then I should still be on the user index page
           And "User has been successfully deleted." should appear on the page
           But I should not see user with username "rick@foo.com" in that list

@@ -21,6 +21,7 @@ interface RuleInterface
     const TYPE_ITEM_TOTAL = 'item_total';
     const TYPE_ITEM_COUNT = 'item_count';
 
+<<<<<<< HEAD
     /**
      * Get type
      *
@@ -61,5 +62,12 @@ interface RuleInterface
      *
      * @param PromotionInterface $promotion
      */
+=======
+    public function getType();
+    public function setType($type);
+    public function getConfiguration();
+    public function setConfiguration(array $configuration);
+    public function getPromotion();
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     public function setPromotion(PromotionInterface $promotion = null);
 }

@@ -13,7 +13,10 @@ namespace Sylius\Bundle\CoreBundle\OrderProcessing;
 
 use Sylius\Bundle\CoreBundle\Model\OrderInterface;
 use Sylius\Bundle\ResourceBundle\Model\RepositoryInterface;
+<<<<<<< HEAD
 use Sylius\Bundle\ShippingBundle\Model\ShipmentInterface;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 
 /**
  * Shipment factory.
@@ -57,6 +60,7 @@ class ShipmentFactory implements ShipmentFactoryInterface
             }
         }
     }
+<<<<<<< HEAD
 
     /**
      * {@inheritdoc}
@@ -69,4 +73,6 @@ class ShipmentFactory implements ShipmentFactoryInterface
             }
         }
     }
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 }

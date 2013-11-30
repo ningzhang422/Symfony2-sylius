@@ -39,12 +39,19 @@
             </cascade>
         </one-to-many>
 
+<<<<<<< HEAD
         <many-to-one field="user" target-entity="Acme\Bundle\ShopBundle\Entity\User" inversed-by="orders">
+=======
+        <many-to-one field="user" target-entity="Sylius\Bundle\CoreBundle\Model\UserInterface" inversed-by="orders">
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
             <join-column name="user_id" referenced-column-name="id" nullable="true" />
         </many-to-one>
 
         <field name="currency" length="3" />
+<<<<<<< HEAD
         <field type="string" name="shippingState" column="shipping_state" />
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     </mapped-superclass>
 
 </doctrine-mapping>

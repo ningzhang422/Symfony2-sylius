@@ -146,7 +146,11 @@ interface OrderInterface extends CartInterface, PromotionSubjectInterface
     /**
      * Get all inventory units.
      *
+<<<<<<< HEAD
      * @return InventoryUnitInterface[]
+=======
+     * @return Collection
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
      */
     public function getInventoryUnits();
 
@@ -155,7 +159,11 @@ interface OrderInterface extends CartInterface, PromotionSubjectInterface
      *
      * @param VariantInterface $variant
      *
+<<<<<<< HEAD
      * @return InventoryUnitInterface[]
+=======
+     * @return Collection
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
      */
     public function getInventoryUnitsByVariant(VariantInterface $variant);
 
@@ -185,7 +193,11 @@ interface OrderInterface extends CartInterface, PromotionSubjectInterface
     /**
      * Get all shipments associated with this order.
      *
+<<<<<<< HEAD
      * @return ShipmentInterface[]
+=======
+     * @return Collection
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
      */
     public function getShipments();
 
@@ -241,6 +253,7 @@ interface OrderInterface extends CartInterface, PromotionSubjectInterface
      * @param CouponInterface $coupon
      */
     public function setPromotionCoupon(CouponInterface $coupon = null);
+<<<<<<< HEAD
 
     /**
      * Get the shipping state.
@@ -262,4 +275,6 @@ interface OrderInterface extends CartInterface, PromotionSubjectInterface
      * @return Boolean
      */
     public function isBackorder();
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 }

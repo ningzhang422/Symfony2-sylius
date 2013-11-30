@@ -14,7 +14,10 @@ namespace Sylius\Bundle\PromotionsBundle\Checker;
 use Sylius\Bundle\PromotionsBundle\Checker\Registry\RuleCheckerRegistryInterface;
 use Sylius\Bundle\PromotionsBundle\Model\PromotionInterface;
 use Sylius\Bundle\PromotionsBundle\Model\PromotionSubjectInterface;
+<<<<<<< HEAD
 use Sylius\Bundle\PromotionsBundle\Model\RuleInterface;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
 use Sylius\Bundle\PromotionsBundle\SyliusPromotionEvents;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
@@ -52,6 +55,7 @@ class PromotionEligibilityChecker implements PromotionEligibilityCheckerInterfac
      */
     public function isEligible(PromotionSubjectInterface $subject, PromotionInterface $promotion)
     {
+<<<<<<< HEAD
         if (false === $this->isEligibleToDates($promotion)) {
             return false;
         }
@@ -110,6 +114,8 @@ class PromotionEligibilityChecker implements PromotionEligibilityCheckerInterfac
      */
     private function isEligibleToDates(PromotionInterface $promotion)
     {
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
         $now = new \DateTime();
 
         if (null !== $startsAt = $promotion->getStartsAt()) {
@@ -124,6 +130,7 @@ class PromotionEligibilityChecker implements PromotionEligibilityCheckerInterfac
             }
         }
 
+<<<<<<< HEAD
         return true;
     }
 
@@ -136,12 +143,15 @@ class PromotionEligibilityChecker implements PromotionEligibilityCheckerInterfac
      */
     private function isEligibleToUsageLimit(PromotionInterface $promotion)
     {
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
         if (null !== $usageLimit = $promotion->getUsageLimit()) {
             if ($promotion->getUsed() >= $usageLimit) {
                 return false;
             }
         }
 
+<<<<<<< HEAD
         return true;
     }
 
@@ -156,6 +166,8 @@ class PromotionEligibilityChecker implements PromotionEligibilityCheckerInterfac
      */
     private function isSubjectEligibleToCoupon(PromotionSubjectInterface $subject, PromotionInterface $promotion)
     {
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
         if ($promotion->isCouponBased()) {
             if (null === $subject->getPromotionCoupon()) {
                 return false;
@@ -166,6 +178,7 @@ class PromotionEligibilityChecker implements PromotionEligibilityCheckerInterfac
             }
         }
 
+<<<<<<< HEAD
         return true;
     }
 
@@ -179,6 +192,20 @@ class PromotionEligibilityChecker implements PromotionEligibilityCheckerInterfac
      */
     private function isCouponEligibleToPromotion(PromotionSubjectInterface $subject, PromotionInterface $promotion)
     {
+=======
+        foreach ($promotion->getRules() as $rule) {
+            $checker = $this->registry->getChecker($rule->getType());
+
+            if (false === $checker->isEligible($subject, $rule->getConfiguration())) {
+                if ($promotion->isCouponBased() && $promotion === $subject->getPromotionCoupon()->getPromotion()) {
+                    $this->dispatcher->dispatch(SyliusPromotionEvents::COUPON_NOT_ELIGIBLE, new GenericEvent($promotion));
+                }
+
+                return false;
+            }
+        }
+
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
         if (!$promotion->hasCoupons()) {
             return true;
         }

@@ -26,7 +26,10 @@
         "doctrine/orm":                         "~2.3",
         "friendsofsymfony/rest-bundle":         "~1.0",
         "friendsofsymfony/user-bundle":         "2.0.*@dev",
+<<<<<<< HEAD
         "hwi/oauth-bundle":                     "0.3.*",
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
         "incenteev/composer-parameter-handler": "~2.0",
         "jms/serializer-bundle":                "0.12.*",
         "jms/translation-bundle":               "1.1.*",
@@ -38,6 +41,10 @@
         "liip/imagine-bundle":                  "~0.9",
         "mathiasverraes/money":                 "*@dev",
         "sensio/distribution-bundle":           "2.3.*",
+<<<<<<< HEAD
+=======
+        "sensio/generator-bundle":              "2.2.*",
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
         "stof/doctrine-extensions-bundle":      "1.1.*",
         "symfony/assetic-bundle":               "2.3.*",
         "symfony/intl":                         "~2.3",
@@ -47,8 +54,13 @@
         "twig/extensions":                      "1.0.*",
         "white-october/pagerfanta-bundle":      "1.0.*@dev",
         "omnipay/omnipay":                      "1.0.*",
+<<<<<<< HEAD
         "payum/payum":                          "~0.6.3",
         "payum/payum-bundle":                   "~0.6.2",
+=======
+        "payum/payum":                          "0.6.*",
+        "payum/payum-bundle":                   "0.6.*",
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
         "payum/paypal-express-checkout-nvp":    "0.6.*",
         "payum/omnipay-bridge":                 "0.6.*"
     },
@@ -57,7 +69,10 @@
         "behat/symfony2-extension":          "*",
         "behat/mink-extension":              "*",
         "behat/mink-browserkit-driver":      "*",
+<<<<<<< HEAD
         "behat/mink-goutte-driver":          "*",
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
         "behat/mink-selenium2-driver":       "*",
         "doctrine/doctrine-fixtures-bundle": "2.2.*",
         "fzaninotto/faker":                  "1.2.*",

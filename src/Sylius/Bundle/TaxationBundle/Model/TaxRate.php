@@ -108,8 +108,11 @@ class TaxRate implements TaxRateInterface
     public function setCategory(TaxCategoryInterface $category = null)
     {
         $this->category = $category;
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -126,8 +129,11 @@ class TaxRate implements TaxRateInterface
     public function setName($name)
     {
         $this->name = $name;
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -168,8 +174,11 @@ class TaxRate implements TaxRateInterface
     public function setIncludedInPrice($includedInPrice)
     {
         $this->includedInPrice = (Boolean) $includedInPrice;
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**
@@ -186,8 +195,11 @@ class TaxRate implements TaxRateInterface
     public function setCalculator($calculator)
     {
         $this->calculator = $calculator;
+<<<<<<< HEAD
 
         return $this;
+=======
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     }
 
     /**

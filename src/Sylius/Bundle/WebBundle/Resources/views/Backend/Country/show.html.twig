@@ -15,12 +15,21 @@
     <div class="actions-menu">
         {{ buttons.manage(path('sylius_backend_country_index'), 'sylius.country.manage'|trans) }}
         {{ buttons.edit(path('sylius_backend_country_update', {'id': country.id})) }}
+<<<<<<< HEAD
         {{ buttons.delete(path('sylius_backend_country_delete', {'id': country.id}), null, false, false) }}
     </div>
     <h1><i class="glyphicon glyphicon-flag"></i> {{ 'sylius.country.show_header'|trans|raw }}</h1>
 </div>
 
 <table class="table table-bordered table-condensed">
+=======
+        {{ buttons.delete(path('sylius_backend_country_delete', {'id': country.id})) }}
+    </div>
+    <h1><i class="icon-flag"></i> {{ 'sylius.country.show_header'|trans|raw }}</h1>
+</div>
+
+<table class="table table-bordered table-consensed">
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
     <thead>
         <tr>
             <th>{{ 'sylius.country.name'|trans }}</th>
@@ -35,7 +44,11 @@
     </tbody>
 </table>
 {% if country.hasProvinces %}
+<<<<<<< HEAD
     <table id="provinces" class="table table-bordered table-condensed">
+=======
+    <table id="provinces" class="table table-bordered table-consensed">
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
         <thead>
             <tr>
                 <th>{{ 'sylius.province.provinces'|trans }}</th>
@@ -44,11 +57,24 @@
         </thead>
         <tbody>
             {% for province in country.provinces %}
+<<<<<<< HEAD
                 <tr id="{{ province.id }}">
                     <td>{{ province.name }}</td>
                     <td>
                         <div class="pull-right">
                             {{ buttons.delete(path('sylius_backend_province_delete', {'id': province.id, 'countryId' : country.id})) }}
+=======
+                <tr>
+                    <td>{{ province.name }}</td>
+                    <td>
+                        <div class="pull-right">
+                            <form action="{{ path('sylius_backend_province_delete', {'countryId': country.id, 'id': province.id}) }}" method="post" style="display: inline;">
+                                <input type="hidden" name="_method" value="DELETE">
+                                <button class="btn btn-danger">
+                                    <i class="icon-trash"></i> {{ 'sylius.delete'|trans }}
+                                </button>
+                            </form>
+>>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
                         </div>
                     </td>
                 </tr>
