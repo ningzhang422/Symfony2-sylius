@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "c9dc16ec99ac083ae7be6c3890b90d0d",
+    "hash": "e9ecd7d87d990806588a641a1c1664bb",
     "packages": [
         {
             "name": "athari/yalinqo",
@@ -3006,6 +3006,54 @@
                 "distribution"
             ],
             "time": "2013-08-22 05:04:53"
+        },
+        {
+            "name": "sensio/generator-bundle",
+            "version": "v2.2.6",
+            "target-dir": "Sensio/Bundle/GeneratorBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sensiolabs/SensioGeneratorBundle.git",
+                "reference": "9fb6b8cb240e78035968b2b5e1fc6455bb9ac40f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/9fb6b8cb240e78035968b2b5e1fc6455bb9ac40f",
+                "reference": "9fb6b8cb240e78035968b2b5e1fc6455bb9ac40f",
+                "shasum": ""
+            },
+            "require": {
+                "symfony/console": "~2.0",
+                "symfony/framework-bundle": "~2.2"
+            },
+            "require-dev": {
+                "doctrine/orm": "~2.2,>=2.2.3",
+                "symfony/doctrine-bridge": "~2.2",
+                "twig/twig": "~1.11"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Sensio\\Bundle\\GeneratorBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "This bundle generates code for you",
+            "time": "2013-06-02 13:07:01"
         },
         {
             "name": "stof/doctrine-extensions-bundle",

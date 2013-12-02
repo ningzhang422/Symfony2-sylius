@@ -1,5 +1,8 @@
-sylius_installer:
-    resource: @SyliusInstallerBundle/Resources/config/routing.yml
+acme_inscription:
+    resource: "@AcmeInscriptionBundle/Resources/config/routing.yml"
+
+#sylius_installer:
+#    resource: @SyliusInstallerBundle/Resources/config/routing.yml
 
 sylius_web:
     resource: @SyliusWebBundle/Resources/config/routing/main.yml

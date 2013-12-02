@@ -76,10 +76,12 @@ class AppKernel extends Kernel
             new Payum\Bundle\PayumBundle\PayumBundle(),
             new Acme\Bundle\ShopBundle\AcmeShopBundle(),
             new Acme\Bundle\WebBundle\AcmeWebBundle(),
+            new Acme\Bundle\InscriptionBundle\AcmeInscriptionBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev'))) {
             $bundles[] = new \Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
+            $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
         }
 
         return $bundles;

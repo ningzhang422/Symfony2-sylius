@@ -1,0 +1,10 @@
+parameters:
+    acme_inscription.scenario.class: Acme\Bundle\InscriptionBundle\Process\InscriptionScenario
+
+services:
+    acme_inscription.scenario:
+        class: %acme_inscription.scenario.class%
+        calls:
+            - [setContainer, ["@service_container"]]
+        tags:
+            - { name: sylius.process.scenario, alias: acme_inscription }
