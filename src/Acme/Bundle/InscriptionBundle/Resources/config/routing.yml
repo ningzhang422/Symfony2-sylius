@@ -1,0 +1,7 @@
+acme_inscription:
+    pattern: /inscription
+    defaults: { _controller: sylius.controller.process:startAction, scenarioAlias: 'acme_inscription' }
+
+sylius_flow:
+    resource: @SyliusFlowBundle/Resources/config/routing.yml
+    prefix: /inscription

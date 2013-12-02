@@ -42,9 +42,13 @@
         "mathiasverraes/money":                 "*@dev",
         "sensio/distribution-bundle":           "2.3.*",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         "sensio/generator-bundle":              "2.2.*",
 >>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
+=======
+        "sensio/generator-bundle":              "2.2.*",
+>>>>>>> master
         "stof/doctrine-extensions-bundle":      "1.1.*",
         "symfony/assetic-bundle":               "2.3.*",
         "symfony/intl":                         "~2.3",

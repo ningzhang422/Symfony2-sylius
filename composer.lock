@@ -4,10 +4,14 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     "hash": "c9dc16ec99ac083ae7be6c3890b90d0d",
 =======
     "hash": "62e0c1fd5b4e407cf1579178ccc266a5",
 >>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
+=======
+    "hash": "e9ecd7d87d990806588a641a1c1664bb",
+>>>>>>> master
     "packages": [
         {
             "name": "athari/yalinqo",
@@ -3097,7 +3101,10 @@
         },
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
             "name": "sensio/generator-bundle",
             "version": "v2.2.6",
             "target-dir": "Sensio/Bundle/GeneratorBundle",
@@ -3146,7 +3153,10 @@
             "time": "2013-06-02 13:07:01"
         },
         {
+<<<<<<< HEAD
 >>>>>>> 2a50dfc58650724c3cd7c772d2f88accef2f3f5d
+=======
+>>>>>>> master
             "name": "stof/doctrine-extensions-bundle",
             "version": "v1.1.0",
             "target-dir": "Stof/DoctrineExtensionsBundle",
